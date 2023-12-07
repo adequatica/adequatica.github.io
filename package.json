@@ -21,7 +21,7 @@
     "husky": "8.0.3"
   },
   "scripts": {
-    "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   }
 }
