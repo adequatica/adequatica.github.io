@@ -37,5 +37,6 @@ GitHub Action runs after each push to build GitHub Pages [website](https://adequ
 
 7. To format Markdown files **locally**:
 
-   - Set up `package.json` for [Prettier](https://prettier.io/): `npm install && npm run prepare`
-   - And add [Husky](https://typicode.github.io/husky/) pre-commit = `npm run format`
+   - Set up `package.json` for [Prettier](https://prettier.io/): `npm install`
+   - Add [Husky](https://typicode.github.io/husky/) pre-commit: `npm run prepare`
+   - Run formatter when necessary: `npm run format`
