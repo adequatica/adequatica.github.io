@@ -21,13 +21,13 @@ Disclaimer:
 
 Fortunately, a [free version of Charles](https://www.charlesproxy.com/download/) is enough to complete our discovery.
 
-1\. Go to _Proxy → Proxy Settings…_ and fill in the field _HTTP Proxy_ = 8888 and check the box \_Support HTTP/2 \_in the «Proxy Settings» window.
+1\. Go to _Proxy → Proxy Settings…_ and fill in the field _HTTP Proxy_ = 8888 and check the box _Support HTTP/2_ in the «Proxy Settings» window.
 
 ![Charles → Proxy → Proxy Settings](/assets/2021-09-23/01-charles-proxy-proxy-settings.png)
 
 _Charles → Proxy → Proxy Settings_
 
-2\. Then go to _Proxy → SSL Proxying Settings… \_and check the box \_Enable SSL Proxying_ in the «SSL Proxying Settings» window.
+2\. Then go to _Proxy → SSL Proxying Settings…_ and check the box _Enable SSL Proxying_ in the «SSL Proxying Settings» window.
 
 ![Charles → Proxy → SSL Proxying Settings](/assets/2021-09-23/02-charles-proxy-ssl-proxing-settings.png)
 
