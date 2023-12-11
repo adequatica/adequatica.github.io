@@ -29,10 +29,10 @@ Vitest’s minimum config can be really minimalistic:
 
 ```JavaScript
 import {defineConfig} from 'vitest/config';
+
 export default defineConfig({
   test: {},
 });
-
 ```
 
 - **Vitest has retries out of the box!**
