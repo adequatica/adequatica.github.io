@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Statistics of Assertions in Playwright Test Suite"
-date: 2023-11-03 08:22:59 +0300
+date: 2023-11-03 08:22:59 +0100
 tags: automation playwright statistics
 ---
 
