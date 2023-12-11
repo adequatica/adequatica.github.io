@@ -2,7 +2,7 @@
 layout: post
 title: "A Brief XSS Scanning with Burp Suite"
 date: 2022-05-10 04:14:56 +0400
-tags: security testing burp
+tags: burp security testing
 ---
 
 Sometimes, as a test engineer, you need to perform a full-scale check of your web application for vulnerabilities.

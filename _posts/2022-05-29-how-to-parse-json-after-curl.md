@@ -25,7 +25,7 @@ Otherwise, you will not be able to parse the response by any tool:
 
 _Fig. 3. Invalid JSON is not parseable_
 
-For all examples, I used macOS Big Sur and its default Terminal; all additional tools can be installed through [homebrew](https://brew.sh/).
+For all examples, I used macOS Big Sur and its default [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>); all additional tools can be installed through [homebrew](https://brew.sh/).
 
 ## Python
 

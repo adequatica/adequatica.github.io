@@ -12,16 +12,16 @@ There are not many good books about software testing compared to other areas of 
 I have compiled a list of non-technical (almost) books that can be recommended for QA engineers:
 
 - **Zen and the Art of Motorcycle Maintenance**
-- The Timeless Way of Building
+  - The Timeless Way of Building
 - **Design for the Real World**
-- The Design of Everyday Things
+  - The Design of Everyday Things
 - **Foundation (series)**
 - **The Phoenix Project**
-- The Goal
-- The Toyota Way
+  - The Goal
+  - The Toyota Way
 - **The South Pole**
-- The Last Place on Earth
-- Chasing New Horizons
+  - The Last Place on Earth
+  - Chasing New Horizons
 
 ## [Zen and the Art of Motorcycle Maintenance](https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance) by Robert M. Pirsig
 

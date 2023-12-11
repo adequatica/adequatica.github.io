@@ -2,7 +2,7 @@
 layout: post
 title: "Browser DevTools as an Essential Tool for API Testing"
 date: 2022-06-01 04:29:29 +0400
-tags: api testing devtools
+tags: api devtools testing
 ---
 
 The DevTools «Network» tab provides almost everything for API testing — from checking responses to making requests.
@@ -244,7 +244,7 @@ I hope that the reader knows why he needs a cURL and how to use it:
 
 ![cURL request in Terminal](/assets/2022-06-01/27-curl-request-in-terminal.png)
 
-_Fig. 27. cURL request in [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS))\_
+_Fig. 27. cURL request in Terminal_
 
 In the example above I added `-i --output -` to cURL request to show response headers and binary output.
 
