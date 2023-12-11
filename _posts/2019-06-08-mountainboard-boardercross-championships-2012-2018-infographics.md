@@ -2,7 +2,7 @@
 layout: post
 title: "Mountainboard Boardercross Championships 2012–2018 Infographics"
 date: 2019-06-08 07:12:06 +0300
-tags: mountainboad infographics
+tags: infographics mountainboad
 ---
 
 Data visualization of World Mountainboard Boardercross Championships from 2012 to 2018.

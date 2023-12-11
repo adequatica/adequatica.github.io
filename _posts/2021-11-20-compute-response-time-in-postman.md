@@ -2,7 +2,7 @@
 layout: post
 title: "Compute Response Time in Postman"
 date: 2021-11-20 15:48:24 +0300
-tags: testing api postman
+tags: api postman testing
 ---
 
 Sometimes, as a test engineer, you need to perform a non-function testing.

@@ -2,7 +2,7 @@
 layout: post
 title: "Run Newman (Postman CLI) in TeamCity (CI) with Secrets"
 date: 2021-09-25 03:28:26 +0300
-tags: testing postman newman
+tags: newman postman testing
 ---
 
 Sometimes, as a test engineer, you need to run your tests in CI with secret tokens.

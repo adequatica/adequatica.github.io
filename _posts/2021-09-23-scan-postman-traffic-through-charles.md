@@ -2,7 +2,7 @@
 layout: post
 title: "Scan Postman Traffic Through Charles"
 date: 2021-09-23 10:31:37 +0300
-tags: testing charles postman
+tags: charles postman testing
 ---
 
 Sometimes, as a test engineer, you need to go deeper for checking API.

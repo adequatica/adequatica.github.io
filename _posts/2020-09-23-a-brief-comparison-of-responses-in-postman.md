@@ -2,7 +2,7 @@
 layout: post
 title: "A Brief Comparison of Responses in Postman"
 date: 2020-09-23 08:26:55 +0300
-tags: api testing postman
+tags: api postman testing
 ---
 
 Sometimes, as a test engineer, you need to quickly compare two API responses.

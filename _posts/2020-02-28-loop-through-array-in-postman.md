@@ -2,7 +2,7 @@
 layout: post
 title: "Loop through array in Postman"
 date: 2020-02-28 08:44:05 +0300
-tags: testing postman
+tags: postman testing
 ---
 
 Sometimes, as a test engineer, you need to iterate over a set of elements and call the same API method with each of them.

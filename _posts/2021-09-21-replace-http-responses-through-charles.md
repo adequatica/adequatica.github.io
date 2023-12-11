@@ -2,7 +2,7 @@
 layout: post
 title: "Replace HTTP Responses Through Charles"
 date: 2021-09-21 09:50:18 +0300
-tags: testing charles
+tags: charles testing
 ---
 
 Sometimes, as a test engineer, you need to rewrite HTTP/HTTPS requests for your web application

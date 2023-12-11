@@ -2,7 +2,7 @@
 layout: post
 title: "Randomization Testing of Filter Handler in Postman"
 date: 2020-11-22 13:07:20 +0300
-tags: api testing postman
+tags: api postman testing
 ---
 
 Sometimes, as a test engineer, you need to make multiple requests of a single API method with different parameters.
