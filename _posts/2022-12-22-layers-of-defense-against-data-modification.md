@@ -97,7 +97,7 @@ await page.route('https://testing.domain/handler', (route) =>
 
 The final restriction layer is to prevent requests to protected application or service. As an ultimate solution, requests can be terminated on a network level through proxy settings, but it is not an option if you still need to make requests from time to time in some cases.
 
-> For example of my project: after all listed layers, my assumed autotests will run only in a testing environment, test users will be forbidden to trigger commands and commands will be sent to an offline or non-existent device, but what if all of the above will fail?
+> For example of my project: after all listed layers, my assumed autotests will run only in a testing environment, test users will be forbidden to trigger commands, and commands will be sent to an offline or non-existent device, but what if all of the above will fail?
 
 For this case, [Playwright can abort HTTP requests](https://playwright.dev/docs/network#abort-requests):
 
