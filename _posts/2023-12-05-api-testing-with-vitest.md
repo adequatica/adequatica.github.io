@@ -9,15 +9,15 @@ As a test engineer (actually, as any engineer and web developer), you should rec
 
 ![API Testing with Vitest](/assets/2023-12-05/00-cover-caledoscope.jpg)
 
-Someone can say that testing API with JS is a bad idea; JS fits only for frontend… The argument in support of this thesis is that APIs should be tested on «backend languages» (or on a language in which a serverside code is written, unless, of course, it is written on Node.js): Python, Java, Go, etc.
+Someone can say that «_testing API with JS is a bad idea_»; «_JS fits only for frontend…_» The argument in support of these theses is that APIs should be tested on «backend languages» (or on a language in which a serverside code is written, unless, of course, it is written on Node.js): Python, Java, Go, etc.
 
-However, testing API is not the same as testing backend code. API is an Application Programming Interface — it is an interface to the backend — defined HTTP endpoints that are not tied up to programming language. API testing is suitable for any convenient language.
+However, testing API is not the same as testing backend code. API is an Application Programming Interface — it is an interface to the backend — a collection of defined HTTP endpoints that are not tied up to programming language. **API testing is suitable for any convenient language.**
 
 Therefore, testing API with JavaScript can not considered delirious. If a project already has end-to-end frontend autotests on JavaScript (most likely based on Puppeteer, Playwright, Cypress, or WebdriverIO), that JavaScript for API testing can be scored as a stack unification.
 
 Ten years ago, JavaScript infrastructure could not provide enough tools for testing. Your selection was lacking: Mocha, Jasmine, Karma, Webdriver (it did not even have a test runner at that time and provided only Node.js API to Selenium), and probably something else that no one will remember now. But shortly, the explosive growth of web technologies spawned advanced testing tools, and it became possible to build a JavaScript testing architecture of any complexity from various open-source projects. You can even settle your API tests based on [UI testing frameworks like Cypress and Playwright](https://javascript.plainenglish.io/api-testing-comparison-cypress-vs-playwright-vs-jest-2ff1f80c5a7b)!
 
-**Jest + suitable HTTP client** ([Axios](https://axios-http.com/), [Got](https://github.com/sindresorhus/got), [superagent](https://github.com/ladjs/superagent)/[supertest](https://github.com/ladjs/supertest), or[ node-fetch](https://github.com/node-fetch/node-fetch)) **was a popular bundle** in recent years. At the same time, a few significant changes have happened over the past year: [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) started working out of the box in Node.js [21](https://nodejs.org/en/blog/announcements/v21-release-announce) (previously, you had to use it under the experimental flag), and [Vitest just released version 1.0](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0). It is time to shake up the habitual testing stack!
+**Jest + favorite HTTP client** ([Axios](https://axios-http.com/), [Got](https://github.com/sindresorhus/got), [superagent](https://github.com/ladjs/superagent)/[supertest](https://github.com/ladjs/supertest), or[ node-fetch](https://github.com/node-fetch/node-fetch)) **was a popular bundle** in recent years. At the same time, a few significant changes have happened over the past year: [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) started working out of the box in Node.js [21](https://nodejs.org/en/blog/announcements/v21-release-announce) (previously, you had to use it under the experimental flag), and [Vitest just released version 1.0](https://github.com/vitest-dev/vitest/releases/tag/v1.0.0). It is time to shake up the habitual testing stack!
 
 ## Why should you choose or switch to Vitest?
 
@@ -72,13 +72,13 @@ Vitest is almost more than one and a half times faster!
 
 - **Vitest has a thoughtful reporter.** For example, in the final report it will collapse successful tests up to the file level. Anyway, you do not need test steps if everything is OK.
 
-![Vitest shows how tests are running](/assets/2023-12-05/01-run-beforeall.png)
+![Vitest reporter after a successful run](/assets/2023-12-05/01-run-passed.png)
 
-_Fig. 1. Vitest shows how tests are running (multi-threading execution — notice beforeAlls are running at the same time)_
+_Fig. 1. Vitest reporter after a successful run_
 
-![Vitest reporter after a successful run](/assets/2023-12-05/02-run-passed.png)
+![Vitest shows how tests are running](/assets/2023-12-05/02-run-beforeall.png)
 
-_Fig. 2. Vitest reporter after a successful run_
+_Fig. 2. Vitest shows how tests are running (multi-threading execution — notice beforeAlls are running at the same time)_
 
 ![Vitest reporter of a single test file shows all tests](/assets/2023-12-05/03-run-epic.png)
 
