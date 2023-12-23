@@ -384,4 +384,11 @@ Useful remark:
 
 Note that your own principles for your own project could be dramatically different.
 
+Read more:
+
+- Playwright [Best Practices](https://playwright.dev/docs/best-practices);
+- Cypress [Best Practices](https://docs.cypress.io/guides/references/best-practices);
+- WebdriverIO [Best Practices](https://webdriver.io/docs/bestpractices/);
+- [UI Testing Best Practices](https://github.com/NoriSte/ui-testing-best-practices/).
+
 Copy @ [Medium](https://adequatica.medium.com/principles-of-writing-automated-tests-a2b72218264c)
