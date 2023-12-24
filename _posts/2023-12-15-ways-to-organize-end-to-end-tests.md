@@ -91,7 +91,6 @@ It is also okay to put screenshot tests next to its components (of course, if th
 This one is a good approach to organizing autotests.
 
 ```
-
 .
 ├── public/
 ├── src/
@@ -229,3 +228,5 @@ Characteristics:
 ---
 
 Thanks to [tree.nathanfriend.io](https://tree.nathanfriend.io/) for generating ASCII folder structure diagrams.
+
+Copy @ [Medium](https://medium.com/@adequatica/api-testing-with-vitest-391697942527)
