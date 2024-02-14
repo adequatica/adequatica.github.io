@@ -336,4 +336,8 @@ Documentation:
 - [Browser Console](https://firefox-source-docs.mozilla.org/devtools-user/browser_console/index.html) (Firefox);
 - [The Console](https://developer.apple.com/library/archive/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Console/Console.html) (Safari).
 
+Further tricks:
+
+- [Console DevTools Tips](https://devtoolstips.org/tag/console/).
+
 Copy @ [Medium](https://adequatica.medium.com/browser-console-for-functional-testing-650004cc4641)

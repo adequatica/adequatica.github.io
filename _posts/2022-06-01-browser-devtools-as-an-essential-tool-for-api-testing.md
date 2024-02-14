@@ -248,4 +248,8 @@ _Fig. 27. cURL request in Terminal_
 
 In the example above I added `-i --output -` to cURL request to show response headers and binary output.
 
+---
+
+For more tricks, see [DevTools Tips](https://devtoolstips.org/).
+
 Copy @ [Medium](https://adequatica.medium.com/browser-devtools-as-an-essential-tool-for-api-testing-c2ace3fc47f2)
