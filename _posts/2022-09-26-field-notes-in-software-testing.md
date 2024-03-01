@@ -26,7 +26,8 @@ I collected tricky test cases which somehow led to bugs and hacks to perform unu
 
 _Fig. 1. The height of the suggest does not have a maximum value and therefore goes off the screen_
 
-- If there is a countdown timer on the page, you must check what happens when it stops. For example, I saw `NaN` and the continuation of the countdown with negative values.
+- If there is a countdown timer on the page, you must check what happens when it stops. For example, I saw `NaN` and the continuation of the countdown with negative values;
+- Try a leap day ([February 29](https://en.wikipedia.org/wiki/February_29)) in a date input. Rather, a wrong leap day (29.02.2021) is more important. Almost every popular frontend and backend frameworks handle this case, but it is a constant trip for custom ones.
 
 ## Non-general cases
 
@@ -44,7 +45,7 @@ _Fig. 2. Printing is an outdated case for most modern websites, but for document
 - It is recommended that the latitude be indicated in the first place because latitude-measuring techniques [were invented earlier than longitude](https://www.open.edu/openlearn/history-the-arts/history/history-science-technology-and-medicine/history-science/latitude-and-longitude), and **latitude coordinates are listed first** [for positioning in the sea and marine charts](https://www.sailingissues.com/navcourse1.html);
 - Latitude and longitude ranges are not the same (again, surprisingly, such bugs occur):
   - latitude range is from `-90` to `90`, and
-  - longitude range is from `-180` to `180`;
+  - longitude range is from `-180` to `180`.
 - Latitude and longitude can be `0` — it’s a perfect edge case and [Null Island](https://en.wikipedia.org/wiki/Null_Island) on Earth;
 - Watch out for the [coordinates’ precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates). Unlimited precision may cause coordinates values like: `44.8162365432106e-540, 20.46046765432101e234`, which causes unsightly bugs. Slicing or rounding the coordinate value may have its advantages. Anyway, eight decimals are already [nearly 1 mm in accuracy](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude).
 
