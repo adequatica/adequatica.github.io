@@ -340,9 +340,9 @@ _Fig. 16. document.activeElement in Firefox console_
 
 Moreover, in **Chrome DevTools**, you can use [Live Expression](https://developer.chrome.com/docs/devtools/console/live-expressions#create) to watch your command’s values in real time:
 
-- Click on [Create live expression] (an eye-like button);
-- In the appeared «Expression» input, type `document.activeElement`
-- Now click on the page or tab around and see how the live expression’s output will update the currently focused element.
+1. Click on [Create live expression] (an eye-like button);
+2. In the appeared «Expression» input, type `document.activeElement`
+3. Now click on the page or tab around and see how the live expression’s output will update the currently focused element.
 
 ![document.activeElement in Chrome DevTools Live Expression](/assets/2023-11-14/17-activeelement-chrome-live-expression.png)
 
