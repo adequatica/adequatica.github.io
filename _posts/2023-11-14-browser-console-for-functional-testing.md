@@ -328,9 +328,35 @@ Further reading:
 - [Taking screenshots with the web console](https://firefox-source-docs.mozilla.org/devtools-user/taking_screenshots/index.html#Taking_screenshots_with_the_web_console);
 - [Essential Tool: Firefox’s screenshot Command](https://meyerweb.com/eric/thoughts/2015/10/22/firefoxs-screenshot-command/).
 
+## 9. Detect which element has the focus
+
+That hack is essential during [A11y testing](https://adequatica.medium.com/accessibility-manual-testing-85826e161071): when you navigate through the page by pressing the TAB key, you can lose a focus element (the outline property can be none, a focused element can be hidden, or elements’ order can be unpredictable).
+
+`document.activeElement` — shows an element that currently has focus.
+
+![document.activeElement in Firefox console](/assets/2023-11-14/16-activeelement-firefox.png)
+
+_Fig. 16. document.activeElement in Firefox console_
+
+Moreover, in **Chrome DevTools**, you can use [Live Expression](https://developer.chrome.com/docs/devtools/console/live-expressions#create) to watch your command’s values in real time:
+
+- Click on [Create live expression] (an eye-like button);
+- In the appeared «Expression» input, type `document.activeElement`
+- Now click on the page or tab around and see how the live expression’s output will update the currently focused element.
+
+![document.activeElement in Chrome DevTools Live Expression](/assets/2023-11-14/17-activeelement-chrome-live-expression.png)
+
+_Fig. 17. document.activeElement in Chrome DevTools Live Expression_
+
+Further reading:
+
+- [Document: activeElement property](https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement);
+- [Track element focus](https://developer.chrome.com/docs/devtools/accessibility/focus);
+- [Detect the element with focus at any time](https://devtoolstips.org/tips/en/track-focused-element/).
+
 ---
 
-Documentation:
+General documentation:
 
 - [Console overview](https://developer.chrome.com/docs/devtools/console/) (Chrome);
 - [Browser Console](https://firefox-source-docs.mozilla.org/devtools-user/browser_console/index.html) (Firefox);
