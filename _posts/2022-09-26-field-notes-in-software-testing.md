@@ -47,7 +47,8 @@ _Fig. 2. Printing is an outdated case for most modern websites, but for document
   - latitude range is from `-90` to `90`, and
   - longitude range is from `-180` to `180`.
 - Latitude and longitude can be `0` — it’s a perfect edge case and [Null Island](https://en.wikipedia.org/wiki/Null_Island) on Earth;
-- Watch out for the [coordinates’ precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates). Unlimited precision may cause coordinates values like: `44.8162365432106e-540, 20.46046765432101e234`, which causes unsightly bugs. Slicing or rounding the coordinate value may have its advantages. Anyway, eight decimals are already [nearly 1 mm in accuracy](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude).
+- Watch out for coordinates in exponential format, like `4.4816236e+1, 2.0460467e+1` instead of regular numbers;
+- Carry on the [coordinates’ precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates). Unlimited precision may cause unnecessary calculations; therefore, slicing or rounding the coordinate value may have advantages. Eight decimals are already [nearly 1 mm in accuracy](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude).
 
 ## On opening URLs
 
