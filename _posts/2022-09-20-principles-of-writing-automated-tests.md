@@ -27,9 +27,10 @@ A presented compilation of principles is based on years of experience and has pr
 12. Avoid regexp in checks;
 13. Wrap clicks and expectations into a promise;
 14. Do not use global variables for page object methods;
-15. Do not scatter test cases;
+15. Do not dispel checks over multiple test scenarios;
 16. Do not mix different kinds of tests;
-17. Use linters and formatters from the testing (parent) project.
+17. Test IDs must be unique;
+18. Use linters and formatters from the testing (parent) project.
 
 ---
 
@@ -356,11 +357,11 @@ test('Should have something', async () => {
 
 If variables are not rewritten, it reduces the probability of rewriting them incorrectly or asynchronously — it increases the overall stability of the tests.
 
-## 15. Do not scatter test cases
+## 15. Do not dispel checks over multiple test scenarios
 
 The same functionality should be checked the same way everywhere.
 
-For example, instead of having `test-1.spec.ts` test where you check a banner through «expect A», and having `test-2.spec.ts` test where you check the same banner (but perhaps in the other page) through «expect B», — test that banner by both expects (A and B) in each of the tests (`test-1.spec.ts` and `test-2.spec.ts`).
+For example, instead of having `test-1.spec.ts` test where you check a banner through «expect A», and having `test-2.spec.ts` test where you check the same banner (but perhaps in the other page) through «expect B», — you should test that banner by both expects (A and B) in each of the tests (`test-1.spec.ts` and `test-2.spec.ts`).
 
 ## 16. Do not mix different kinds of tests
 
@@ -370,7 +371,27 @@ If you want to check UI functionality and check the layout by screenshot simulta
 
 If you want to check end-to-end API scenarios and check JSON schemes simultaneously — do two integration API tests each of which makes certain checks.
 
-## 17. Use linters and formatters from the testing (parent) project
+## 17. Test IDs must be unique
+
+If you use test identifications, like [data-testid attributes](https://playwright.dev/docs/locators#locate-by-test-id), these IDs must be unique on the page (and preferably for the whole site). It means that only one selector with a specific ID attribute can be on a testing page.
+
+Instead of:
+
+```Html
+<div class="block_element__modificator" role="banner" data-testid="banner-element"></div>
+…
+<div class="block_element__modificator view-more" data-testid="banner-element"></div>
+```
+
+Do:
+
+```Html
+<div class="block_element__modificator" role="banner" data-testid="banner-element-one"></div>
+…
+<div class="block_element__modificator view-more" data-testid="banner-element-more"></div>
+```
+
+## 18. Use linters and formatters from the testing (parent) project
 
 If a directory with tests is located inside a testing project, or tests are located in a separate repository, or if tests are written by dedicated autotest engineers or by developers, tests should inherit linter and formatting rules from the testing (parent) project.
 
