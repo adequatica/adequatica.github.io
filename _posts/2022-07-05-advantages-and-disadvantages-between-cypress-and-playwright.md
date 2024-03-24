@@ -71,7 +71,7 @@ Disclaimer: all listed pros and cons are subjective and based on my own experien
 
 ### Disadvantages:
 
-1. Сonfusing documentation. Without a doubt a Playwright’s documentation is good, but looking for lore takes time, and examples are quite poor. After the [installation process](https://playwright.dev/docs/intro) I had to use Google and Stackoverflow to figure out some of the details.
+1. Confusing documentation. Without a doubt a Playwright’s documentation is good, but looking for lore takes time, and examples are quite poor. After the [installation process](https://playwright.dev/docs/intro) I had to use Google and Stackoverflow to figure out some of the details.
 2. Despite the fact that Playwright allows [API testing](https://playwright.dev/docs/test-api-testing), its [request method](https://playwright.dev/docs/api/class-apirequest) is not advanced enough. For example, it does not support disabling follow redirects ([but Cypress does](https://docs.cypress.io/api/commands/request)).
 3. Screenshots, videos, and traces on failures are made inside one [test()](https://playwright.dev/docs/api/class-test) function. It means that if you have a few tests inside `test.describe()`, you will get videos and traces for each nested test, but not for a whole root test function ([steps](https://playwright.dev/docs/api/class-test#test-step) have the same behavior). It is a shame that so many artifacts can not be assembled into one piece.
 4. TeamCity is not supported out of the box — you have to write your own reporter for CI builds.

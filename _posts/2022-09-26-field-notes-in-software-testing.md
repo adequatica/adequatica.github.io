@@ -66,7 +66,7 @@ _Fig. 2. Printing is an outdated case for most modern websites, but for document
 - Search for [special characters](https://wiki.mozilla.org/Help:Special_characters): `! * ' ( ) ; : @ & = + $ , / ? % # [ ] &lt; > .`
 - Search for special characters through mnemonic [entities](https://www.w3.org/wiki/Common_HTML_entities_used_for_typography), for example: `&laquo; &raquo;` instead of `« »`
 - Search for `:` — it can affect Python’s backends, especially if the search is performed on the [clickhouse](https://github.com/ClickHouse/ClickHouse) database;
-- Search for сyrillic `ё` (or any non-latin letters or hieroglyphs). [There was a bug in iPhone](https://nymag.com/intelligencer/2018/02/apple-ios-11-telugu-bug-locks-users-out-of-messages.html) with the Telugu character జ్ఞా
+- Search for cyrillic `ё` (or any non-latin letters or hieroglyphs). [There was a bug in iPhone](https://nymag.com/intelligencer/2018/02/apple-ios-11-telugu-bug-locks-users-out-of-messages.html) with the Telugu character జ్ఞా
 - Search for text in different encodings;
 - Search for `[object Object]`
 - Search for `%`, by `%%`, and by `%` with combination of special characters;

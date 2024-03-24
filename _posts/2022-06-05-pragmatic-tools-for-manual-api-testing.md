@@ -15,7 +15,7 @@ There are several types of tools for testing API by manual testers — from the 
 
 - Browsers
 - GUI: Postman, Insomnia, Paw, Hoppscotch, TestMace
-- CLI: сURL, HTTPie
+- CLI: cURL, HTTPie
 - Visual Studio Code: Rest Client, Thunder Client
 
 For all examples, I used the latest versions of the apps for macOS Big Sur and [OpenWeather API](https://openweathermap.org/api/one-call-3) handler:
@@ -134,9 +134,9 @@ _Fig. 11. TestMace_
 
 ## CLI
 
-### сURL
+### cURL
 
-[сURL](https://curl.se/) is a command-line tool for transferring data through various network protocols, including HTTP — exactly what we need for REST API testing. By using cURL you can isolate your requests from the limitations and influences of the frontend environment and generate requests of any complexity that cannot be reproduced in any GUI client.
+[cURL](https://curl.se/) is a command-line tool for transferring data through various network protocols, including HTTP — exactly what we need for REST API testing. By using cURL you can isolate your requests from the limitations and influences of the frontend environment and generate requests of any complexity that cannot be reproduced in any GUI client.
 
 ![cURL in Terminal](/assets/2022-06-05/12-curl.png)
 

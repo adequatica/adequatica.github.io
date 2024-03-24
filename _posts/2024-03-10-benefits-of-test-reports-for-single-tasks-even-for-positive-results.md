@@ -7,7 +7,7 @@ tags: testing
 
 In this article, the term «Test Report» refers to a QA’s comment after checking (testing) a single task (ticket).
 
-As a test engineer, you have to test many things. The work's result is a verified task, but sometimes it can be closed without visible work. So, it is a good practice to leave comments about the job done.
+As a test engineer, you have to test many things. The work’s result is a verified task, but sometimes it can be closed without visible work. So, it is a good practice to leave comments about the job done.
 
 ![DALL-E 3 prompt](/assets/2024-03-10/00-cover-dall-e-3.jpg)
 
@@ -15,7 +15,7 @@ _DALL-E 3 prompt: make the interface of a website for managing tickets with the 
 
 ## 1. Confirmation of the accomplished work
 
-The result (outcome) of the developer's work is Pull Requests and changes in the code; these are traceable artifacts of their activities, and results are countable and tangible.
+The result (outcome) of the developer’s work is Pull Requests and changes in the code; these are traceable artifacts of their activities, and results are countable and tangible.
 
 The result (outcome) of the QA’s work (especially if it is manual testing) is challenging to quantify. Eventually, it only confirms that the feature works or a bug is fixed, but confirmation should have proof.
 

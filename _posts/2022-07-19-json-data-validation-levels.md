@@ -149,7 +149,7 @@ pm.test("5. Required values", function () {
   pm.expect(jsonData.lon).to.be.within(-180, 180);
 });
 
-pm.test("6. Аdditional criteria", function () {
+pm.test("6. Additional criteria", function () {
   let jsonData = pm.response.json();
   pm.expect(jsonData.timezone).to.have.string('Yerevan');
 });

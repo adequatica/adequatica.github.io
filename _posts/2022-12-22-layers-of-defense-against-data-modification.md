@@ -65,7 +65,7 @@ This case applies not only to autotests — it is a good practice to prevent the
 
 ## Layer 3: test objects restrictions — choose idle testable objects
 
-This item does not refer to restricting, but sanitary measures. To reduce the impact of unexpected commands or data modification, if they do happen, it is worth using less important or popular/loaded objects for testing. Сhoose the least noticeable objects for testing in a prestable/production environment.
+This item does not refer to restricting, but sanitary measures. To reduce the impact of unexpected commands or data modification, if they do happen, it is worth using less important or popular/loaded objects for testing. Choose the least noticeable objects for testing in a prestable/production environment.
 
 > For example of my project: I try to select devices that are offline or hidden, not just randomly.
 

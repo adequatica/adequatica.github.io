@@ -113,7 +113,7 @@ Each language locale must correspond to the value from the [IANA registry](https
 
 ## 6. Document Structure
 
-Сheck for the appropriate [section heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
+Check for the appropriate [section heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements).
 
 The actual result matches with expected: titles are marked with the correct tags.
 
@@ -264,7 +264,6 @@ For further testing, you should start using a screen reader.
 
 ### Similar Articles
 
-- Russian translation of this article: [Тестирование доступности](https://telegra.ph/Testirovanie-dostupnosti-09-21)
 - [How To Do an Accessibility Review](https://developers.google.com/web/fundamentals/accessibility/how-to-review)
 - [Accessibility audits](https://web.dev/lighthouse-accessibility/)
 - [Testing for accessibility](https://www.gov.uk/service-manual/helping-people-to-use-your-service/testing-for-accessibility)

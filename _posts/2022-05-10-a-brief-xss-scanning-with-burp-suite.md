@@ -27,7 +27,7 @@ _Burp Proxy_
 
 4\. Install Burp’s certificate for Firefox by [instruction](https://portswigger.net/burp/documentation/desktop/external-browser-config/certificate/ca-cert-firefox);
 
-5\. Сonfigure Firefox’s proxy settings: Preferences → General → Network Settings → [Settings…] → choose «Manual Proxy Configuration»: **HTTPS = 127.0.0.1** and **Port = 8080** → [OK];
+5\. Configure Firefox’s proxy settings: Preferences → General → Network Settings → [Settings…] → choose «Manual Proxy Configuration»: **HTTPS = 127.0.0.1** and **Port = 8080** → [OK];
 
 ![Firefox Connection Settings](/assets/2022-05-10/02-firefox-connection-settings.png)
 

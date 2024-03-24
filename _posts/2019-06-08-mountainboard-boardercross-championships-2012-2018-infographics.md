@@ -9,7 +9,7 @@ Data visualization of World Mountainboard Boardercross Championships from 2012 t
 
 ![Mountainboard Boardercross Championships 2012–2018 Infographics](/assets/2019-06-08/00-cover.jpg)
 
-Mountainboarding is a tiny sport, but with a strong community of passionate riders. Despite that regular bordercross сhampionships started only six years ago. The organizers of each event act independently, so the results are presented in non-standardized form and I had to spend some time aggregating data in one spreadsheet. Based on that information I made some charts and theses which found interesting.
+Mountainboarding is a tiny sport, but with a strong community of passionate riders. Despite that regular bordercross championships started only six years ago. The organizers of each event act independently, so the results are presented in non-standardized form and I had to spend some time aggregating data in one spreadsheet. Based on that information I made some charts and theses which found interesting.
 
 ### 148 riders participated 452 times in 6 championships
 

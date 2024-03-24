@@ -157,7 +157,7 @@ Console allows to store currently-inspected element and refer to it for DOM modi
 2. Return to console;
 3. Type the command: `$0`
 
-Now, if you type `$0` again, you will get the element in the Сonsole, and can modify the properties of the element ([node](https://developer.mozilla.org/en-US/docs/Web/API/Node) in the DOM terms) or get the [element](https://developer.mozilla.org/en-US/docs/Web/API/Element)’s properties and call [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) methods.
+Now, if you type `$0` again, you will get the element in the Console, and can modify the properties of the element ([node](https://developer.mozilla.org/en-US/docs/Web/API/Node) in the DOM terms) or get the [element](https://developer.mozilla.org/en-US/docs/Web/API/Element)’s properties and call [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) methods.
 
 ```
 // Evaluate stored element
