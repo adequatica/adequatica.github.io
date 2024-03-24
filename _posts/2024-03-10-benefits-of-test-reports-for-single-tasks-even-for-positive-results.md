@@ -11,7 +11,7 @@ As a test engineer, you have to test many things. The work's result is a verifie
 
 ![DALL-E 3 prompt](/assets/2024-03-10/00-cover-dall-e-3.jpg)
 
-_DALL-E 3 prompt: make the interface of a website for managing tickets with the comments section. It should have minimalistic UI, light and bright, very enegeering look. Make it fullscreen._
+_DALL-E 3 prompt: make the interface of a website for managing tickets with the comments section. It should have minimalistic UI, light and bright, very engineering look. Make it fullscreen._
 
 ## 1. Confirmation of the accomplished work
 
@@ -19,7 +19,7 @@ The result (outcome) of the developer's work is Pull Requests and changes in the
 
 The result (outcome) of the QA’s work (especially if it is manual testing) is challenging to quantify. Eventually, it only confirms that the feature works or a bug is fixed, but confirmation should have proof.
 
-For instance, a ticket comes for testing → something happens on the QA side → ticket closes (or returns for improvements). But what exactly has happened? What have the QAs done/tested/verified? Where is a presentation of the work done? Why not close the ticket without any testing?
+For instance, if a ticket comes for testing → something happens on the QA side → ticket closes (or returns for improvements). But what exactly has happened? What have the QAs done/tested/verified? Where is a presentation of the work done? Why not close the ticket without any testing?
 
 Thus, **a test report is a valuable artifact of QA’s work.** A screenshot of a new web page or just one button, an HTTP response of a new or fixed handler — all of this matters.
 
