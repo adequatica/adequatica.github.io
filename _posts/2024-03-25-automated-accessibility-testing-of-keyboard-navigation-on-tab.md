@@ -148,7 +148,7 @@ await test.step("Press TAB key", async () => {
   });
 
   expect(focusedOn, "Should have correct active element").toBe(
-    "\n  Skip to main content\n"
+    "\n  Skip to main content\n",
   );
 });
 ```
