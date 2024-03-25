@@ -2,7 +2,7 @@
 layout: post
 title: "Automated Accessibility Testing of Keyboard Navigation on Tab"
 date: 2024-03-25 09:58:30 +0100
-tags: testing
+tags: accessibility testing
 ---
 
 One of the first and easiest ways to start accessibility testing on the site is to navigate through the page using just a keyboard.
