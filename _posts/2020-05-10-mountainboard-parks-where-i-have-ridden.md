@@ -133,6 +133,7 @@ Contacts: [Dirt Dessert](https://www.facebook.com/DirtDessert).
 - [2012](https://yadi.sk/a/54AFYsLeqsa3K), [2013](https://yadi.sk/a/NS_mjvA5qsjRj)
 
 ![Dubki, Kyiv, Ukraine (2013)](/assets/2020-05-10/06-dubki-2013.jpg)
+
 _Dubki, Kyiv, Ukraine (2013)_
 
 This is a local freestyle spot with one jump of good shape for mountainboarding, although the spot is shared with bikers. It’s hard enough to find it without a guide. I’ve been there two times, but I have no idea if it still exists.
@@ -142,6 +143,7 @@ This is a local freestyle spot with one jump of good shape for mountainboarding,
 - [2015](https://yadi.sk/a/6QzS2cLrqtT5A)
 
 ![El SoT Vilamajor, Barcelona, Spain (2015)](/assets/2020-05-10/07-el-sot-vilamajor-2015.jpg)
+
 _El SoT Vilamajor, Barcelona, Spain (2015)_
 
 This spot is located in the countryside, less than an hour’s drive from Barcelona, and operates on demand. When I came there in the middle of the summer of 2015, the track and jumps were overgrown with dry grass but became fully ridable just after a few runs and looked the same as a long time ago. It has a freestyle section: jumps, rails for jibbing, dirt quarterpipe, and big air.
@@ -169,6 +171,7 @@ Contacts: [Skilift Snowpark Boardpark & Bikepark Großerlach](https://www.facebo
 - [2013](https://yadi.sk/a/qxbbxV9Tqsipp)
 
 ![Iguria, Basque Country, Spain (2013)](/assets/2020-05-10/09-iguria-2013.jpg)
+
 _Iguria, Basque Country, Spain (2013)_
 
 The exact coordinates of the park are classified, and it’s not possible to ride there without locals. When I was there in 2013 out of season, the park was in perfect condition. It’s not a boardercross track or freestyle park, it’s all in one and one of the greatest things made for mountainboarding. Unfortunately, there is no news, photos, or videos from there [except one](https://www.youtube.com/watch?v=Xs2rx8ObSeI).
@@ -180,6 +183,7 @@ The exact coordinates of the park are classified, and it’s not possible to rid
 - [2013](https://yadi.sk/a/A43mDcMVqsuga)
 
 ![Local Trip, Rio de Janeiro, Brazil (2013)](/assets/2020-05-10/10-local-trip-2013.jpg)
+
 _Local Trip, Rio de Janeiro, Brazil (2013)_
 
 A legendary place — the oldest mountainboard park in the world. There are two different parks in one place: a cozy home spot with jumps, rails, and quarterpipe and the full-length boardercross track on a wide slope with big air.
@@ -221,6 +225,7 @@ It’s the home spot of Diego Anderson — ex-president of the [International Mo
 - [2013](https://yadi.sk/a/cegCbB0Eqsfyh)
 
 ![Roseraie, Toulouse, France (2013)](/assets/2020-05-10/13-rosaraie-2013.jpg)
+
 _Roseraie, Toulouse, France (2013)_
 
 I visited this park during a tour around the Pyrenees in the spring of 2013. The local mountainboard community has its own piece of a big bike park. This place is only for freestyle: small big air and jibbing figures. Some bike parts of the track are also available for mountainboarding.
@@ -232,6 +237,7 @@ Contacts: [TMC31](https://www.facebook.com/tmc31).
 - [2012](https://yadi.sk/a/T6A0mP54qsKpW)
 
 ![Shambhala, Sopot, Bulgaria (2012)](/assets/2020-05-10/14-shambhala-2012.jpg)
+
 _Shambhala, Sopot, Bulgaria (2012)_
 
 I visited this track only to take part in the boardercross competition, but it wasn’t a mountainboard park. It was an ordinary bikecross track: low rollers, easy turns, not much speed, and gravel surface. There is no info about any events in Bulgaria since then.
@@ -241,6 +247,7 @@ I visited this track only to take part in the boardercross competition, but it w
 - [2013](https://yadi.sk/a/d4ikgDF_qtSB2)
 
 ![Swell, Porto Alegre, Brazil (2013)](/assets/2020-05-10/15-swell-2013.jpg)
+
 _Swell, Porto Alegre, Brazil (2013)_
 
 The park is located on the backyard slope of Swell skatepark. It is the second Brazilian mountainboard park that was abandoned in 2013. It seems to be that I was the first rider who rode there on a mountainboard in a couple of years, but even so, the track was very speedy. Everything else was the same as in the late ’00s.
@@ -254,6 +261,7 @@ Contacts: [Swell Skate Camp](https://swell-skate-camp.negocio.site/).
 - [2013](https://yadi.sk/a/6TuEFsroqtQtZ)
 
 ![Trilhas do Olimpo, Petrópolis, Brazil (2013)](/assets/2020-05-10/16-trilhas-do-olimpo-2013.jpg)
+
 _Trilhas do Olimpo, Petrópolis, Brazil (2013)_
 
 [I was there](https://www.facebook.com/media/set/?set=a.621973047848303.1073741844.238894309489514&type=1) during[ the trip in 2013](https://enjoytherideforfun.blogspot.com/2013/11/visita-de-andrey-yenin-ao-trilhas-do.html) and didn’t know about this park before going to Brazil. It’s totally a great place for relaxing and riding on a mountainboard. There are two tracks: the first for beginners and the second for experienced riders.
@@ -289,6 +297,7 @@ Contacts: [Wanyi Park Mountainboardcenter](https://www.facebook.com/wanyipark) o
 - [2011](https://yadi.sk/a/1xy3V9hJqsHiD)
 
 ![Willingen, Germany (2011)](/assets/2020-05-10/18-willingen-2011.jpg)
+
 _Willingen, Germany (2011)_
 
 I was there only for competition in 2011, and as local riders say, they also rarely use it. This is a bike track that partially fits for mountainboarding. It’s not fast but has a few interesting rollers and a nice gravel surface. There haven’t been any events since that time.
@@ -298,6 +307,7 @@ I was there only for competition in 2011, and as local riders say, they also rar
 - [2010](https://yadi.sk/a/cB_KZHpaqrNNy), [2011](https://yadi.sk/a/yKBgcbQDqsHNF)
 
 ![Winterberg, Germany (2010)](/assets/2020-05-10/19-winterberg-2010.jpg)
+
 _Winterberg, Germany (2010)_
 
 The magnificent mountainboard park was built in 2009 on a slope of a ski resort in an attempt to attract riders during summertime. Unfortunately, mountainboarding became unprofitable, and the park was demolished in 2012. I was lucky enough to visit it two times: in 2010 and 2011. There was the best series of mountainboard jumps I’ve ever ridden.
@@ -306,7 +316,7 @@ Despite the loss of the freestyle section, the bike track «Black Hole» in the 
 
 [![Black Hole Rollercoaster Ride Winterberg](http://img.youtube.com/vi/QOTd99mDaCA/0.jpg)](https://www.youtube.com/watch?v=QOTd99mDaCA)
 
-## Yukki [closed], Saint Petersburg, Russia {#yukki-[closed]-saint-petersburg-russia}
+## Yukki [closed], Saint Petersburg, Russia
 
 - [2010](https://yadi.sk/a/7A-kxmkNqsGig), [2012](https://yadi.sk/a/JYWybW0kqsaVV)
 
