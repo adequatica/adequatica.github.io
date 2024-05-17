@@ -15,7 +15,7 @@ I started traveling to mountainboard competitions or just visiting new mountainb
 
 **[See all of them on the map](https://www.google.com/maps/d/viewer?mid=1tyD4TTqb97ZVnRM3YoJ_Ql9btS8).**
 
-_Note: all descriptions are valid as of the date of the original publication of the article (May 2020)._
+_Note: all descriptions are valid as of the date of the initial publication of the article (May 2020)._
 
 ---
 
@@ -43,11 +43,11 @@ Contacts: [Naranoriders](https://www.facebook.com/naranoriders).
 
 _Bukovac, Novi Sad, Serbia (2018)_
 
-After my first visit in 2011, I returned here every time I could. In 2018 the Bukovac’s track celebrated its 10<sup>th</sup> year anniversary: it developed from a local spot to the host of four World Boardercross Championships in 2013, 2014, 2016, and 2019.
+After my first visit in 2011, I returned every time I could. In 2018, Bukovac’s track celebrated its 10th anniversary: it developed from a local spot to the host of four World Boardercross Championships in 2013, 2014, 2016, and 2019.
 
 [![Bukovac walkthrough from top to bottom](http://img.youtube.com/vi/lmnkEvrvnuE/0.jpg)](https://www.youtube.com/watch?v=lmnkEvrvnuE)
 
-The full-length track operates only during annual competitions, but the top part of it could be ridden all season. The last part of the track is extremely fast and becomes faster and faster every year. The overall length of the track is over 800 m. Watch out for thorns growing on the roadsides.
+The full-length track operates only during annual competitions, but the top part is ridable all season. The last part of the track is extremely fast and becomes faster and faster every year. The overall length of the track is over 800 m. Watch out for thorns growing on the roadsides.
 
 In 2018, the track got a bridge!
 
@@ -67,7 +67,7 @@ Contacts: [Mountainboard park Bukovac](https://www.facebook.com/mountainboarding
 
 _Cabure, Porto Alegre, Brazil (2013)_
 
-Unfortunately, the park was abandoned when I visited it in 2013. It was built in the private fazenda and hasn’t changed since the late 00’s. Maybe it is still rideable because the last time the dirt was smooth and banked turns kept their shape. There is no info about any events in South Brazil.
+Unfortunately, the park was abandoned when I visited it in 2013. It was built in the private fazenda and hasn’t changed since the late 00’s. Maybe it is still rideable because the last time, the dirt was smooth, and banked turns kept their shape. There is no info about any events in South Brazil.
 
 Freestyle section: big air with wooden rollin.
 
@@ -97,7 +97,7 @@ Contacts: [Association Mountainboard Compiegne](https://www.facebook.com/Associa
 
 _Dirt Dessert, Kranj, Slovenia (2018)_
 
-It’s one of the best tracks I’ve ever ridden at the World Championships. It doesn’t feel overspeed and you can also try different trajectories and practice various techniques of passing curves and rollers. You can’t see the full track, because it is laid in the coniferous forests, so you must do a few runs to get used to it.
+It’s one of the best tracks I’ve ever ridden at the World Championships. It doesn’t feel overspeed and you can also try different trajectories and practice various techniques of passing curves and rollers. You can’t see the full track because it is laid in the coniferous forests, so you must do a few runs to get used to it.
 
 [![Dirt Dessert walkthrough from top to bottom](http://img.youtube.com/vi/Jk4EkO5VWwY/0.jpg)](https://www.youtube.com/watch?v=Jk4EkO5VWwY)
 
@@ -205,7 +205,7 @@ It’s the home spot of Diego Anderson — ex-president of the [International Mo
 
 _Roseraie, Toulouse, France (2013)_
 
-I visited this park during a tour around the Pyrenees in the spring of 2013. The local mountainboard community has its own piece of a big bike park. This place is only for freestyle: small big air and jibbing figures. Some bike parts of the track are also available for mountainboarding.
+I visited this park during a tour around the Pyrenees in the spring of 2013. The local mountainboard community has its own piece of a big bike park. This place is only for freestyle: a series of mini jumps, small big-air, and jibbing figures. Some bike parts of the track are also available for mountainboarding.
 
 Contacts: [TMC31](https://www.facebook.com/tmc31).
 
@@ -261,7 +261,7 @@ Contacts: [Trilhas do Olimpo](https://www.facebook.com/TrilhasDoOlimpo).
 
 _Wanyi Park, Belgium (2013)_
 
-This is the best and the oldest mountainboard resort in Europe (opened in 2005). I came here many times and always had fun regardless of the weather. The park has a series of jumps with big air, jibbing obstacles that change from season to season, a boardercross track (not for beginners), a foam pit, a wide slope (for beginners), babylift, and a camping site.
+This is the best and oldest mountainboard resort in Europe (opened in 2005). I have come here many times and always had fun regardless of the weather. The park has a series of jumps with big air, jibbing obstacles that change from season to season, a boardercross track (not for beginners), a foam pit, a wide slope (for beginners), a baby-lift, and a camping site.
 
 [![Short Ride in Wanyi Park](http://img.youtube.com/vi/zbUKQh_DBwo/0.jpg)](https://www.youtube.com/watch?v=zbUKQh_DBwo)
 
