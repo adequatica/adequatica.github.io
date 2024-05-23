@@ -30,7 +30,7 @@ Based on these levels, you can adjust the depth of testing of your JSON data.
 
 This is an initial check that answers the question: _Is the body parsable?_
 
-Validation could be done by JavaScript's standard method — [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) will throw an error in case of invalid JSON.
+Validation could be done by JavaScript’s standard method — [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) will throw an error in case of invalid JSON.
 
 By the way, according to [JSON documentation](https://www.json.org/json-en.html), the empty object `{}` is a valid JSON.
 

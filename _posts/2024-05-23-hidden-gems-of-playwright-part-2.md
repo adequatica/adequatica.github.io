@@ -98,6 +98,8 @@ await expect(async () => {
 });
 ```
 
+This is extremely useful for checking unreliable backend responses.
+
 _There is also a similar, but not quite, [`expect.poll` method](https://playwright.dev/docs/test-assertions#expectpoll), which implements the idea of [HTTP polling](https://medium.com/cache-me-out/http-polling-and-long-polling-bd3f662a14f#0f5c) inside assertions._
 
 ## CI reporter for GitHub Actions
@@ -150,7 +152,7 @@ test('Home page toolbar about overlay on mobile',
 
 _Fig. 3. HTML report: on the left — {box: true}, on the right is an ordinary test step_
 
-Anyway, that is quite a controversial feature, and it strongly depends on the helper functions and the team’s test requirements.
+Anyway, that is quite a controversial feature, and it depends a lot on the helper functions, the assertions inside them, and the test requirements.
 
 Read more:
 
