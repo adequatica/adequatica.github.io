@@ -5,9 +5,9 @@ date: 2024-05-23 05:33:13 +0100
 tags: playwright
 ---
 
-![Hidden Gems of Playwright: Part 2](/assets/2024-05-23/00-cover-2.jpg)
-
 [In the previous article](https://adequatica.github.io/2022/09/07/hidden-gems-of-playwright.html), I highlighted some notable Playwright methods that made testing easier when I started using it as a default test automation framework in production.
+
+![Hidden Gems of Playwright: Part 2](/assets/2024-05-23/00-cover-2.jpg)
 
 Here I continued to pick up some interesting features of that tool:
 
@@ -24,7 +24,7 @@ Some of them are «illustrated» in [this GitHub repository](https://github.com/
 
 Docs: [Test use options](https://playwright.dev/docs/test-use-options), [TestOptions](https://playwright.dev/docs/api/class-testoptions/)
 
-Playwright provides a [config file to manage all options](https://playwright.dev/docs/test-configuration) for running your tests. However, some tests may require a completely different setup for the base URL, browser settings, or a special user's environment (viewport, geolocation, etc.).
+Playwright provides a [config file to manage all options](https://playwright.dev/docs/test-configuration) for running your tests. However, some tests may require a completely different setup for the base URL, browser settings, or a special user’s environment (viewport, geolocation, etc.).
 
 To rewrite the global config, you can set the necessary parameters for a particular single test via the [`test.use()` method](https://playwright.dev/docs/api/class-test#test-use) at the top of a test:
 

@@ -81,7 +81,7 @@ And for unit or API testing:
 > UPDATE for 2023 year:
 >
 > - Vitest is a preferable option for unit testing;
-> - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) starts work out of the box from Node.js [21](https://nodejs.org/en/blog/announcements/v21-release-announce), so you may skip adding a library for HTTP requests ([see an example](https://adequatica.medium.com/api-testing-with-vitest-391697942527)).
+> - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) starts work out of the box from Node.js [21](https://nodejs.org/en/blog/announcements/v21-release-announce), so you may skip adding a library for HTTP requests ([see an example](https://adequatica.github.io/2023/12/04/api-testing-with-vitest.html)).
 
 ---
 

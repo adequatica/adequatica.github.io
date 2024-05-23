@@ -9,7 +9,7 @@ Sometimes, as a test engineer, you need to perform a non-function testing.
 
 When developers start to speed up an API, the QA department usually gets two types of tasks:
 
-1. Check that handlers work the same way as they worked before (that could be tested by [comparison of responses](https://adequatica.medium.com/brief-comparison-of-responses-in-postman-aea23ee9d342));
+1. Check that handlers work the same way as they worked before (that could be tested by [comparison of responses](https://adequatica.github.io/2020/09/23/a-brief-comparison-of-responses-in-postman.html));
 2. Check that handlers start work faster.
 
 «Start work faster» means starting to respond in less time. [Response time](<https://en.wikipedia.org/wiki/Response_time_(technology)>) is a common [non-functional requirement](https://en.wikipedia.org/wiki/Non-functional_requirement) for the API or its particular handlers or [methods](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods).

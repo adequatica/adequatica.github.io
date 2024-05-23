@@ -12,7 +12,7 @@ Once in my practice, I made requests from Postman, which responded in an unpredi
 Disclaimer:
 
 - As an example, [COVID-19 Rich Data Services](https://documenter.getpostman.com/view/2220438/SzYevv9u) API was selected, because it is open and can be accessed without token;
-- [Charles should be installed and configured](https://adequatica.medium.com/replace-http-responses-through-charles-f2954c372b40#c750) at least for working with web applications;
+- [Charles should be installed and configured](https://adequatica.github.io/2021/09/21/replace-http-responses-through-charles.html) at least for working with web applications;
 - I use Charles 4.5.6 on macOS Catalina 10.15.7 and Postman 8.12.1.
 
 ![Charles](/assets/2021-09-23/00-charles.png)

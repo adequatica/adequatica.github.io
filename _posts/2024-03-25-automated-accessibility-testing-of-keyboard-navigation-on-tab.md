@@ -65,7 +65,7 @@ Read more:
 
 - [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11.html).
 
-This point can also include avoiding [keyboard traps](https://www.a11y-collective.com/glossary/keyboard-trap/). This issue mainly occurs on [pop-ups and overlays](https://adequatica.medium.com/vectors-of-testing-pop-up-overlays-modal-windows-65c2ede32344#1fdc) when tabbing loops focus on one interactive component. The user should be able to leave a focused element.
+This point can also include avoiding [keyboard traps](https://www.a11y-collective.com/glossary/keyboard-trap/). This issue mainly occurs on [pop-ups and overlays](https://adequatica.github.io/2020/09/04/vectors-of-testing-pop-up-overlays.html) when tabbing loops focus on one interactive component. The user should be able to leave a focused element.
 
 Read more:
 
@@ -113,10 +113,10 @@ The test scenario for this case is pretty simple:
 For the implementation of this check, you need:
 
 1. **Playwright** or any frontend test automation framework;
-2. Playwright’s [`evaluate()`](https://playwright.dev/docs/api/class-page#page-evaluate) method [to invoke a custom function](https://adequatica.medium.com/simple-examples-of-using-playwright-evaluate-method-9b00d01cadc1#1d0e);
+2. Playwright’s [`evaluate()`](https://playwright.dev/docs/api/class-page#page-evaluate) method [to invoke a custom function](https://adequatica.github.io/2023/09/29/examples-of-using-playwright-evaluate-method.html);
 3. Document’s [activeElement property](https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement) to get the current element on the page that has focus.
 
-To see how the activeElement property works, open DevTools Console and write the command: `document.activeElement` (read more about [detecting focused elements through the browser’s console](https://adequatica.medium.com/browser-console-for-functional-testing-650004cc4641#cc4e)).
+To see how the activeElement property works, open DevTools Console and write the command: `document.activeElement` (read more about [detecting focused elements through the browser’s console](https://adequatica.github.io/2023/11/14/browser-console-for-functional-testing.html)).
 
 For further examples, I randomly selected the [CERN](https://home.cern/) website. But I suddenly faced with a completely unoptimized Tab order — the user could not get on the main navigation list! Well, finding bugs is not the topic of this article. Therefore, I will have to limit the example to just a toolbar with a logo.
 
@@ -148,7 +148,7 @@ await test.step("Press TAB key", async () => {
   });
 
   expect(focusedOn, "Should have correct active element").toBe(
-    "\n  Skip to main content\n",
+    "\n  Skip to main content\n"
   );
 });
 ```

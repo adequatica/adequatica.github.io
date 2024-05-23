@@ -330,7 +330,7 @@ Further reading:
 
 ## 9. Detect which element has the focus
 
-That hack is essential during [A11y testing](https://adequatica.medium.com/accessibility-manual-testing-85826e161071): when you navigate through the page by pressing the TAB key, you can lose a focus element (the outline property can be none, a focused element can be hidden, or elements’ order can be unpredictable).
+That hack is essential during [A11y testing](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html): when you navigate through the page by pressing the TAB key, you can lose a focus element (the outline property can be none, a focused element can be hidden, or elements’ order can be unpredictable).
 
 `document.activeElement` — shows an element that currently has focus.
 

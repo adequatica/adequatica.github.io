@@ -11,7 +11,7 @@ If you do not have ready testing infrastructure, you can use [Postman Collection
 
 Let’s assume that you have an array (or any collection) of items, each of which you need to pass into the same request.
 
-As an example, I decided to find which of 10 books from [Google Books](https://www.google.com/search?tbm=bks&q=dostoevsky) has a preview (it will be an array of items). As in [my previous article](https://adequatica.medium.com/use-postman-collection-runner-as-vulnerability-scanner-aff7471c94fb), I chose [Google Books API](https://developers.google.com/books/docs/v1/using#RetrievingVolume) for that:
+As an example, I decided to find which of 10 books from [Google Books](https://www.google.com/search?tbm=bks&q=dostoevsky) has a preview (it will be an array of items). As in [my previous article](https://adequatica.github.io/2019/07/28/use-postman-collection-runner-as-vulnerability-scanner.html), I chose [Google Books API](https://developers.google.com/books/docs/v1/using#RetrievingVolume) for that:
 
 ```
 {% raw %}https://www.googleapis.com/books/v1/volumes/{{varVolume}}?key={{yourAPIKey}}{% endraw %}

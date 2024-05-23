@@ -120,7 +120,7 @@ Further reading about [cross browser testing](https://developer.mozilla.org/en-U
 - Back to the previous page by `[Back]` — it can affect [SPA websites](https://en.wikipedia.org/wiki/Single-page_application) and websites which use [History API](https://developer.mozilla.org/en-US/docs/Web/API/History/back);
 - Switch to another tab by `[CMD]+[NUM_KEY]` or switch to another application by `[ALT]+[TAB]`;
 - Search on a tested page through the browser’s search: `[CMD]+[F]` — it can affect pages with pop-ups, modal windows, dynamic loading scripts, and [infinite scroll](https://www.smashingmagazine.com/2013/05/infinite-scrolling-lets-get-to-the-bottom-of-this/);
-- Navigate by keyboard `[TAB]` — actually, it is already a part of [accessibility testing](https://adequatica.medium.com/accessibility-manual-testing-85826e161071);
+- Navigate by keyboard `[TAB]` — actually, it is already a part of [accessibility testing](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html);
 - [Hard refresh the browser](https://fabricdigital.co.nz/blog/how-to-hard-refresh-your-browser-and-clear-cache): `[CMD]+[SHIFT]+[R]` — the browser will clear the cache on refresh, but the URL’s path should remain unchanged;
 - Check Safari’s Console in DevTools, because additional [CSP errors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP/Errors) can occur in this browser;
 - Make the browser window fullscreen — most likely, nothing will break, but who knows?

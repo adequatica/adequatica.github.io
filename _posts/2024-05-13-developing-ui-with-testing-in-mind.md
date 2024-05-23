@@ -41,7 +41,7 @@ Keep in mind, that all users, including those with color vision deficiencies, sh
 
 ## 2. Do not hide the outline
 
-Unfortunately, mostly due to ignorance, some developers and designers argue about hiding outline styles by saying that this is «ugly». However, [Retaining an outline on the focused element](https://adequatica.medium.com/automated-accessibility-testing-of-keyboard-navigation-on-tab-89d30087c111#f3a3) aids users in understanding their current place on the page, offering valuable context and improving overall usability.
+Unfortunately, mostly due to ignorance, some developers and designers argue about hiding outline styles by saying that this is «ugly». However, [retaining an outline on the focused element](https://adequatica.github.io/2024/03/25/automated-accessibility-testing-of-keyboard-navigation-on-tab.html) aids users in understanding their current place on the page, offering valuable context and improving overall usability.
 
 ![The default outline](/assets/2024-05-13/02-outline.png)
 
@@ -113,7 +113,7 @@ In addition, closing the pop-up by [ESC] key will not be superfluous 😉
 
 Read further:
 
-- [Vectors of Testing Pop-up Overlays](https://adequatica.medium.com/vectors-of-testing-pop-up-overlays-modal-windows-65c2ede32344).
+- [Vectors of Testing Pop-up Overlays](https://adequatica.github.io/2020/09/04/vectors-of-testing-pop-up-overlays.html).
 
 ## 7. Ensuring forms usability
 
@@ -173,11 +173,11 @@ Based on my experience, it is much easier (and cost-efficient) to commit to UI t
 Read further:
 
 - [Locate by test id](https://playwright.dev/docs/locators#locate-by-test-id);
-- [Testing Recipes](https://legacy.reactjs.org/docs/testing-recipes.html) (take a look at data-testid attributes at examples in code snippets);
+- [Testing Recipes](https://legacy.reactjs.org/docs/testing-recipes.html) (take a look at `data-testid` attributes at examples in code snippets);
 - [Why Your Development Team Should Use data-testid Attributes](https://medium.com/@automationTest/why-your-development-team-should-use-data-testid-attributes-a83f1ca27ebb).
 
 ---
 
-If none of the listed items were considered during the web application’s development, then QA engineers will report dozens of [bugs related to A11Y](https://adequatica.medium.com/accessibility-manual-testing-85826e161071), UI, UX, and the app’s logic. Meanwhile, most of them can be resolved in advance by adhering to the practices discussed above.
+If none of the listed items were considered during the web application’s development, then QA engineers will report dozens of [bugs related to A11Y](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html), UI, UX, and the app’s logic. Meanwhile, most of them can be resolved in advance by adhering to the practices discussed above.
 
 Copy @ [Medium](https://adequatica.medium.com/developing-ui-with-testing-in-mind-741d9fe8e3b3)

@@ -51,7 +51,7 @@ What makes a building a quality one? What is quality in the context of architect
 
 _Buy: [Design for the Real World: Human Ecology and Social Change](https://www.amazon.com/Design-Real-World-Ecology-Social/dp/0897331532)_
 
-While specialized books talk about web design and user interfaces, this one reveals the fundamental basics of experiences between human and man-made objects (and software is no exception). This book is especially valuable for everyone who deals with [accessibility](https://adequatica.medium.com/accessibility-manual-testing-85826e161071).
+While specialized books talk about web design and user interfaces, this one reveals the fundamental basics of experiences between human and man-made objects (and software is no exception). This book is especially valuable for everyone who deals with [accessibility](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html).
 
 Further reading:
 

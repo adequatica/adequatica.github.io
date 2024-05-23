@@ -9,7 +9,7 @@ Sometimes, as a test engineer, you need to perform a full-scale check of your we
 
 Web application security testing is not the topic of one article, it takes a whole book. So I will focus only on the example of scanning for XSS ([cross-site scripting](https://portswigger.net/web-security/cross-site-scripting)) with one special tool — [Burp Suite](https://portswigger.net/).
 
-You can try to find [XSS vulnerabilities manually](https://adequatica.medium.com/a-brief-security-testing-for-manual-testers-f2f59d56fbb5#9af2), but it won't be productive and efficient. Testing for XSS is a kind of [brute-force search](https://en.wikipedia.org/wiki/Brute-force_search) — a repetitive scanning (or attacking) with changing of various parameters and payloads. Such tasks should be solved with special tooling that allows us to check hundreds of test cases in a relatively short time.
+You can try to find [XSS vulnerabilities manually](https://adequatica.github.io/2022/05/06/security-testing-for-manual-testers.html), but it won’t be productive and efficient. Testing for XSS is a kind of [brute-force search](https://en.wikipedia.org/wiki/Brute-force_search) — a repetitive scanning (or attacking) with changing of various parameters and payloads. Such tasks should be solved with special tooling that allows us to check hundreds of test cases in a relatively short time.
 
 ## 1. Prepare the Burp Suite
 

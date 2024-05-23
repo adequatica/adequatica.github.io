@@ -168,7 +168,7 @@ The next advantage of the console utility is that it could be combined with othe
 
 _Fig. 15. time curl [-s](https://curl.se/docs/manpage.html#-s)_
 
-The only difficulty with cURL is that it does not show JSON from the body in a pretty way. Therefore, [you have to use additional tools to parse the response](https://adequatica.medium.com/how-to-parse-json-after-curl-71e9413daa0c).
+The only difficulty with cURL is that it does not show JSON from the body in a pretty way. Therefore, [you have to use additional tools to parse the response](https://adequatica.github.io/2022/05/29/how-to-parse-json-after-curl.html).
 
 Further reading:
 
