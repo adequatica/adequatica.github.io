@@ -11,7 +11,7 @@ The main tools for writing UI tests are: browser, IDE, and testing framework doc
 
 The Playwright’s documentation is rich and intricate at the same time. Sometimes, you can make a check or perform an action one way, and after a while, find that it could be done in another way — just because you look into the [API](https://playwright.dev/docs/api/class-playwright) section instead of [Docs](https://playwright.dev/docs/intro) or vice versa.
 
-I picked up a few «features» that excited me when I discovered them:
+I picked up a few features that excited me when I discovered them:
 
 - maxFailures
 - Custom Expect Messages
@@ -21,7 +21,7 @@ I picked up a few «features» that excited me when I discovered them:
 - test.fixme
 - Explore Selectors in Playwright Inspector
 
-All of them are «illustrated» in the [GitHub repository](https://github.com/adequatica/ui-testing).
+All of them are «illustrated» in [this GitHub repository](https://github.com/adequatica/ui-testing).
 
 ## maxFailures {#maxfailures}
 
@@ -164,6 +164,10 @@ Sometimes, when you try to choose the right selector for a locator, it is not ea
 
 _Fig. 6. Example of exploring selector_
 
-For thoughtful debugging you can add [await page.pause()](https://playwright.dev/docs/debug#pagepause) on a desired line of the code — it will stop test execution and will not close Inspector window after timeout.
+For thoughtful debugging, you can add [`await page.pause()`](https://playwright.dev/docs/debug#pagepause) on a desired line of the code — it will stop test execution and will not close the Inspector window after a timeout.
+
+---
+
+Take a look at [part 2](https://adequatica.github.io/2024/05/23/hidden-gems-of-playwright-part-2.html).
 
 Copy @ [Medium](https://adequatica.medium.com/hidden-gems-of-playwright-68fcf8896bcb)
