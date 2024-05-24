@@ -27,7 +27,8 @@ I collected tricky test cases which somehow led to bugs and hacks to perform unu
 _Fig. 1. The height of the suggest does not have a maximum value and therefore goes off the screen_
 
 - If there is a countdown timer on the page, you must check what happens when it stops. For example, I saw `NaN` and the continuation of the countdown with negative values;
-- Try a leap day ([February 29](https://en.wikipedia.org/wiki/February_29)) in a date input. Rather, a wrong leap day (29.02.2021) is more important. Almost every popular frontend and backend frameworks handle this case, but it is a constant trip for custom ones.
+- Try a leap day ([February 29](https://en.wikipedia.org/wiki/February_29)) in a date input. Rather, a wrong leap day (29.02.2021) is more important. Almost every popular frontend and backend frameworks handle this case, but it is a constant trip for custom ones;
+- Keep in mind that there are [magic numbers](<https://learn.microsoft.com/en-us/previous-versions/software-testing/ee621251(v=msdn.10)>) for every test case.
 
 ## Non-general cases
 
