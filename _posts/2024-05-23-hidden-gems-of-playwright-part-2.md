@@ -71,7 +71,7 @@ test('Go offline', async ({ browser, page }) => {
   });
 ```
 
-**Watch out, this is not a completely offline mode.** Network activity will stop (as an emulation of a network being offline), but you will not be able to test features of your application that use [online/offline events](https://developer.mozilla.org/en-US/docs/Web/API/Window/offline_event) in the [`addEventListener()` method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener):
+**Watch out, this is not fully offline mode.** Network activity will stop (as an emulation of a network being offline), but you will not be able to test features of your application that use [online/offline events](https://developer.mozilla.org/en-US/docs/Web/API/Window/offline_event) in the [`addEventListener()` method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener):
 
 ```JavaScript
 // If your application’s code has this:
@@ -152,7 +152,7 @@ test('Home page toolbar about overlay on mobile',
 
 _Fig. 3. HTML report: on the left — {box: true}, on the right is an ordinary test step_
 
-Anyway, that is quite a controversial feature, and it depends a lot on the helper functions, the assertions inside them, and the test requirements.
+Anyway, that is quite a controversial feature, **and it depends a lot on the helper functions and the assertions inside them (your errors may look completely different than in the example above),** as well as the test requirements.
 
 Read more:
 
