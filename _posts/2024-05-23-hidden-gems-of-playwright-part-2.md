@@ -12,9 +12,10 @@ tags: playwright
 Here I continued to pick up some interesting features of that tool:
 
 - Rewrite global config for any test
-- …devices[]
+  - …devices[]
 - setOffline
 - expect.toPass
+- waitForSelector / waitFor
 - CI reporter for GitHub Actions
 - Boxed steps
 
@@ -41,7 +42,7 @@ test('Home page on mobile', async ({ page }) => {
 });
 ```
 
-## …devices[]
+### …devices[]
 
 [Doc](https://playwright.dev/docs/emulation#devices)
 
@@ -102,6 +103,65 @@ This is extremely useful for checking unreliable backend responses.
 
 _There is also a similar, but not quite, [`expect.poll` method](https://playwright.dev/docs/test-assertions#expectpoll), which implements the idea of [HTTP polling](https://medium.com/cache-me-out/http-polling-and-long-polling-bd3f662a14f#0f5c) inside assertions._
 
+## waitForSelector / waitFor
+
+[Doc](https://playwright.dev/docs/api/class-elementhandle#element-handle-wait-for-selector)
+
+This is another brilliant method suitable for checking selectors.
+
+There are recommendations that **assertions should not be placed inside [page object models](https://playwright.dev/docs/pom)**, even despite the implementation example in Playwright itself.
+
+![Please, do not do that inside pageObjects](/assets/2024-05-23/04-please-do-not-do-that.png)
+
+_Fig. 1. Please, do not do that inside pageObjects_
+
+Instead, you can wait for the required selector without explicit assert/expect:
+
+```javascript
+// Page’s toolbar object
+export class Toolbar {
+  private page: Page;
+  private toggleLocator: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.toggleLocator = page.locator('[class*=toggle]');
+  }
+
+  async clickOnToggle(): Promise<void> {
+    await this.toggleLocator.click();
+    // Deprecated, use locator-based locator.waitFor() instead
+    await this.page.waitForSelector('[data-testid="dropdown-menu"]');
+  }
+}
+```
+
+Unfortunately, **this method is deprecated,** and [`waitFor()`](https://playwright.dev/docs/api/class-locator#locator-wait-for) must be used. So the pageObject’s code above should be rewritten as follows:
+
+```javascript
+// Page’s toolbar object
+export class CernToolbar {
+  private page: Page;
+  private toggleLocator: Locator;
+  private dropdownMenu: Locator;
+
+  constructor(page: Page) {
+    this.page = page;
+    this.toggleLocator = page.locator('[class*=toggle]');
+    this.dropdownMenu = page.getByTestId('dropdown-menu');
+  }
+
+  async clickOnToggle(): Promise<void> {
+    await this.toggleLocator.click();
+    await this.dropdownMenu.waitFor({state: 'visible'});
+  }
+}
+```
+
+Read more:
+
+- [Principles of Writing Automated Tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html).
+
 ## CI reporter for GitHub Actions
 
 [Doc](https://playwright.dev/docs/test-reporters#github-actions-annotations)
@@ -117,13 +177,13 @@ Documentation tells that this reporter has _annotations_ without describing what
 
 ![github reporter annotations in PR](/assets/2024-05-23/01-reporter-github-actions-annotations.png)
 
-_Fig. 1. github reporter annotations in PR_
+_Fig. 2. github reporter annotations in PR_
 
 `github` reporter’s report in a workflow’s job looks like a normal `list` report.
 
 ![github reporter in the job](/assets/2024-05-23/02-reporter-github-actions-jobs.png)
 
-_Fig. 2. github reporter in the job_
+_Fig. 3. github reporter in the job_
 
 ## Boxed steps
 
@@ -150,9 +210,9 @@ test('Home page toolbar about overlay on mobile',
 
 ![HTML report: on the left — {box: true}, on the right is an ordinary test step](/assets/2024-05-23/03-test-step-box.png)
 
-_Fig. 3. HTML report: on the left — {box: true}, on the right is an ordinary test step_
+_Fig. 4. HTML report: on the left — {box: true}, on the right is an ordinary test step_
 
-Anyway, that is quite a controversial feature, **and it depends a lot on the helper functions and the assertions inside them (your errors may look completely different than in the example above),** as well as the test requirements.
+Anyway, that is quite a controversial feature, and **it depends a lot on the helper functions and the assertions inside them (your errors may look completely different than in the example above),** as well as the test requirements.
 
 Read more:
 
