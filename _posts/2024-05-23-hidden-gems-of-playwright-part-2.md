@@ -5,7 +5,7 @@ date: 2024-05-23 05:33:13 +0100
 tags: playwright
 ---
 
-[In the previous article](https://adequatica.github.io/2022/09/07/hidden-gems-of-playwright.html), I highlighted some notable Playwright methods that made testing easier when I started using it as a default test automation framework in production.
+[In the previous part](https://adequatica.github.io/2022/09/07/hidden-gems-of-playwright.html), I highlighted some notable Playwright methods that made testing easier when I started using it as a default test automation framework in production.
 
 ![Hidden Gems of Playwright: Part 2](/assets/2024-05-23/00-cover-2.jpg)
 
@@ -187,7 +187,7 @@ _Fig. 3. github reporter in the job_
 
 ## Boxed steps
 
-When I first read the [release notes](https://playwright.dev/docs/release-notes#hide-implementation-details-box-test-steps) about a new option for the [`test.step()` method](https://playwright.dev/docs/api/class-test#test-step), I was confused and considered it useless. But later, I realized that it could be useful for steps with helpers.
+When I first read the [release notes](https://playwright.dev/docs/release-notes#hide-implementation-details-box-test-steps) about a new option for the [`test.step()` method](https://playwright.dev/docs/api/class-test#test-step), I was confused and considered it useless. But later, I realized that it could be useful for steps with «helpers».
 
 If you develop test automation for fairly complex applications, sooner or later, you will have to add abstraction layers inside tests to perform repetitive and/or compound actions. These pieces of code are usually called helpers or utils and are imported into tests for execution as their steps.
 

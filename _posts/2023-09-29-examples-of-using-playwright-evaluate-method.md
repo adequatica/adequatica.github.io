@@ -88,7 +88,7 @@ Read more:
 
 The most desired way of using `evaluate()` is for modifying web page elements. It may be to set some part of the page into the desired state by adding/changing/deleting elements’ attributes, or even delete the whole elements (if you need to remove pop-ups of iframes from the page).
 
-Updating element’s attribute by [setAttribute() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute):
+- Updating element’s attribute by [setAttribute() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute):
 
 ```JavaScript
 await page.evaluate(() => {
@@ -102,7 +102,15 @@ await page.evaluate(() => {
 });
 ```
 
-Removing element by [remove() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove):
+Or:
+
+```JavaScript
+await test.step('Updating element attribute', async () => {
+  const selector = await page.locator('[class^=Input_]');
+  await selector.evaluate(node => node.setAttribute('placeholder', 'Foo bar'));
+```
+
+- Removing element by [remove() method](https://developer.mozilla.org/en-US/docs/Web/API/Element/remove):
 
 ```JavaScript
 await page.evaluate(() => {
@@ -112,6 +120,14 @@ await page.evaluate(() => {
     selector.remove();
   }
 });
+```
+
+Or:
+
+```JavaScript
+await test.step('Remove element attribute', async () => {
+  const selector = await page.locator('.class_name');
+  await selector.evaluate(node => node.removeAttribute('readonly'));
 ```
 
 Read more:
