@@ -127,7 +127,8 @@ Read more about contract testing:
 - [What is contract testing and why should I try it](https://pactflow.io/blog/what-is-contract-testing/)?
 - [Contract Testing Vs Integration Testing](https://pactflow.io/blog/contract-testing-vs-integration-testing/);
 - [A Complete Guide to API Contract Testing](https://testsigma.com/blog/api-contract-testing/);
-- [API contract testing: 4 things to validate to meet expectations](https://blog.postman.com/api-contract-testing-4-things-to-validate/).
+- [API contract testing: 4 things to validate to meet expectations](https://blog.postman.com/api-contract-testing-4-things-to-validate/);
+- [Contract Testing: The Key to Unlocking E2E Testing Bottlenecks in CI/CD pipelines](https://www.youtube.com/watch?v=RSl_JcWKE3M).
 
 ---
 

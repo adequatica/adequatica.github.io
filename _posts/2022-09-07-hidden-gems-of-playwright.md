@@ -19,6 +19,7 @@ I picked up a few features that excited me when I discovered them:
 - expect.soft
 - test.step
 - test.fixme
+- last
 - Explore Selectors in Playwright Inspector
 
 All of them are «illustrated» in [this GitHub repository](https://github.com/adequatica/ui-testing).
@@ -137,6 +138,10 @@ _Fig. 4. Example of HTML report of identical tests: one with describe and child 
 
 Furthermore, you can combine describes and steps inside a single test file to gather all the power of Playwright’s test runner.
 
+Read more:
+
+- [Keep your Playwright tests structured with steps](https://timdeschryver.dev/blog/keep-your-playwright-tests-structured-with-steps).
+
 ## test.fixme
 
 [Docs](https://playwright.dev/docs/api/class-test#test-fixme-2)
@@ -154,6 +159,22 @@ test('Should have proper page title', async () => {
 
 _Fig. 5. Example of skipped test in a list reporter_
 
+## last
+
+[Docs](https://playwright.dev/docs/api/class-locator#locator-last)
+
+Last but not least, an easy way to match the last selector from several. It is an explicit «shortcut» for the `.nth(-1)` method and, for example, useful for selecting recently appeared identical elements.
+
+```JavaScript
+const lastNotification = await page.locator('.notification').last();
+```
+
+Read more:
+
+- [Playwright Select First or Last Element](https://www.programsbuzz.com/article/playwright-select-first-or-last-element).
+
+---
+
 ## Explore Selectors in Playwright Inspector {#explore-selectors-in-playwright-inspector}
 
 [Docs](https://playwright.dev/docs/debug-selectors)
@@ -168,6 +189,6 @@ For thoughtful debugging, you can add [`await page.pause()`](https://playwright.
 
 ---
 
-Take a look at [part 2](https://adequatica.github.io/2024/05/23/hidden-gems-of-playwright-part-2.html).
+More gems in [part 2](https://adequatica.github.io/2024/05/23/hidden-gems-of-playwright-part-2.html).
 
 Copy @ [Medium](https://adequatica.medium.com/hidden-gems-of-playwright-68fcf8896bcb)

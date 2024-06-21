@@ -12,10 +12,11 @@ tags: playwright
 Here I continued to pick up some interesting features of that tool:
 
 - Rewrite global config for any test
-  - …devices[]
+  - …devices
 - setOffline
 - expect.toPass
-- waitForSelector / waitFor
+- waitForSelector (deprecated, but works) / waitFor
+- last-failed
 - CI reporter for GitHub Actions
 - Boxed steps
 
@@ -42,7 +43,7 @@ test('Home page on mobile', async ({ page }) => {
 });
 ```
 
-### …devices[]
+### …devices
 
 [Doc](https://playwright.dev/docs/emulation#devices)
 
@@ -103,7 +104,7 @@ This is extremely useful for checking unreliable backend responses.
 
 _There is also a similar, but not quite, [`expect.poll` method](https://playwright.dev/docs/test-assertions#expectpoll), which implements the idea of [HTTP polling](https://medium.com/cache-me-out/http-polling-and-long-polling-bd3f662a14f#0f5c) inside assertions._
 
-## waitForSelector / waitFor
+## waitForSelector (deprecated, but works) / waitFor
 
 [Doc](https://playwright.dev/docs/api/class-elementhandle#element-handle-wait-for-selector)
 
@@ -111,7 +112,7 @@ This is another brilliant method suitable for checking selectors.
 
 There are recommendations that **assertions should not be placed inside [page object models](https://playwright.dev/docs/pom)**, even despite the implementation example in Playwright itself.
 
-![Please, do not do that inside pageObjects](/assets/2024-05-23/04-please-do-not-do-that.png)
+![Please, do not do that inside pageObjects](/assets/2024-05-23/01-please-do-not-do-that.png)
 
 _Fig. 1. Please, do not do that inside pageObjects_
 
@@ -175,15 +176,29 @@ reporter: process.env.CI ? 'github' : 'list',
 
 Documentation tells that this reporter has _annotations_ without describing what it is. These annotations look like very useful widgets inside PR’s diff in the place of a failed code line.
 
-![github reporter annotations in PR](/assets/2024-05-23/01-reporter-github-actions-annotations.png)
+![github reporter annotations in PR](/assets/2024-05-23/02-reporter-github-actions-annotations.png)
 
 _Fig. 2. github reporter annotations in PR_
 
 `github` reporter’s report in a workflow’s job looks like a normal `list` report.
 
-![github reporter in the job](/assets/2024-05-23/02-reporter-github-actions-jobs.png)
+![github reporter in the job](/assets/2024-05-23/03-reporter-github-actions-jobs.png)
 
 _Fig. 3. github reporter in the job_
+
+## last-failed
+
+[CLI Docs](https://playwright.dev/docs/test-cli#reference)
+
+The new CLI option in the latest release ([1.44](https://playwright.dev/docs/release-notes#version-144)) brings the ability to run only tests that failed in the previous run.
+
+This is a significant improvement for Playwright’s test runner. Earlier, we had to develop a custom scripts for reruning only failed tests, but now it works out of the box.
+
+![--last-failed option runs only failed tests](/assets/2024-05-23/04-last-failed.png)
+
+_Fig. 4. --last-failed option runs only failed tests_
+
+---
 
 ## Boxed steps
 
@@ -208,9 +223,9 @@ test('Home page toolbar about overlay on mobile',
     });
 ```
 
-![HTML report: on the left — {box: true}, on the right is an ordinary test step](/assets/2024-05-23/03-test-step-box.png)
+![HTML report: on the left — {box: true}, on the right is an ordinary test step](/assets/2024-05-23/05-test-step-box.png)
 
-_Fig. 4. HTML report: on the left — {box: true}, on the right is an ordinary test step_
+_Fig. 5. HTML report: on the left — {box: true}, on the right is an ordinary test step_
 
 Anyway, that is quite a controversial feature, and **it depends a lot on the helper functions and the assertions inside them (your errors may look completely different than in the example above),** as well as the test requirements.
 
