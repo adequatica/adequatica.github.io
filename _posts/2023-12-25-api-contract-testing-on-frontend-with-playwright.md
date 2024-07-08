@@ -140,4 +140,9 @@ _Fig. 6. Mock APIs_
 
 Read more about how [Playwright mocks API](https://playwright.dev/docs/mock).
 
+This article was featured in:
+
+- [Appium Interceptor, Automation Trends, Playwright and More](https://www.youtube.com/watch?v=GNxuqakgkgs) by Automation Testing with Joe Colantonio;
+- [Contract Testing in Playwright using Zod](https://www.youtube.com/watch?v=jtg4By7I8XI) by Uncle Aaroh Testing.
+
 Copy @ [Medium](https://adequatica.medium.com/api-contract-testing-on-frontend-with-playwright-4509b74b3008)

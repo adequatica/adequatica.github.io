@@ -56,7 +56,7 @@ Concerns:
 - **Network problems.** Unfortunately, timeouts between requests between services will always be.
 - Dependence on the release cycle of third-party services. Your tests _may_ face incompatible changes or other’s downtime due to updates.
 - Dependence on constantly changing data ⇒ tests should have very flexible asserts.
-- **Flaky tests.** All the concerns listed above lead to flaky tests ⇒ flakiness can be reduced by [writing well-designed tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html), but it won’t get rid of it completely. This point is usually the most criticized against running tests on staging environments, but, unfortunately, flaky tests happen on isolated ones, too.
+- **Flaky tests.** All the concerns listed above lead to flaky tests ⇒ flakiness can be reduced by [writing well-designed tests](https://adequatica.medium.com/principles-of-writing-automated-tests-a2b72218264c), but it won’t get rid of it completely. This point is usually the most criticized against running tests on staging environments, but, unfortunately, flaky tests happen on isolated ones, too.
 - Complicated CI settings. Because tests’ action/build can’t start without an environment, the CI pipeline had to have triggers and dependencies between systems, often not assumed to have a connection between each other._ In all projects with such kind of autotests I worked on, this step was the most painful._
 - Long-lasting CI flow. The need to deploy the environment increases the time of the whole flow, and the whole flow itself has more points of failure.
 

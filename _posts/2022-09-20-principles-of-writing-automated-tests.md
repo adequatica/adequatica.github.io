@@ -20,17 +20,18 @@ A presented compilation of principles is based on years of experience and has pr
 5. No commented test;
 6. No hanging locators;
 7. No IF statements inside tests;
-8. One expect for each test step;
-9. Do not put await inside expect;
-10. Do not reload the page, reopen it;
-11. Do not check URLs through includes;
-12. Avoid regexp in checks;
-13. Wrap clicks and expectations into a promise;
-14. Do not use global variables for page object methods;
-15. Do not dispel checks over multiple test scenarios;
-16. Do not mix different kinds of tests;
-17. Test IDs must be unique;
-18. Use linters and formatters from the testing (parent) project.
+8. No assertions inside page object models;
+9. One expect for each test step;
+10. Do not put await inside expect;
+11. Do not reload the page, reopen it;
+12. Do not check URLs through includes;
+13. Avoid regexp in checks;
+14. Wrap clicks and expectations into a promise;
+15. Do not use global variables for page object methods;
+16. Do not dispel checks over multiple test scenarios;
+17. Do not mix different kinds of tests;
+18. Test IDs must be unique;
+19. Use linters and formatters from the testing (parent) project.
 
 ---
 
@@ -171,10 +172,10 @@ test("Should have a pop-up", async () => {
 
   if (popUpisVisible) {
 	const checkedLocator = await $('.one-locator').isChecked();
-	expect(checkedLocator).toBeTruthy();
+	await expect(checkedLocator).toBeTruthy();
   } else {
 	const checkedAnother = await $('.another-locator').isChecked();
-	expect(checkedAnother).toBeTruthy();
+	await expect(checkedAnother).toBeTruthy();
   }
 }
 ```
@@ -188,7 +189,15 @@ If your application has A/B experiments and the interface can change randomly, t
 
 This rule also applies to functions in page object models because they are part of the test infrastructure. You can use[ switch statements](https://en.wikipedia.org/wiki/Switch_statement) (as more deterministic and predictable) there instead of[ if-statemens](https://en.wikipedia.org/wiki/Conditional_%28computer_programming%29), but don’t use any statements in the tests themselves at all.
 
-## 8. One expect for each test step
+## 8. No assertions inside page object models
+
+A Page Object Model is a common design pattern in test automation that enhances test maintenance and reduces code duplication. A page object encapsulates common operations on the testing page and/or stores all web elements.
+
+The logic is simple: you do interactions on the page through page objects and then do checks inside the test through `expect`.
+
+Therefore, do not mess up interactions in page objects with checks ([assertions](https://playwright.dev/docs/test-assertions)) in the tests themselves. Even the [Playwright’s documentation](https://playwright.dev/docs/pom) is spoiled by this mixing. Please just do not use `exect` in page objects.
+
+## 9. One expect for each test step
 
 Test steps should be short, and each step should check only one thing.
 
@@ -196,9 +205,9 @@ Do not put more than one or two assertions inside one test step.
 
 Do not try to do everything and/or check everything in a single step.
 
-The more «atomic» will be test steps, the more intelligible will be test reports and test logs.
+The more «atomic» test steps, the more intelligible test reports and test logs will be.
 
-## 9. Do not put await inside expect
+## 10. Do not put await inside expect
 
 One operation inside another operation leads to a complication.
 
@@ -208,6 +217,12 @@ Instead of:
 test("Should have title on the button", async () => {
   expect(await page.locator('.button')).toHaveText(/Menu/);
 });
+
+// OR:
+test("Should have title on the button", async () => {
+  await expect(page.locator('.button')).toHaveText(/Menu/);
+});
+
 ```
 
 Do:
@@ -215,13 +230,13 @@ Do:
 ```JavaScript
 test("Should have title on the button", async () => {
   const button = await page.locator('.button');
-  expect(button).toHaveText(/Menu/);
+  await expect(button).toHaveText(/Menu/);
 });
 ```
 
 It is more verbose, but less chance to forget about await.
 
-## 10. Do not reload the page, reopen it
+## 11. Do not reload the page, reopen it
 
 Refreshing a page by a standard command ([page.reload()](https://playwright.dev/docs/api/class-page#page-reload) for Playwright or [browser.refresh()](https://webdriver.io/docs/api/webdriver/#refresh) for WebdriverIO) is not a good idea — it makes the test flaky.
 
@@ -248,7 +263,7 @@ This makes tests robust.
 
 This pattern also applies to [goBack()](https://playwright.dev/docs/api/class-page#page-go-back) and [goForward()](https://playwright.dev/docs/api/class-page#page-go-forward) methods, but unfortunately, does not fit for [SPA web applications](https://developer.mozilla.org/en-US/docs/Glossary/SPA) in which the state of the page can differ from the URL.
 
-## 11. Do not check URLs through includes
+## 12. Do not check URLs through includes
 
 Do not use [string.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) for string comparison in assertions, because includes() returns **true** or **false**. When your check fails, you will get a report that **false is not true** — and no more details.
 
@@ -261,7 +276,7 @@ test("Should have corresponding URL", async () => {
 });
 ```
 
-Use [appropriate method](https://playwright.dev/docs/test-assertions#page-assertions-to-have-url):
+Use the [appropriate method](https://playwright.dev/docs/test-assertions#page-assertions-to-have-url):
 
 ```JavaScript
 test("Should have corresponding URL", async () => {
@@ -281,7 +296,7 @@ test("Should have corresponding URL", async () => {
 
 This pattern applies for checking any strings and affects the readability and clarity of test reports.
 
-## 12. Avoid regexp in checks
+## 13. Avoid regexp in checks
 
 Checks with [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) make tests too sensitive and do not add much reliability to the tests, but make it difficult to analyze after failures.
 
@@ -294,7 +309,7 @@ Both types of this kind of data are suitable for checking by regexp.
 
 If your testing project includes IDs of a specific domain that can be attributed to some pattern, then testing them by regexp is also OK.
 
-## 13. Wrap clicks and expectations into a promise
+## 14. Wrap clicks and expectations into a promise
 
 Instead of:
 
@@ -319,7 +334,7 @@ await expect(response.ok()).toBe(true);
 
 [Promise.all prevents a race condition between clicking and waiting](https://playwright.dev/docs/api/class-page#page-wait-for-response) for something. The first example is likely to be extremely flaky.
 
-## 14. Do not use global variables for page object methods
+## 15. Do not use global variables for page object methods
 
 Isolate tests/steps from each other. Do not use global variables which are used and rewritten by multiple test steps in a single test suite.
 
@@ -357,13 +372,63 @@ test('Should have something', async () => {
 
 If variables are not rewritten, it reduces the probability of rewriting them incorrectly or asynchronously — it increases the overall stability of the tests.
 
-## 15. Do not dispel checks over multiple test scenarios
+## 16. Do not dispel checks over multiple test scenarios
 
 The same functionality should be checked the same way everywhere.
 
-For example, instead of having `test-1.spec.ts` test where you check a banner through «expect A», and having `test-2.spec.ts` test where you check the same banner (but perhaps in the other page) through «expect B», — you should test that banner by both expects (A and B) in each of the tests (`test-1.spec.ts` and `test-2.spec.ts`).
+For example, instead of having `test-1.spec.ts` test where you check a banner through «expect A», and having `test-2.spec.ts` test where you check the same banner (but perhaps on the other page) through «expect B», — you should test that banner by both expects (A and B) in each of the tests (`test-1.spec.ts` and `test-2.spec.ts`).
 
-## 16. Do not mix different kinds of tests
+Instead of:
+
+```JavaScript
+test-1.spec.ts
+
+test.describe('Banner A', async () => {
+  test('Banner should have title', async () => {
+    …
+  });
+});
+
+test-2.spec.ts
+
+test.describe('Banner B', async () => {
+  test('Banner should have image', async () => {
+    …
+  });
+});
+```
+
+Do:
+
+```JavaScript
+test-1.spec.ts
+
+// The same functionality is checked in the same way
+test.describe('Banner A', async () => {
+  test('Banner should have title', async () => {
+    …
+  });
+
+  test('Banner should have image', async () => {
+    …
+  });
+});
+
+test-2.spec.ts
+
+// The same functionality is checked in the same way
+test.describe('Banner B', async () => {
+  test('Banner should have title', async () => {
+    …
+  });
+
+  test('Banner should have image', async () => {
+    …
+  });
+});
+```
+
+## 17. Do not mix different kinds of tests
 
 If you want to check API and UI for a single user action — do two tests: API test and UI test.
 
@@ -371,7 +436,7 @@ If you want to check UI functionality and check the layout by screenshot simulta
 
 If you want to check end-to-end API scenarios and check JSON schemes simultaneously — do two integration API tests each of which makes certain checks.
 
-## 17. Test IDs must be unique
+## 18. Test IDs must be unique
 
 If you use test identifications, like [data-testid attributes](https://playwright.dev/docs/locators#locate-by-test-id), these IDs must be unique on the page (and preferably for the whole site). It means that only one selector with a specific ID attribute can be on a testing page.
 
@@ -391,7 +456,7 @@ Do:
 <div class="block_element__modificator view-more" data-testid="banner-element-more"></div>
 ```
 
-## 18. Use linters and formatters from the testing (parent) project
+## 19. Use linters and formatters from the testing (parent) project
 
 If a directory with tests is located inside a testing project, or tests are located in a separate repository, or if tests are written by dedicated autotest engineers or by developers, tests should inherit linter and formatting rules from the testing (parent) project.
 

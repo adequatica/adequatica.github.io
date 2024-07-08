@@ -110,7 +110,7 @@ _There is also a similar, but not quite, [`expect.poll` method](https://playwrig
 
 This is another brilliant method suitable for checking selectors.
 
-There are recommendations that **assertions should not be placed inside [page object models](https://playwright.dev/docs/pom)**, even despite the implementation example in Playwright itself.
+[There is a recommendation](https://adequatica.medium.com/principles-of-writing-automated-tests-a2b72218264c#f94b) that **assertions should not be placed inside [page object models](https://playwright.dev/docs/pom)**, even despite the implementation example in Playwright itself.
 
 ![Please, do not do that inside pageObjects](/assets/2024-05-23/01-please-do-not-do-that.png)
 
@@ -158,10 +158,6 @@ export class CernToolbar {
   }
 }
 ```
-
-Read more:
-
-- [Principles of Writing Automated Tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html).
 
 ## CI reporter for GitHub Actions
 
