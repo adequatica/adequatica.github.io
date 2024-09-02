@@ -16,8 +16,8 @@ Here I continued to pick up some interesting features of that tool:
 - setOffline
 - expect.toPass
 - waitForSelector (deprecated, but works) / waitFor
-- last-failed
 - CI reporter for GitHub Actions
+- last-failed
 - Boxed steps
 
 Some of them are «illustrated» in [this GitHub repository](https://github.com/adequatica/ui-testing).
@@ -186,13 +186,19 @@ _Fig. 3. github reporter in the job_
 
 [CLI Docs](https://playwright.dev/docs/test-cli#reference)
 
-The new CLI option in the latest release ([1.44](https://playwright.dev/docs/release-notes#version-144)) brings the ability to run only tests that failed in the previous run.
+The new CLI option in the latest release ([1.44](https://playwright.dev/docs/release-notes#version-144)) brought the ability to run only tests that failed in the previous run.
 
 This is a significant improvement for Playwright’s test runner. Earlier, we had to develop a custom scripts for reruning only failed tests, but now it works out of the box.
 
 ![--last-failed option runs only failed tests](/assets/2024-05-23/04-last-failed.png)
 
 _Fig. 4. --last-failed option runs only failed tests_
+
+**UPDATE:** one more highly useful CLI option appeared with release [1.46](https://playwright.dev/docs/release-notes#--only-changed-cli-option): `--only-changed` — it allows to run only changed tests (test files) since the last git commit. It really speeds up the local development and debugging of tests.
+
+Read more:
+
+- [Iterate quickly using the new --only-changed option](https://dev.to/playwright/iterate-quickly-using-the-new-only-changed-option-55m2).
 
 ---
 
