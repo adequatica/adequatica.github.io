@@ -47,7 +47,7 @@ Yes, this is an anti-pattern, and [you should avoid pauses inside tests](https:/
 
 ## 2. Drawing on Canvas
 
-Interaction with <code>&lt;[canvas](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)&gt;</code> element can also be tricky, especially if it is interactive and contains logic. In my example, I have a map (of course, as a canvas) from a third-party vendor and need to draw an object on it by making a certain number of clicks.
+Interaction with [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element can also be tricky, especially if it is interactive and contains logic. In my example, I have a map (of course, as a canvas) from a third-party vendor and need to draw an object on it by making a certain number of clicks.
 
 The problem is that the element is actionable for Playwright from the moment it appears on the page, but the actual actionable state of the element is indefinable by its locator.
 
