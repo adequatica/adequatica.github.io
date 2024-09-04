@@ -253,7 +253,7 @@ Where:
 
 - Import contains all involved [Vitest’s functions](https://vitest.dev/api/);
 - `BEFORE_ALL_TIMEOUT` constant will be used in [`beforeAll`](https://vitest.dev/api/#beforeall) function to extend the termination time of the request’s execution;
-- `beforeAll` contains `fetch()` HTTP request. `beforeAll` [must not contain any assertions](https://adequatica.medium.com/principles-of-writing-automated-tests-a2b72218264c#6da4). Response data and response body are stored in variables for subsequent checks;
+- `beforeAll` contains `fetch()` HTTP request. `beforeAll` [must not contain any assertions](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html#2-no-assertions-in-before-or-after-hooks). Response data and response body are stored in variables for subsequent checks;
 - «Should have response status 200» test checks response code;
 - «Should have content-type» test checks on one of the headers;
 - «Should have array in the body» checks the type of the body’s root;

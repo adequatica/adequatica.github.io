@@ -26,7 +26,7 @@ https://api.openweathermap.org/data/2.5/onecall?lat=40.1811&lon=44.5136&appid={a
 
 ## Browsers
 
-As strange as it may sound, a web browser is the very first tool to start API testing. You can only stop at this tool and [test almost everything from DevTools](https://medium.com/@adequatica/browser-devtools-as-an-essential-tool-for-api-testing-c2ace3fc47f2), but it is not too handy.
+As strange as it may sound, a web browser is the very first tool to start API testing. You can only stop at this tool and [test almost everything from DevTools](https://adequatica.github.io/2022/06/01/browser-devtools-as-an-essential-tool-for-api-testing.html), but it is not too handy.
 
 The browser is best suited for ad hoc checking GET requests. You just need to insert the [URI](https://stackoverflow.com/q/176264) in the address bar. This method is suitable for manual testing of parameters in the [query string](https://en.wikipedia.org/wiki/Query_string) or testing the correctness of the incoming response — in most cases, in [JSON](https://en.wikipedia.org/wiki/JSON) format.
 

@@ -13,7 +13,7 @@ _DALL-E 3 prompt: make minimalistic illustration of accessible website with keyb
 
 ## Introduction to Accessible Keyboard Navigation
 
-[Testing your website’s keyboard navigation](https://medium.com/@adequatica/accessibility-manual-testing-85826e161071#d6b0) functionality will help guarantee accessibility for users who rely on keyboards. Usually, keyboard navigation is performed by pressing the [TAB] key, which moves focus between interactive elements, and pressing [ENTER] interacts with them.
+[Testing your website’s keyboard navigation](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html#keyboard-navigation) functionality will help guarantee accessibility for users who rely on keyboards. Usually, keyboard navigation is performed by pressing the [TAB] key, which moves focus between interactive elements, and pressing [ENTER] interacts with them.
 
 Proper accessible keyboard navigation implementation benefits all users regardless of which disabilities (physical or technical) they may have.
 
@@ -148,7 +148,7 @@ await test.step("Press TAB key", async () => {
   });
 
   expect(focusedOn, "Should have correct active element").toBe(
-    "\n  Skip to main content\n",
+    "\n  Skip to main content\n"
   );
 });
 ```

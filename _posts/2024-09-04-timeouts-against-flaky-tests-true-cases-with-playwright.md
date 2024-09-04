@@ -53,7 +53,7 @@ The problem is that the element is actionable for Playwright from the moment it 
 
 That is a timeline for loading the element on a page:
 
-1. Canvas element is attached and visible on the page (the element is actionable for Playwright), but nothing is rendered inside:
+1. Canvas element is attached and visible on the page (the element is actionable for Playwright), but nothing is rendered inside:
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-1.png)
 
@@ -71,7 +71,7 @@ _Fig. 2.1. Canvas element is attached and visible on the page, but nothing is re
 ></canvas>
 ```
 
-2. Canvas element has rendered content but is not yet actionable for internal logic:
+2. Canvas element has rendered content but is not yet actionable for internal logic:
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-2-3.png)
 
@@ -89,7 +89,7 @@ _Fig. 2.2. Canvas element has rendered content but is not yet actionable for int
 ></canvas>
 ```
 
-3. Canvas element is ready for action:
+3. Canvas element is ready for action:
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-2-3.png)
 
@@ -141,7 +141,7 @@ _This may be due to the different virtualization technologies. If GitHub has vir
 
 _Perhaps the JavaScript runtime detects virtualization technology and cuts the minimum timeout to prevent exploits like_ [_Spectre_](<https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)>) _and_ [_Meltdown_](<https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)>)…
 
-# Timeout Tips
+## Timeout Tips
 
 Here are a few principles of organizing timeouts inside test infrastructure:
 

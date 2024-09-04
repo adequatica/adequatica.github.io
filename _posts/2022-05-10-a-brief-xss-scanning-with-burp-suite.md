@@ -246,7 +246,7 @@ This means that the web application does not handle `%` in URL. The real attacke
 
 ---
 
-In case of API testing, you can [Use Postman Collection Runner as Vulnerability Scanner](https://medium.com/@adequatica/use-postman-collection-runner-as-vulnerability-scanner-aff7471c94fb).
+In case of API testing, you can [Use Postman Collection Runner as Vulnerability Scanner](https://adequatica.github.io/2019/07/28/use-postman-collection-runner-as-vulnerability-scanner.html).
 
 For further study, take the courses [Learn Burp Suite, the Nr. 1 Web Hacking Tool](https://www.youtube.com/playlist?list=PLq9n8iqQJFDrwFe9AEDBlR1uSHEN7egQA), and [Web Security Academy](https://portswigger.net/web-security).
 

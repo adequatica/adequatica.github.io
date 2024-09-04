@@ -229,4 +229,4 @@ Characteristics:
 
 Thanks to [tree.nathanfriend.io](https://tree.nathanfriend.io/) for generating ASCII folder structure diagrams.
 
-Copy @ [Medium](https://medium.com/@adequatica/api-testing-with-vitest-391697942527)
+Copy @ [Medium](https://adequatica.medium.com/api-testing-with-vitest-391697942527)

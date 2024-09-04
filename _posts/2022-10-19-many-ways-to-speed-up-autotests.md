@@ -31,7 +31,7 @@ Based on the experience since that time, I have put together several ways in whi
 
 ---
 
-The covered ways are mostly fit for [JavaScript/TypeScript test frameworks](https://medium.com/@adequatica/selection-criteria-of-test-framework-d091a18c3c4), but also can take into account another stack.
+The covered ways are mostly fit for [JavaScript/TypeScript test frameworks](https://adequatica.github.io/2022/09/23/selection-criteria-of-javascript-test-framework.html), but also can take into account another stack.
 
 ## 1. Parallelisation
 
@@ -88,7 +88,7 @@ Use conditional expectation (wait for something) instead, because **the conditio
 
 Further reading:
 
-- [Principles of Writing Automated Tests](https://medium.com/@adequatica/principles-of-writing-automated-tests-a2b72218264c#b9cd).
+- [Principles of Writing Automated Tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html).
 
 ## 4. Fail fast
 
@@ -98,7 +98,7 @@ Find a way to stop test execution when a certain threshold of failed tests is ex
 
 Further reading:
 
-- [Hidden Gems of Playwright](https://medium.com/@adequatica/hidden-gems-of-playwright-68fcf8896bcb#4180).
+- [Hidden Gems of Playwright](https://adequatica.github.io/2022/09/07/hidden-gems-of-playwright.html#maxfailures).
 
 ## 5. Cancel subsequent steps when the first one fails
 

@@ -24,8 +24,8 @@ Automated tests cover more than 80% of the functionality and are the main compon
 - **601 [`expect`](https://playwright.dev/docs/api/class-playwrightassertions#playwright-assertions-expect-generic) methods** (in 97 test files);
 - There are 50 negative checks among them (assertions has `.not` before matchers) ~ 8.5% of expects;
 - No assertions in page object models, but there are **185 awaits for locators;**
-- No assertions in `beforeAll` or `afterAll` hooks (see [№2 in Principles of Writing Automated Tests](https://medium.com/@adequatica/principles-of-writing-automated-tests-a2b72218264c#6da4));
-- All assertions are executable (no if-statements in tests, see [№7 in Principles of Writing Automated Tests](https://medium.com/@adequatica/principles-of-writing-automated-tests-a2b72218264c#8fbe));
+- No assertions in `beforeAll` or `afterAll` hooks (see [№2 in Principles of Writing Automated Tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html#2-no-assertions-in-before-or-after-hooks));
+- All assertions are executable (no if-statements in tests, see [№7 in Principles of Writing Automated Tests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html#7-no-if-statements-inside-tests));
 - No [soft assertions](https://playwright.dev/docs/test-assertions#soft-assertions);
 - All tests run for 14 min in 4 threads in CI.
 
