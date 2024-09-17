@@ -57,7 +57,7 @@ _Fig. 1. Pairwise test cases_
 
 Onwards, test cases’ values are passed to the component in the story ([`battery.stories.tsx`](https://storybook.js.org/docs/writing-stories/args)) for rendering.
 
-```javascript
+```JavaScript
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Battery } from './battery';
@@ -114,13 +114,13 @@ The Storybook itself is an excellent tool for [testing UIs](https://storybook.js
 
 ### Read more:
 
-1. **[Pairwise Testing: A Best Practice That Isn’t](https://www.satisfice.com/download/pairwise-testing-a-best-practice-that-isnt) by James Bach and Patrick J. Schroeder;**
-2. [Introduction to Combinatorial Testing](https://personal.utdallas.edu/~ewong/SE6367/03-Lecture/29-A-Combinatorial-Testing-by-Kuhn.pdf) — presentation by Rick Kuhn, National Institute of Standards and Technology, Carnegie-Mellon University, 7 June 2011;
-3. [List of papers on combinatorial testing](https://csrc.nist.rip/Projects/automated-combinatorial-testing-for-software/acts-library/papers), National Institute of Standards and Technology (NIST);
-4. [Pairwise Testing](https://www.pairwise.org/);
-5. [Pairwise Testing Explained with Tools & Examples](https://www.testrail.com/blog/pairwise-testing/);
-6. [Pairwise Testing | What It Is, When & How to Perform](https://testsigma.com/blog/pairwise-testing/)?
-7. [Pairwise Testing in the Real World: Practical Extensions to Test-Case Scenarios](<https://learn.microsoft.com/en-us/previous-versions/software-testing/cc150619(v=msdn.10)>).
+- **[Pairwise Testing: A Best Practice That Isn’t](https://www.satisfice.com/download/pairwise-testing-a-best-practice-that-isnt) by James Bach and Patrick J. Schroeder;**
+- [Introduction to Combinatorial Testing](https://personal.utdallas.edu/~ewong/SE6367/03-Lecture/29-A-Combinatorial-Testing-by-Kuhn.pdf) — presentation by Rick Kuhn, National Institute of Standards and Technology, Carnegie-Mellon University, 7 June 2011;
+- [List of papers on combinatorial testing](https://csrc.nist.rip/Projects/automated-combinatorial-testing-for-software/acts-library/papers), National Institute of Standards and Technology (NIST);
+- [Pairwise Testing](https://www.pairwise.org/);
+- [Pairwise Testing Explained with Tools & Examples](https://www.testrail.com/blog/pairwise-testing/);
+- [Pairwise Testing \| What It Is, When & How to Perform](https://testsigma.com/blog/pairwise-testing/)?
+- [Pairwise Testing in the Real World: Practical Extensions to Test-Case Scenarios](<https://learn.microsoft.com/en-us/previous-versions/software-testing/cc150619(v=msdn.10)>).
 
 ### References:
 
