@@ -35,7 +35,7 @@ Here comes all-pairs testing, which allows maximizing input coverage while minim
 
 Despite the flaws above, this technique is excellently applied to a system with a limited number of parameters and values. In this case, we can achieve a pretty decent test coverage with determined parameters rather than using random ones [3].
 
-This system can be a [Storybook](https://storybook.js.org/), a development environment tool that is used as a playground for UI components. It allows the creation and testing of UI components in isolation. Each UI component (if it is not a composite one and is made just enough) usually gets a limited number of parameters ([`Props`](https://react.dev/learn/passing-props-to-a-component)) for rendering ⇒ <strong>you can predefine `Props` using a pairwise test design technique.</strong>
+This system can be a [Storybook](https://storybook.js.org/), a development environment tool that is used as a playground for UI components. It allows the creation and testing of UI components in isolation. Each UI component (if it is not a composite one and is made just enough) usually gets a limited number of parameters ([`Props`](https://react.dev/learn/passing-props-to-a-component)) for rendering ⇒ **you can predefine `Props` using a pairwise test design technique.**
 
 ### A real-life example:
 
@@ -49,7 +49,7 @@ The next step after choosing the [system under test](https://en.wikipedia.org/wi
 - Charging status — `isCharging: boolean`;
 - In case both parameters `isConnected` and `isCharging` are `true`, UI should show a charging sign; if both are `false` — no sign; in other cases — an error sign.
 
-Then, determined parameters and values are passed to a pairwise test case generator. There are a lot of [available tools](https://www.pairwise.org/tools.html), including web-based ones, such as [Pairwise Online Tool](https://pairwise.teremokgames.com/) and [Pairwise Pict Online](https://pairwise.yuuniworks.com/) powered by [Microsoft Pict](https://github.com/microsoft/pict). I chose the last one to generate test cases because of its severe mathematical base.
+Then, determined parameters and values are passed to a pairwise test case generator. There are a lot of [available tools](https://www.pairwise.org/tools.html), including web-based ones, such as [Pairwise Online Tool](https://pairwise.teremokgames.com/) and **[Pairwise Pict Online](https://pairwise.yuuniworks.com/)** powered by [Microsoft Pict](https://github.com/microsoft/pict). I chose the last one to generate test cases because of its severe mathematical base.
 
 ![Pairwise test cases](/assets/2024-09-17/01-pairwise-pict-online.png)
 
