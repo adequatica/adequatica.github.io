@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Developing UI with Testing in Mind"
-date: 2024-05-13 10:38:08 +0100
+date: 2024-05-13 10:38:08 +0200
 tags: testing
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hidden Gems of Playwright: Part 2"
-date: 2024-05-23 05:33:13 +0100
+date: 2024-05-23 05:33:13 +0200
 tags: playwright
 ---
 

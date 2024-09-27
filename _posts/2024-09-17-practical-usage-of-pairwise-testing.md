@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Practical Usage of Pairwise Testing"
-date: 2024-09-17 19:30:49 +0100
+date: 2024-09-17 19:30:49 +0200
 tags: testing
 ---
 

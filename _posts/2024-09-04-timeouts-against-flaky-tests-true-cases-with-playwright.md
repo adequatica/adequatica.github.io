@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Timeouts Against Flaky Tests: True Cases with Playwright"
-date: 2024-09-04 07:11:53 +0100
+date: 2024-09-04 07:11:53 +0200
 tags: playwright
 ---
 
