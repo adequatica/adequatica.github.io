@@ -7,7 +7,9 @@ tags: api automation testing vitest
 
 As a test engineer (actually, as any engineer and web developer), you should reconsider your stack from time to time. Using Jest with Got or Axios for API testing can sound outdated in 2K23 cause we have Vitest and Fetch API in Node.js.
 
-![API Testing with Vitest](/assets/2023-12-05/00-cover-caledoscope.jpg)
+![DALL-E 3 prompt](/assets/2023-12-05/00-cover-dall-e-3.jpg)
+
+_DALL-E 3 prompt: draw yellow lightning with rounded corners above the green tick, smooth golden hour colors on a background_
 
 Someone can say that «_testing API with JS is a bad idea_»; «_JS fits only for frontend…_» The argument in support of these theses is that APIs should be tested on «backend languages» (or on a language in which a serverside code is written, unless, of course, it is written on Node.js): Python, Java, Go, etc.
 
