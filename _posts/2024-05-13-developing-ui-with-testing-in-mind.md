@@ -9,9 +9,9 @@ In web development, testing is not just about ensuring functionality; it is also
 
 ![DALL-E 3 prompt](/assets/2024-05-13/00-cover-dall-e-3.jpg)
 
-_DALL-E 3 prompt: make the interface for a complex modern website with accessibility features, buttons, alerts, notifications, backdrops, hints, loaders, progress bars, and skeletons. Use material UI and use bright web-safe color palette. 2d view from the top and ready to code_
+_DALL-E 3 prompt: create a design system for a modern web interface with accessibility features, buttons, alerts, notifications, backdrops, hints, loaders, progress bars, and skeletons. Use a bright color palette with mesh gradients_
 
-On my current project, I work not only as a test engineer but also as a web developer, creating some UI components that I had to test by myself simultaneously. Suddenly, taking into account the tester’s background, you have to consider many things that are missing from the design mockups but which will be revealed at the testing stage.
+In my current project, I work not only as a test engineer but also as a web developer, creating some UI components that I have to test by myself simultaneously. Suddenly, taking into account the tester’s background, you have to consider many things that are missing from the design mockups but which will be revealed at the testing stage.
 
 The following tips will help deliver an intuitive and seamless user experience when developing UI components:
 

@@ -13,7 +13,7 @@ _Fig. 1. Terminal_
 
 I am using [cURL](https://curl.se/) as a tool for testing REST API — **making HTTP/HTTPS requests**. In most cases, the response body contains [JSON](https://www.json.org/). I assume that the reader knows what cURL ([wiki](https://en.wikipedia.org/wiki/CURL)) is for and is familiar with JSON ([wiki](https://en.wikipedia.org/wiki/JSON)) format.
 
-All the methods described below will work if the cURL output contains **only valid** JSON ⇒ do not use `-i` option ([show the HTTP response headers](https://curl.se/docs/manpage.html#-i)), which will add additional data to the output except the response’s body like this:
+All the methods described below will work if the cURL output contains **only valid** JSON ⇒ do not use `-i` option ([it shows the HTTP response headers](https://curl.se/docs/manpage.html#-i)), which will add additional data to the output except the response’s body like this:
 
 ![Response headers are included in the cURL output](/assets/2022-05-29/02-curl-output.png)
 
@@ -26,6 +26,15 @@ Otherwise, you will not be able to parse the response by any tool:
 _Fig. 3. Invalid JSON is not parseable_
 
 For all examples, I used macOS Big Sur and its default [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>); all additional tools can be installed through [homebrew](https://brew.sh/).
+
+List of choices:
+
+- Python
+- jq
+- fx
+- jless
+
+---
 
 ## Python
 
