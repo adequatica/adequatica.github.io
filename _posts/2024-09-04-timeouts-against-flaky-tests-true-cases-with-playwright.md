@@ -47,7 +47,7 @@ Yes, this is an anti-pattern, and [you should avoid pauses inside tests](https:/
 
 ## 2. Drawing on Canvas
 
-Interaction with [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element can also be tricky, especially if it is interactive and contains logic. In my example, I have a map (of course, as a canvas) from a third-party vendor and need to draw an object on it by making a certain number of clicks.
+Interaction with [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element can also be tricky, especially if it is interactive and contains logic. In my example, **I have a map (as a canvas)** from a third-party vendor and need to draw an object on it by making a certain number of clicks.
 
 The problem is that the element is actionable for Playwright from the moment it appears on the page, but the actual actionable state of the element is indefinable by its locator.
 
@@ -57,7 +57,7 @@ That is a timeline for loading the element on a page:
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-1.png)
 
-_Fig. 2.1. Canvas element is attached and visible on the page, but nothing is rendered inside_
+_Fig. 2.1. Canvas element (a map) is attached and visible on the page, but nothing is rendered inside_
 
 ```html
 <canvas
@@ -75,7 +75,7 @@ _Fig. 2.1. Canvas element is attached and visible on the page, but nothing is re
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-2-3.png)
 
-_Fig. 2.2. Canvas element has rendered content but is not yet actionable for internal logic_
+_Fig. 2.2. Canvas element (a map) has rendered content but is not yet actionable for internal logic_
 
 ```html
 <canvas
@@ -93,7 +93,7 @@ _Fig. 2.2. Canvas element has rendered content but is not yet actionable for int
 
 ![Drawing on Canvas](/assets/2024-09-04/02-canvas-2-3.png)
 
-_Fig. 2.3. Canvas element is ready for action (the same image as Fig. 2.2)_
+_Fig. 2.3. Canvas element (a map) is ready for action (the same image as Fig. 2.2)_
 
 ```html
 <canvas
@@ -125,7 +125,7 @@ async function sleep(customTimeout: number): Promise<void> {
 }
 ```
 
-Then, you may encounter the problem `setTimeout()` can be executed longer than the specified time. It sounds crazy, but this behavior is most pronounced in CI runners (from GitHub Actions to custom runners on dedicated servers) during testing and does not reproduce in production!
+Then, you may encounter the problem that `setTimeout()` can be executed longer than the specified time. It sounds crazy, but this behavior is most pronounced in CI runners (from GitHub Actions to custom runners on dedicated servers) during testing and does not reproduce in production!
 
 **Solution:** Add unconditional timeout that is at least three times longer than the logic under test.
 
