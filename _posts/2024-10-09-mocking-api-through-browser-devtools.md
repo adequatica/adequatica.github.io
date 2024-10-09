@@ -5,6 +5,8 @@ date: 2024-10-09 04:11:47 +0200
 tags: mocking devtools
 ---
 
+Sometimes, as a test engineer, it is time to use the new features of the standard, seemingly familiar tools.
+
 For decades, to mock API responses for UI testing, QA engineers used special proxies and interceptors like [Charles](https://www.charlesproxy.com/), [Fiddler](https://www.telerik.com/fiddler), [Proxyman](https://proxyman.io/), [Requestly](https://requestly.com/), or [HTTP Toolkit](https://httptoolkit.com/); even [Postman has acquired similar functionality](https://learning.postman.com/docs/sending-requests/capturing-request-data/capture-with-proxy/).
 
 Under «mocking» API responses, I figuratively mean all kinds of overriding of different parts of [HTTP requests and responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages). This is a very important and useful tool by itself, which helps to test, prototype, and develop the frontend.
