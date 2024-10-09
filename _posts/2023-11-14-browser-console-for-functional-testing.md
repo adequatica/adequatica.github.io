@@ -2,7 +2,7 @@
 layout: post
 title: "Browser Console for Functional Testing"
 date: 2023-11-14 06:56:50 +0100
-tags: console testing
+tags: testing devtools
 ---
 
 As a test engineer, you have to use DevTools for efficient testing of UI and frontend, and the browser’s Console is an essential part of it.
