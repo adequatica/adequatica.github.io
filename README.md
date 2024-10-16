@@ -11,7 +11,7 @@ A copy of my personal blog on [Medium](https://adequatica.medium.com/) (only tec
 2. Install Jekyll:
 
    - First, [switch to Ruby on Brew](https://github.com/ffi/ffi/issues/653#issuecomment-458895497);
-   - Reboot the terminal!
+   - **Reboot the terminal!**
    - Use sudo to install Jekyll: `sudo gem install bundler jekyll`
 
 At this step, I have to add this to `~/.zshrc`:
@@ -25,7 +25,7 @@ export PATH="/usr/local/sbin:$PATH"
 
    - Where `git checkout --orphan gh-pages` is an excess step — you can use the «main» branch;
    - Use sudo to install Bundle: `sudo bundle install`
-   - Reboot the terminal!
+   - **Reboot the terminal!**
 
 4. Test a site locally by [instruction](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#building-your-site-locally):
 
@@ -41,8 +41,10 @@ export PATH="/usr/local/sbin:$PATH"
    - Move theme’s files required for changes to the local repository (I used `_layouts` and `_sass`);
    - Path to gem for adding to VS Code workspace: `../../../usr/local/lib/ruby/gems/3.2.0/gems/minima-2.5.1`
 
-7. To format Markdown files **locally**:
+---
 
-   - Set up `package.json` for [Prettier](https://prettier.io/): `npm install`
-   - Add [Husky](https://typicode.github.io/husky/) pre-commit: `npm run prepare`
-   - Run formatter when necessary: `npm run format`
+To format Markdown files **locally** (only for this repository):
+
+- Set up `package.json` for [Prettier](https://prettier.io/): `npm install`
+- Add [Husky](https://typicode.github.io/husky/) pre-commit: `npm run prepare`
+- Run formatter when necessary: `npm run format`
