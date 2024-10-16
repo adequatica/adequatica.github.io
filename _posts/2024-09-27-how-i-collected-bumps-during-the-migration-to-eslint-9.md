@@ -83,7 +83,7 @@ export default [
   ...compat.extends(
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended"
   ),
   {
     plugins: {
@@ -259,5 +259,7 @@ Related articles:
 - [Eslint v9: Migrate from Older Versions](https://javascript.plainenglish.io/eslint-v9-migrate-from-older-versions-da30b74372be);
 - [Embrace the Future: Navigating the New Flat Configuration of ESLint](https://www.raulmelo.me/en/blog/migration-eslint-to-flat-config);
 - [How does eslint-config-prettier works](https://allalmohamedlamine.medium.com/how-does-eslint-config-prettier-works-b5f926be6418)?
+
+P.S. When trying to update ESLint in production projects, it turned out that some plugins were simply not ready to work with ESLint 9, and it was impossible to switch to a new version without changing the habitual dev environment. That means we will use the eighth version ([v8.57](https://eslint.org/blog/2024/02/eslint-v8.57.0-released/)) for a long time.
 
 Copy @ [Medium](https://adequatica.medium.com/how-i-collected-bumps-during-the-migration-to-eslint-9-973ec54fe254)
