@@ -29,7 +29,7 @@ Therefore, the insufficiency of testing for some projects can be caused by diffe
 
 _Fig. 1. Options for interaction between subsystems with different types of testing_
 
-That is how it went for one of my latest projects.
+That is how it went for one of my resent projects.
 
 - The main limitation was the lack of test environments ⇒ fully end-to-end testing was unavailable;
 - The second limitation was CI: runners’ instances were limited in resources ⇒ test infrastructure should be as «light» as possible;
