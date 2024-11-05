@@ -7,11 +7,11 @@ tags: testing websockets
 
 Sometimes, as a test engineer, you have to deal with advanced technology, such as WebSockets position itself.
 
-If you have ever tested HTTP API, then you will not encounter very difficulties with testing bidirectional messages. However, there are a few features inherent in WebSockets that should be taken into account before starting testing.
+If you have ever tested HTTP APIs, then you will not encounter very difficulties with testing bidirectional messages. However, there are a few features inherent in WebSockets that should be taken into account before starting testing.
 
 ## Theory
 
-A [WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a persistent connection between client and server. WebSockets provide a full-duplex communication channel (allows communication in both directions simultaneously) through a single TCP/IP socket connection.
+[WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a persistent connection between client and server. WebSockets provide a full-duplex communication channel (allows communication in both directions simultaneously) through a single TCP/IP socket connection.
 
 Thanks to WebSocket connection, client-server communication can happen in real-time (unlike HTTP with timings on each request/response), similar to UDP, but with the reliability of TCP. So it is broadly used in chat, gaming, and stock market browser-based applications.
 
