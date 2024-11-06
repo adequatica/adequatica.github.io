@@ -169,4 +169,13 @@ Read more:
 - [What is Flaky Test](https://www.browserstack.com/test-observability/features/test-reporting/what-is-flaky-test)?
 - [How to Avoid Flaky Tests in Playwright](https://semaphoreci.com/blog/flaky-tests-playwright).
 
+---
+
+UPDATE: JFYI, issues №1 and №2 can be solved another way instead of timeouts. Actions with checks may be wrapped in [`expect.toPass()` method](https://playwright.dev/docs/test-assertions#expecttopass) to retry a flaky sequence.
+
+Watch more:
+
+- [Avoid flaky end-to-end tests due to poorly hydrated Frontends with Playwright’s toPass()](https://www.youtube.com/watch?v=8g7FvoRToGo);
+- [Hydration](https://playwright.dev/docs/navigations#hydration).
+
 Copy @ [Medium](https://adequatica.medium.com/timeouts-against-flaky-tests-true-cases-with-playwright-9f4f28d2c391)

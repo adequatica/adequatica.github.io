@@ -102,7 +102,7 @@ await page.routeWebSocket(/.+\/api/, (ws) => {
 
 Where `ws.send()` method sends a message to the page from the server.
 
-Unfortunately, I could not figure out if it is possible to intercept and mock messages in both ways in one `test()`. Even so, there is nothing to worry about because the test cases can be divided.
+Unfortunately, I could not figure out if it is possible to intercept and mock messages in both ways in one `test()`. Even so, there is nothing to worry about if these test cases can be splitted.
 
 ---
 
