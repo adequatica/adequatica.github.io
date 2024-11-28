@@ -53,7 +53,7 @@ Then, determined parameters and values are passed to a pairwise test case genera
 
 ![Pairwise test cases](/assets/2024-09-17/01-pairwise-pict-online.png)
 
-_Fig. 1. Pairwise test cases_
+_Fig. 1. Pairwise test cases (generated in [Pairwise Pict Online](https://pairwise.yuuniworks.com/))_
 
 Onwards, test cases’ values are passed to the component in the story ([`battery.stories.tsx`](https://storybook.js.org/docs/writing-stories/args)) for rendering.
 

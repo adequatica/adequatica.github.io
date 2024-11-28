@@ -47,7 +47,7 @@ Yes, this is an anti-pattern, and [you should avoid pauses inside tests](https:/
 
 ## 2. Drawing on Canvas
 
-Interaction with [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) element can also be tricky, especially if it is interactive and contains logic. In my example, **I have a map (as a canvas)** from a third-party vendor and need to draw an object on it by making a certain number of clicks.
+Interaction with [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) elements can also be tricky, especially if it is interactive and contains logic. In my example, **I have a map (as a canvas)** from a third-party vendor and need to draw an object on it by making a certain number of clicks.
 
 The problem is that the element is actionable for Playwright from the moment it appears on the page, but the actual actionable state of the element is indefinable by its locator.
 
@@ -113,6 +113,8 @@ As you can notice, **the HTML element is the same for all states**, but when Pla
 
 However, this test case does not imply having any mocks, and it is much easier to add a single timeout rather than develop a highly complicated (and potentially fragile) solution for determining a single element’s state. Here, a few seconds in one test is sacrificed in favor of _relative_ reliability.
 
+> Both issues described above are the most common root causes of UI-based flaky tests, according to the 2021 study «[An Empirical Analysis of UI-based Flaky Tests](https://arxiv.org/abs/2103.02669)». Where №1 fits the category «Animation Timing Issue», and №2 — «Resource Rendering».
+
 ## 3. Sleep Timeouts in CI in the Cloud
 
 If your frontend application has its own timeouts (actual business logic may require freaky periods of «sleep»), then your tests may be affected by it.
@@ -133,7 +135,7 @@ Then, you may encounter the problem that `setTimeout()` can be executed longer t
 
 _Fig. 3. If it waits for a timeout, it waits_
 
-Unfortunately, that is not a bug. I even consulted with DevOps and CI’s tech support, who confirmed this behavior:
+Unfortunately, that is not a bug. I even consulted with DevOps and CI/CD’s tech support, who confirmed this behavior (but I did not double-check their statements):
 
 _JavaScript does not guarantee that the setTimeout will work on time. Therefore, there may be many reasons…_
 
@@ -167,6 +169,7 @@ _But how often have I been allowed to do this in production? In a recent project
 Read more:
 
 - [What is Flaky Test](https://www.browserstack.com/test-observability/features/test-reporting/what-is-flaky-test)?
+- [We Have A Flaky Test Problem](https://medium.com/scopedev/how-can-we-peacefully-co-exist-with-flaky-tests-3c8f94fba166);
 - [How to Avoid Flaky Tests in Playwright](https://semaphoreci.com/blog/flaky-tests-playwright).
 
 ---
