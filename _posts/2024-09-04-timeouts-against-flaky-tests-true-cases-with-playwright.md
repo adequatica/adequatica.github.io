@@ -113,7 +113,9 @@ As you can notice, **the HTML element is the same for all states**, but when Pla
 
 However, this test case does not imply having any mocks, and it is much easier to add a single timeout rather than develop a highly complicated (and potentially fragile) solution for determining a single element’s state. Here, a few seconds in one test is sacrificed in favor of _relative_ reliability.
 
-> Both issues described above are the most common root causes of UI-based flaky tests, according to the 2021 study «[An Empirical Analysis of UI-based Flaky Tests](https://arxiv.org/abs/2103.02669)». Where №1 fits the category «Animation Timing Issue», and №2 — «Resource Rendering».
+> Both issues described above are the most common root causes of UI-based flaky tests, according to the 2021 study **«[An Empirical Analysis of UI-based Flaky Tests](https://arxiv.org/abs/2103.02669)»**. Where №1 fits the category «Animation Timing Issue», and №2 — «Resource Rendering».
+
+> Moreover, according to this study, adding timeouts («Adding or Increase Delay» between actions and «Fix Waiting Mechanism» by adding `await` where needed) is one of the core fixing strategies of flaky tests.
 
 ## 3. Sleep Timeouts in CI in the Cloud
 
@@ -164,7 +166,7 @@ await page.waitForTimeout(UNCONDITIONAL_TIMEOUT);
 
 Official Playwright’s documentation recommends you «[never wait for timeout in production](https://playwright.dev/docs/api/class-page#page-wait-for-timeout)» and use it only for debugging because tests that wait for time are inherently flaky. But here, I use `waitForTimeout()` exactly for the opposite, despite the fact that **tests with unconditional waits are truthfully flaky.**
 
-_But how often have I been allowed to do this in production? In a recent project, I had 50 tests with more than 200 test steps. Two tests had seven waits for timeouts, and three page objects had six timeouts. Not so much, although, of course, I would like to have zero._
+_But how often have I been allowed to do this in production? In a recent project, I have 50 declared tests (`test()`) with more than 200 test steps (`test.step()`). Two tests have seven waits for timeouts, and three page objects had six timeouts. Not so much, although, of course, I would like to have zero._
 
 Read more:
 
