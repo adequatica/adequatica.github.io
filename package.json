@@ -15,7 +15,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "prettier": "3.3.3"
+    "prettier": "3.4.1"
   },
   "devDependencies": {
     "husky": "8.0.3"
