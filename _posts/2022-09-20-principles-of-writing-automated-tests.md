@@ -9,7 +9,7 @@ While working on test automation in different projects, I’ve learned that ther
 
 ![Principles of Writing Automated Tests](/assets/2022-09-20/00-cover.jpg)
 
-If any team member will write tests with his own ideal vision, it will be a mess. Some patterns applicable to unit tests on Java or Python do not fit integration tests on JavaScript and vice versa. Tests of a certain type should be consistent and should conform to acceptable rules for the project.
+If any team member writes tests with his own ideal vision, it will be a mess. Some patterns applicable to unit tests on Java or Python do not fit integration tests on JavaScript and vice versa. Tests of a certain type should be consistent and should conform to acceptable rules for the project.
 
 A presented compilation of principles is based on years of experience and has proven their effectiveness in real projects. They are mostly applicable for end-to-end tests (API and UI) on JavaScript/TypeScript and corresponding test frameworks: [mocha](https://mochajs.org/), [Jest](https://jestjs.io/), [WebdriverIO](https://webdriver.io/), [Playwright](https://playwright.dev/), and the like. Some principles may overlap or even conflict with each other, some may be controversial — common sense will judge it, at least it all depends on the context of the testing project.
 
@@ -32,6 +32,8 @@ A presented compilation of principles is based on years of experience and has pr
 17. Do not mix different kinds of tests;
 18. Test IDs must be unique;
 19. Use linters and formatters from the testing (parent) project.
+
+> _Disclaimer: some statements may seem controversial or not be provided with references, but they reflect only the author’s experience as a test automation engineer._
 
 ---
 
@@ -60,13 +62,13 @@ test("Should open menu", async () => {
 
 ## 2. No assertions in before or after hooks
 
-beforeAll, beforeEach, afterAll, afterEach hooks should not have assertions. Preconditions/postconditions should contain only pure actions (for example, [authorization](https://playwright.dev/docs/test-auth#sign-in-with-beforeeach)). Checks should be done inside tests.
+`beforeAll, beforeEach, afterAll, afterEach` hooks should not have assertions. Preconditions/postconditions should contain only pure actions (for example, [authorization](https://playwright.dev/docs/test-auth#sign-in-with-beforeeach)). Checks should be done inside tests.
 
 If you still need to check something in preconditions/postconditions, then use [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) and/or [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw) errors.
 
 ## 3. No actions without expectations
 
-After all actions in tests: clicks, hovers, gotos, etc., should be an assertion with an expectation to check that the action was definitely committed.
+After all actions in tests, such as clicks, hovers, gotos, etc., there should be an assertion with an expectation to check that the action was definitely committed.
 
 ```JavaScript
 test("Should open menu", async () => {
@@ -89,7 +91,7 @@ The second example is valid because [expect(locator).toBeVisible()](https://play
 
 ## 4. No unconditional expectation
 
-Do not add [pause](https://webdriver.io/docs/api/browser/pause/) and timeouts for N seconds between action and assertion to prevent flakiness — it only slows down the tests.
+Do not add [pauses](https://webdriver.io/docs/api/browser/pause/), `sleep`s, and [timeouts](https://playwright.dev/docs/api/class-page#page-wait-for-timeout) for N seconds between action and assertion to prevent flakiness — it only slows down the tests and does not make them reliable and efficient.
 
 Instead of unconditional expectation:
 
@@ -177,17 +179,17 @@ test("Should have a pop-up", async () => {
 	const checkedAnother = await $('.another-locator').isChecked();
 	await expect(checkedAnother).toBeTruthy();
   }
-}
+});
 ```
 
 Don’t do that, because if such kind of test fails, you will have to investigate what conditional statement was triggered and, moreover, you will miss a bug if the functionality of not invoked check in the conditional statement failed.
 
 If your application has A/B experiments and the interface can change randomly, then:
 
-- Prepare UI state of your application in precondition;
+- Prepare the UI state of your application in precondition;
 - White separate tests for each UI state.
 
-This rule also applies to functions in page object models because they are part of the test infrastructure. You can use[ switch statements](https://en.wikipedia.org/wiki/Switch_statement) (as more deterministic and predictable) there instead of[ if-statemens](https://en.wikipedia.org/wiki/Conditional_%28computer_programming%29), but don’t use any statements in the tests themselves at all.
+This rule also applies to functions in page object models because they are part of the test infrastructure. You can use[ switch statements](https://en.wikipedia.org/wiki/Switch_statement) (as more deterministic and predictable) there instead of[ if-statements](https://en.wikipedia.org/wiki/Conditional_%28computer_programming%29), but don’t use any statements in the tests themselves at all.
 
 ## 8. No assertions inside page object models
 
@@ -468,7 +470,7 @@ Useful remark:
 
 ---
 
-Note that your own principles for your own project could be dramatically different.
+Note that the principles for your own project may be dramatically different.
 
 Read more:
 

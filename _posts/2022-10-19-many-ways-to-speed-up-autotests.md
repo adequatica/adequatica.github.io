@@ -29,9 +29,11 @@ Based on the experience since that time, I have put together several ways in whi
 12. Authorize from cache;
 13. Hardcode precondition data.
 
----
+> _Disclaimer: some statements may seem controversial or not be provided with references, but they reflect only the author’s experience as a test automation engineer._
 
-The covered ways are mostly fit for [JavaScript/TypeScript test frameworks](https://adequatica.github.io/2022/09/23/selection-criteria-of-javascript-test-framework.html), but also can take into account another stack.
+The covered techniques are primarily fit for [JavaScript/TypeScript test frameworks](https://adequatica.github.io/2022/09/23/selection-criteria-of-javascript-test-framework.html), but they can also take into account another stack.
+
+---
 
 ## 1. Parallelisation
 
@@ -47,7 +49,7 @@ The ability to parallelize tests depends _mostly_ on a test runner:
 
 The number of parallel threads is usually configured by the number «workers» or «jobs». Each test is put into a queue and executed as workers become available.
 
-When you run tests in parallel, you should keep in mind the performance of your local machine or cloud instance. If you have more than 1000 tests and you will run them all in parallel at the same time, you may have a performance issue — you should find a balance between execution time and number of workers.
+When you run tests in parallel, you should keep in mind the performance of your local machine or cloud instance. If you have more than 1000 tests and you will run them all in parallel at the same time, you may have a performance issue — you should find a balance between execution time and the number of workers.
 
 Read further about parallelisation in popular frameworks:
 
