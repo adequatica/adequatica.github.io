@@ -49,7 +49,7 @@ Adding delay does not fix the root cause of the flakiness; it just patches an au
 
 The strategy of waiting for an element’s state [is much better](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html#4-no-unconditional-expectation). But what if the element is already actionable as soon it appears, as was mentioned above happened with [Add geobar]?
 
-Some QAs concentrate too much only on the single element being tested. No matter how correct the ideas of independence and atomicity of checks are (by the way, they are definitely correct), the code of modern dynamic web applications is highly complicated, and its components are intertwined.
+Some QA engineers concentrate too much only on the single element being tested. No matter how correct the ideas of independence and atomicity of checks are (by the way, they are definitely correct), the code of modern dynamic web applications is highly complicated, and its components are intertwined.
 
 So, using the case example under consideration, let’s inspect other components related to the element under test. The [Add geobar] button depends on the popover, while the state of the popover’s content is definable!
 

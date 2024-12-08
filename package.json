@@ -15,10 +15,10 @@
     "node": ">=18"
   },
   "dependencies": {
-    "prettier": "3.4.1"
+    "prettier": "3.4.2"
   },
   "devDependencies": {
-    "husky": "9.1.4"
+    "husky": "9.1.7"
   },
   "scripts": {
     "format": "prettier --write .",
