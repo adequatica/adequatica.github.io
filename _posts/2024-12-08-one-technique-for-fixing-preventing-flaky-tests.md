@@ -7,7 +7,7 @@ tags: testing
 
 Often, as a test engineer, you have to manifest and fix flaky tests regardless of how great your test automation is.
 
-According to the 2021 study «**[An Empirical Analysis of UI-based Flaky Tests](https://arxiv.org/abs/2103.02669)**» [1], «_increasing delays between actions_» and «_adding the `await` keyword where needed_» are among the popular solutions for fixing flakiness. But instead of these superficial ways, in some particular cases, the fix can be done by waiting for some conditions of an element just related to the tested one.
+According to the 2021 study «**[An Empirical Analysis of UI-based Flaky Tests](https://arxiv.org/abs/2103.02669)**» [1], «_increasing delays between actions_» and «_adding the `await` keyword where needed_» are among the popular solutions for fixing flakiness. But instead of these superficial ways, in some particular cases, **the fix can be done by waiting for some conditions of an element just related to the tested one.**
 
 Let’s take a look at one example of a flaky case…
 
