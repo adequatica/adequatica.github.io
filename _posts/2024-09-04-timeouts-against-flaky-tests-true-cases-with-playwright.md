@@ -19,7 +19,7 @@ Automation engineers can write bad and good tests with both tools depending on t
 
 Even adhering to [the best practices in writing autotests](https://adequatica.github.io/2022/09/20/principles-of-writing-automated-tests.html) **to prevent false falls, unreliable results, and unwanted errors** sometimes requires breaking established principles and setting exceptions in the code.
 
-Below are a few cases that I encountered during the automation of several production services with Playwright (actually, these cases can be attributed to any other tool, too):
+Below are a few cases that I encountered during the automating of several production services on [Playwright](https://playwright.dev/) (actually, these cases can be attributed to any other tool, too):
 
 1. UI Animations
 2. Drawing on Canvas

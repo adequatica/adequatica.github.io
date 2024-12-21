@@ -24,9 +24,9 @@ await page.getByRole("button", { name: "Add geobar" }).click();
 await expect(page.getByTestId("a-new-entity")).toBeVisible();
 ```
 
-In the second step, the test occasionally fails because sometimes the autotest framework (Playwright) successfully clicks on [Add geobar]. Still, sometimes, the click misses or does not trigger any action.
+In the second step, the test occasionally fails because sometimes the autotest framework ([Playwright](https://playwright.dev/)) successfully clicks on [Add geobar]. Still, sometimes, the click misses or does not trigger any action.
 
-The root problem of that flaky step is that when the user/autotest framework clicks on [Open smth] button, the popover with the [Add geobar] button **_opens with smooth animation_**. At the moment of the appearance of the [Add geobar] button, most of the test frameworks have already considered the [Add geobar] button to be [actionable](https://playwright.dev/docs/actionability) and have tried to click on it. Sometimes they succeed, and sometimes they do not.
+The root problem of that flaky step is that when the user/autotest framework ([Playwright](https://playwright.dev/)) clicks on [Open smth] button, the popover with the [Add geobar] button **_opens with smooth animation_**. At the moment of the appearance of the [Add geobar] button, most of the test frameworks have already considered the [Add geobar] button to be [actionable](https://playwright.dev/docs/actionability) and have tried to click on it. Sometimes they succeed, and sometimes they do not.
 
 ![Fig. 1.](/assets/2024-12-08/01.jpg)
 
