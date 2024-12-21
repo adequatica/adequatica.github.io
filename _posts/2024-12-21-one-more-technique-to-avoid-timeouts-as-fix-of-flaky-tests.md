@@ -33,7 +33,7 @@ _Fig. 1 and 2. Both states of the map are actionable for Playwright, but only th
 
 HTML code of the map is the same during all states of loading and rendering of the element on a page:
 
-1. Canvas element is attached and visible on the page (the element is actionable for Playwright), but nothing is rendered inside:
+1. Canvas element is attached and visible on the page (the element is actionable for Playwright), but nothing is rendered inside:
 
 ```html
 <canvas
@@ -47,7 +47,7 @@ HTML code of the map is the same during all states of loading and rendering of t
 ></canvas>
 ```
 
-2. Canvas element has rendered content but is not yet actionable for internal logic:
+2. Canvas element has rendered content but is not yet actionable for internal logic:
 
 ```html
 <canvas
@@ -61,7 +61,7 @@ HTML code of the map is the same during all states of loading and rendering of t
 ></canvas>
 ```
 
-3. Canvas element is ready for action:
+3. Canvas element is ready for action:
 
 ```html
 <canvas
