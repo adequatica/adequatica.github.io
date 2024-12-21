@@ -9,9 +9,9 @@ Sometimes, as a test engineer, you have to find better solutions to previous fix
 
 A while ago, I wrote a controversial article about [fixing flaky tests by adding timeouts in tests](https://adequatica.github.io/2024/09/04/timeouts-against-flaky-tests-true-cases-with-playwright.html), of course, with a disclaimer that it’s only suitable in exceptional cases.
 
-One of the cases ([№2](https://adequatica.github.io/2024/09/04/timeouts-against-flaky-tests-true-cases-with-playwright.html#2-drawing-on-canvas)) was that a `&lt;canvas>` element in the test was unavailable for interaction, while the Playwright considered the element actionable.
+One of the cases ([№2](https://adequatica.github.io/2024/09/04/timeouts-against-flaky-tests-true-cases-with-playwright.html#2-drawing-on-canvas)) was that a `<canvas>` element in the test was unavailable for interaction, while the Playwright considered the element actionable.
 
-The fix was to add timeouts before interaction with a `&lt;canvas>` element because there was no way to determine its readiness.
+The fix was to add timeouts before interaction with a `<canvas>` element because there was no way to determine its readiness.
 
 Unfortunately, this «fix» still allowed the test to fail — the fix made the test more «stable» but not 100% enough. According to my brief statistics, it could be one time of the [false positive failure](https://en.wikipedia.org/wiki/False_positives_and_false_negatives#False_positive_error) of that test in 1–2 weeks. That is nearly 0,5–1% failure rate based on around 100 weekly test runs.
 
@@ -19,7 +19,7 @@ Both the fix and that it did not completely solve the issue are common problems 
 
 - _Increasing delays between actions that involve fetching or loading_ [1] or _stalling some part of the code for a pre-specified time delay using `sleep`_ [2] are among the popular solutions for fixing flakiness.
 - While this does not fix the root cause directly [1], this decreases the chance of a flaky failure [2].
-- Even in Microsoft, some flaky tests _are found to be flaky more than once because the developers’ initial fix for the flakiness was inadequate_ [3].
+- [Even in Microsoft](https://cs.gmu.edu/~winglam/publications/2020/LamETAL20FaTB.pdf), some flaky tests _are found to be flaky more than once because the developers’ initial fix for the flakiness was inadequate_ [3].
 
 For a proper fix, you have to examine the application from the top (inspecting HTML and JS) to the bottom (network level) and find indirect ways to perform a check. One example of such an indirect check is [waiting for a particular state of the related element before clicking on the desired one](https://adequatica.github.io/2024/12/08/one-technique-for-fixing-preventing-flaky-tests.html).
 
@@ -144,6 +144,6 @@ References:
 
 1. A. Romano, Z. Song, S. Grandhi, W. Yang, and W. Wang, “An Empirical Analysis of UI-based Flaky Tests,” in Proceedings of the 43rd International Conference on Software Engineering, 2021. [https://doi.org/10.48550/arXiv.2103.02669](https://doi.org/10.48550/arXiv.2103.02669)
 2. Q. Luo, F. Hariri, L. Eloussi, and D. Marinov, “An empirical analysis of flaky tests,” in Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering, 2014. [https://doi.org/10.1145/2635868.2635920](https://doi.org/10.1145/2635868.2635920)
-3. W. Lam, K. Mus¸lu, H. Sajnani, and S. Thummalapenta, “A study on the lifecycle of flaky tests,” in Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering, 2020. [https://doi.org/10.1145/3377811.3381749](https://doi.org/10.1145/3377811.3381749)
+3. W. Lam, K. Muslu, H. Sajnani, and S. Thummalapenta, “A study on the lifecycle of flaky tests,” in Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering, 2020. [https://doi.org/10.1145/3377811.3381749](https://doi.org/10.1145/3377811.3381749)
 
 Copy @ [Medium](https://adequatica.medium.com/one-more-technique-to-avoid-timeouts-as-fix-of-flaky-tests-ca25cd6e3f6e)

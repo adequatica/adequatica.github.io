@@ -82,7 +82,7 @@ According to the study mentioned at the beginning of the article, this strategy 
 
 References:
 
-1. A. Romano, Z. Song, S. Grandhi, W. Yang, and W. Wang, “An Empirical Analysis of UI-based Flaky Tests,” in Proceedings of the 43rd International Conference on Software Engineering, 2021. https://doi.org/10.48550/arXiv.2103.02669
-2. Q. Luo, F. Hariri, L. Eloussi, and D. Marinov, “An empirical analysis of flaky tests,” in Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering, 2014. https://doi.org/10.1145/2635868.2635920
+1. A. Romano, Z. Song, S. Grandhi, W. Yang, and W. Wang, “An Empirical Analysis of UI-based Flaky Tests,” in Proceedings of the 43rd International Conference on Software Engineering, 2021. [https://doi.org/10.48550/arXiv.2103.02669](https://doi.org/10.48550/arXiv.2103.02669)
+2. Q. Luo, F. Hariri, L. Eloussi, and D. Marinov, “An empirical analysis of flaky tests,” in Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering, 2014. [https://doi.org/10.1145/2635868.2635920](https://doi.org/10.1145/2635868.2635920)
 
 Copy @ [Medium](https://adequatica.medium.com/one-technique-for-fixing-preventing-flaky-tests-afbfd4f46639)
