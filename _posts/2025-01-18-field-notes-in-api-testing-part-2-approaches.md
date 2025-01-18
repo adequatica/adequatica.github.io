@@ -279,17 +279,18 @@ Dev best practices:
   "page": 1,
   "page_size": 10,
   "total_pages": 5
-};
+}
 ```
 
 - Return meaningful responses for empty datasets:
 
 ```json
-{ "data": [],
+{
+  "data": [],
   "meta": {
     "total": 0
   }
-};
+}
 ```
 
 - Provide hypermedia controls (next and previous links) in the response body to allow clients to navigate pages easily;
