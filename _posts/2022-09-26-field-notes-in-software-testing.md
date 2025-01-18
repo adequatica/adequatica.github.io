@@ -5,17 +5,17 @@ date: 2022-09-26 07:55:19 +0300
 tags: testing
 ---
 
-Being a test engineer (QA) for a decade «[I’ve seen things you people wouldn’t believe](https://www.acmi.net.au/stories-and-ideas/blade-runner-ive-seen-things/)», I’ve tested enough web applications to accumulate experience that can be shared.
+Being a test engineer (QA) for a decade, «[I’ve seen things you people wouldn’t believe](https://www.acmi.net.au/stories-and-ideas/blade-runner-ive-seen-things/).» I’ve tested enough web applications to accumulate experience that can be shared.
 
 ![Field Notes in Software Testing](/assets/2022-09-26/00-cover.jpg)
 
-I collected tricky test cases which somehow led to bugs and hacks to perform unusual checks. They are sorted by logical blocks in no particular order. Enjoy!
+I collected tricky test cases, which somehow led to bugs and hacks to perform unusual checks. They are sorted by logical blocks in no particular order. Enjoy!
 
 ## General cases
 
 - Divide by zero wherever it is possible;
 - Plug in a real mouse to notebook — it can affect scrollbars, which may be hiding in the case of touchpad;
-- Click on disabled buttons (controls) — sometimes they can just look like disabled, but actually be clickable;
+- Click on disabled buttons (controls) — sometimes they can just look like disabled but actually be clickable;
 - Open links and click buttons by [double-click](https://en.wikipedia.org/wiki/Double-click);
 - Repeat the action multiple times, like clicking on the same button 10 times in a row;
 - Click on all arrows pointing downwards `∨` or upwards `∧` — something must open or close:
