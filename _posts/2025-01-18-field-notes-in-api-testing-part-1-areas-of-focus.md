@@ -26,7 +26,7 @@ _Disclaimer: Many sources of information have been lost, and I can not add proof
 
 ---
 
-## Background
+### Background
 
 First of all, you cannot start API testing without a background in the concept of [REST](https://en.wikipedia.org/wiki/REST) (Representational State Transfer) API and a [basic understanding of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) (Hypertext Transfer Protocol), or rather, what parts the request and response consist of.
 
@@ -46,11 +46,11 @@ Protocol, domain, path, and query parameters are parts of the URL and, therefore
 
 ---
 
-# Key Areas of Focus for API Testing
+## Key Areas of Focus for API Testing
 
 _Getting the API right is ¾ of how the product works._
 
-## 1. Functionality Testing
+### 1. Functionality Testing
 
 Ensure the API behaves according to the defined specifications and performs the required operations correctly.
 
@@ -63,7 +63,7 @@ What it involves:
 
 All other types of testing that are not related to checking business logic can be classified as non-functional testing. In some companies, non-functional testing can be performed by dedicated specialists, not common test engineers.
 
-## 2. Performance Testing (may include several types of non-functional testing)
+### 2. Performance Testing (may include several types of non-functional testing)
 
 Assess the speed and stability of the API under different load conditions.
 
@@ -75,7 +75,7 @@ What it involves:
 - **Stress testing** to determine the API’s limits;
 - **Reliability testing** to ensure the API is stable over time.
 
-## 3. Compatibility Testing
+### 3. Compatibility Testing
 
 Ensure that the API works as intended when the application is deployed on different instance configurations or has different network configurations, which can affect the usage on other devices and third-party modules.
 
@@ -87,7 +87,7 @@ What it involves:
 
 Do not confuse compatibility API testing with cross-browsing testing — it is a common mistake of AI’s «recommendations» — it does not make sense cause REST API over HTTP works the same way and independently from the browser (unless the behavior of the API depends on the `User-Agent` header).
 
-## 4. Security Testing
+### 4. Security Testing
 
 Ensure the API is secure, protects sensitive data (that it is transmitted securely over HTTPS), and can handle unauthorized access or potential vulnerabilities.
 
@@ -99,7 +99,7 @@ What it involves:
 - [Testing for common vulnerabilities](https://adequatica.github.io/2019/07/28/use-postman-collection-runner-as-vulnerability-scanner.html) like cross-site scripting (XSS) in API requests. — It’s good to get acquainted with [OWASP Top 10 API Security Risks](https://owasp.org/API-Security/editions/2023/en/0x11-t10/);
 - Ensuring no sensitive information is leaked in error messages in responses (see error handling testing).
 
-## 5. Error Handling Testing
+### 5. Error Handling Testing
 
 Ensure the API handles errors gracefully and provides helpful feedback.
 
@@ -110,7 +110,7 @@ What it involves:
 - Checking that status codes and error messages align with standards and documentation;
 - **Ensuring that error responses do not contain implementation details** (an indication of programming language or framework version) **and stack traces for external users** (but internal users (developers) may need debug information in testing environments).
 
-## 6. Usability Testing
+### 6. Usability Testing
 
 Evaluate the ease of use, integration, and developer-friendliness of the API.
 

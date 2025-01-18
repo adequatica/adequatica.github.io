@@ -30,11 +30,11 @@ _Disclaimer: Many sources of information have been lost, and I can not add proof
 
 ---
 
-# Approaches to API Testing
+## Approaches to API Testing
 
 During API testing, most of the described approaches are intertwined because you can not test HTTP codes and headers by ignoring authentication and body, and so on… everything is connected.
 
-## 1. HTTP Methods
+### 1. HTTP Methods
 
 Ensure correct usage of HTTP methods for their intended purposes.
 
@@ -57,7 +57,7 @@ Examples of test cases:
 - Request the same handler simultaneously — this check may reveal a race condition;
 - Ensure that repeated DELETE requests on the same endpoint have no additional effects.
 
-## 2. HTTP Status Codes
+### 2. HTTP Status Codes
 
 Verify that the API returns appropriate status codes for each operation.
 
@@ -77,7 +77,7 @@ Examples of test cases:
 - Check for `400 Bad Request` when entering incorrect values (examples of such checks will be discussed in the «Error Handling» paragraph);
 - Treat any 500 status code as a bug and potential vulnerability — **the backend should be able to handle errors, not crashes**.
 
-## 3. Authentication and Authorization
+### 3. Authentication and Authorization
 
 Verify that the API endpoints use proper authentication and authorization mechanisms.
 
@@ -103,7 +103,7 @@ Examples of test cases:
 - Compare to compliance of responses to requests with different credentials;
 - Try to request endpoints without authentication methods.
 
-## 4. Headers
+### 4. Headers
 
 Ensure correct usage of HTTP headers.
 
@@ -136,7 +136,7 @@ Using headers for non-functional testing:
 - [`Content-Length`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length) can help collect metrics about the size of the transmitted information;
 - [`Date`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Date) can be used as a reference point for calculating a response time.
 
-## 5. Path and Query Parameters
+### 5. Path and Query Parameters
 
 Ensure that the API endpoints and their associated inputs operate as intended, adhere to best practices, and are robust against misuse or unexpected inputs. There is a lot to check out in this space: sorting, pagination, filtering, searching, etc.
 
@@ -169,7 +169,7 @@ Examples of test cases:
 - Request resources with partly [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) endpoints (e.g., `/users?search=D%C5%BEejms%20D%C5%BEojs%26lang%3Den` which is the same as `/users?search=Džejms Džojs&lang=en`);
 - Assemble the endpoint with the maximum possible number of parameters and its values. If the limit set on the server is exceeded, you will receive a response with `414 URI Too Long` status.
 
-## 6. Versioning (a special case of path and query parameters)
+### 6. Versioning (a special case of path and query parameters)
 
 Verify the API supports multiple versions without breaking backward compatibility.
 
@@ -193,7 +193,7 @@ Examples of test cases:
 - Verify that updates to `v2` do not break `v1` — this is a part of backward compatibility testing;
 - Ensure that new fields in requests/responses are optional and ignored in older versions.
 
-## 7. Pagination (a special case of path and query parameters)
+### 7. Pagination (a special case of path and query parameters)
 
 Validate that the API correctly returns data in chunks according to the specified range.
 
@@ -232,7 +232,7 @@ Examples of test cases:
 
 Be aware of exotic pagination methods, like through [`Range`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range) header.
 
-## 8. Input Payload Validation
+### 8. Input Payload Validation
 
 Ensure the API handles user inputs interpreted correctly and effectively. Input payload testing applies only to methods that produce changes and include a body in the request, like POST, PUT, or PATCH.
 
@@ -259,7 +259,7 @@ Examples of test cases:
 - Send _enormous_ body payload (maximum payload size can be a non-functional requirement);
 - Test boundary values for numeric fields.
 
-## 9. Response Payload Validation
+### 9. Response Payload Validation
 
 Validate the content of the response payload for correctness and consistency.
 
@@ -311,7 +311,7 @@ Examples of test cases:
 - Test for missing, null, or unexpected fields;
 - Pay attention to the consistency of answers. If one handler responds with 200 OK status with the body `"result": {}`, then the other one with the same method and the same status code should not have a body like `"result": { "data": {} }` (but of course, it depends on the context).
 
-## 10. Error Handling
+### 10. Error Handling
 
 Validate that the API handles errors and returns meaningful error messages with corresponding HTTP codes. This is a rare place where you need to try _to break_ the application.
 
