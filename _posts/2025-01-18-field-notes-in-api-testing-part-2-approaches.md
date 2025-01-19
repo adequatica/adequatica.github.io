@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Field Notes in API Testing, Part 2: Approaches"
+title: "Field Notes in API Testing, Part 2: Practical Approaches"
 date: 2025-01-18 17:00:00 +0100
 tags: testing
 ---
@@ -13,7 +13,7 @@ _DALL-E 3 prompt: provide application programming interface in the form of a tec
 
 This is the second part of the summarization of my notes using AI (GPT-4o). I gave all my hundreds of notes on API testing to AI to process them. Asking summarization prompts to the corpus of my notes, **I got a pretty decent list of aspects of API testing** after strong manual compilation and editing. The final result I decided to be divided into two parts: [key areas of focus for API testing](https://adequatica.github.io/2025/01/18/field-notes-in-api-testing-part-1-areas-of-focus.html) and its practical approaches.
 
-**Approaches to API Testing:**
+**Practical Approaches to API Testing:**
 
 1. HTTP Methods
 2. HTTP Status Codes
@@ -30,7 +30,7 @@ _Disclaimer: Many sources of information have been lost, and I can not add proof
 
 ---
 
-## Approaches to API Testing
+## Practical Approaches to API Testing
 
 During API testing, most of the described approaches are intertwined because you can not test HTTP codes and headers by ignoring authentication and body, and so on… everything is connected.
 
