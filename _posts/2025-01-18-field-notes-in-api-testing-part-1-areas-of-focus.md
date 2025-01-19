@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Field Notes in API Testing, Part 1: Areas of Focus"
-date: 2025-01-18 17:00:00 +0100
+date: 2025-01-18 17:51:44 +0100
 tags: testing
 ---
 
@@ -11,7 +11,7 @@ Being a test engineer (QA) for a decade, I’ve collected over a hundred notes r
 
 _DALL-E 3 prompt: draw a technical drawing of complicated motion transmission and force-by-gear wheels, 2.5D view of the gear train with spur gears showing tangent contact between their pitch circles_
 
-I already shared [my field notes on general testing topics](https://adequatica.github.io/2022/09/26/field-notes-in-software-testing.html), but this time, I summarized my notes using AI (GPT-4o). I gave all my hundreds of notes on API testing to AI to process them (~ 91650 characters, ~ 19k tokens). Asking summarization prompts to the corpus of my notes, **I got a pretty decent list of aspects of API testing** after strong manual compilation and editing. The final result I decided to be divided into two parts: areas of focus and [practical approaches to API Testing](https://adequatica.github.io/2025/01/18/field-notes-in-api-testing-part-2-approaches.html).
+I already shared [my field notes on general testing topics](https://adequatica.github.io/2022/09/26/field-notes-in-software-testing.html), but this time, I summarized my notes using AI (GPT-4o). I gave all my hundreds of notes on API testing to AI to process them (~ 91650 characters, ~ 19k tokens). Asking summarization prompts to the corpus of my notes, **I got a pretty decent list of aspects of API testing** after strong manual compilation and editing. The final result I decided to be divided into two parts: areas of focus and [practical approaches to API testing](https://adequatica.github.io/2025/01/18/field-notes-in-api-testing-part-2-approaches.html).
 
 **Key Areas of Focus for API Testing:**
 
