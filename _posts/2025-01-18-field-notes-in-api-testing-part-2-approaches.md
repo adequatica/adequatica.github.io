@@ -11,7 +11,7 @@ Being a test engineer (QA) for a decade, I’ve collected over a hundred notes r
 
 _DALL-E 3 prompt: provide application programming interface in the form of a technical drawing of complicated motion transmission and force-by-gear wheels, 2.5D view of the gear train with spur gears showing tangent contact between their pitch circles_
 
-This is the second part of the summarization of my notes using AI (GPT-4o). I gave all my hundreds of notes on API testing to AI to process them. Asking summarization prompts to the corpus of my notes, **I got a pretty decent list of aspects of API testing** after strong manual compilation and editing. The final result I decided to be divided into two parts: [key areas of focus for API testing](https://adequatica.github.io/2025/01/18/field-notes-in-api-testing-part-1-areas-of-focus.html) and its practical approaches.
+This is the second part of the summarization of my notes using AI (GPT-4o). I gave all my hundreds of notes on API testing to AI to process them. Asking summarization prompts to the corpus of my notes, **I got a pretty decent list of aspects of API testing** after heavy manual editing and adding missed cases. The final result I decided to be divided into two parts: [key areas of focus for API testing](https://adequatica.github.io/2025/01/18/field-notes-in-api-testing-part-1-areas-of-focus.html) and its practical approaches.
 
 **Practical Approaches to API Testing:**
 
