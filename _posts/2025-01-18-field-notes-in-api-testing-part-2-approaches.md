@@ -52,7 +52,7 @@ Examples of test cases:
 
 - Call the GET request several times in a row, and it must always return to the same state — **this is the idempotency confirmation test**;
 - Send GET request with a body — API should ignore payload;
-- Verify that POST request creates a resource (and responds with `200 OK` or `201 Created` сodes) — check it in the database or use a subsequent GET request;
+- Verify that POST request creates a resource (and responds with `200 OK` or `201 Created` codes) — check it in the database or use a subsequent GET request;
 - Evaluate the differences between POST, PUT, and PATCH methods if the API supports all of them;
 - Request the same handler simultaneously — this check may reveal a race condition;
 - Ensure that repeated DELETE requests on the same endpoint have no additional effects.

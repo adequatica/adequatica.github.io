@@ -23,8 +23,12 @@ The following tips will help deliver an intuitive and seamless user experience w
 6. Closeable pop-ups and notifications;
 7. Ensuring forms usability;
 8. Maintaining visual stability;
-9. Maintaining overall consistency;
-10. Testability of elements.
+9. Sticking to unambiguity
+10. Maintaining overall consistency
+11. Testability of elements
+12. Prioritizing accessibility features
+
+---
 
 ## 1. Providing a meaningful visual clue
 
@@ -81,13 +85,13 @@ Read more:
 
 Every user action should evoke a corresponding feedback response, **indicating that the action has been initiated or is in progress.** This ensures users are not left in the dark, providing reassurance and clarity throughout their interaction with the interface.
 
-It can be a special state of the button or the whole intractable component, or some kind of alert or notification after click. There are a lot of feedback components that can be used: alerts, notifications, backdrops, hints, loaders, progress bars, and skeletons.
+It can be a special state of the button or the whole intractable component or some kind of alert or notification after a click. There are a lot of feedback components that can be used: alerts, notifications, backdrops, hints, loaders, progress bars, and skeletons.
 
 ![Example of feedback Notification in Mantine components library](/assets/2024-05-13/04-notification.png)
 
 _Fig. 4. Example of feedback Notification in Mantine components library_
 
-Apple Human Interface Guidelines has [Feedback’s best practices](https://developer.apple.com/design/human-interface-guidelines/feedback#Best-practices) which apply to the web.
+Apple Human Interface Guidelines has [Feedback’s best practices](https://developer.apple.com/design/human-interface-guidelines/feedback#Best-practices), which apply to the web.
 
 ## 5. Implementing error handling from the backend
 
@@ -97,9 +101,17 @@ It is a good practice to alert users of any problems that may arise by backend r
 
 ![Example of React Alert in Material UI components library](/assets/2024-05-13/05-refresh.png)
 
-_Fig. 5. Example of React Alert in Material UI components library_
+_Fig. 5.1. Example of React Alert in Material UI components library_
 
 Keep in mind that consistent communication between the backend and frontend ensures transparency and empowers users to navigate potential disruptions effectively.
+
+_Sometimes,_ it is helpful to display a detailed error message: status codes, error messages, request IDs, etc. This is absolutely optional information, but some responsible users are ready to report bugs with screenshots, and auxiliary information will speed up the debugging.
+
+![Example of an alert with debug info](/assets/2024-05-13/05-refresh-error.png)
+
+_Fig. 5.2. Example of an alert with debug info_
+
+Of course, any alert display implies error logging in the background.
 
 ## 6. Closeable pop-ups and notifications
 
@@ -143,17 +155,29 @@ _Fig. 8. Avoid unintended jumps and shifts_
 
 Keep in mind that divert shifts of UI elements distract the user’s attention.
 
-## 9. Maintaining overall consistency
+## 9. Sticking to unambiguity
+
+Avoid hidden behavior of interacting elements. Its name, shape, and appearance should demonstrate its unambiguous functionality.
+
+For example, a select element should be used only to select item(s) from the list (dropdown). Then, if the interface needs to process the choice made, there should be a separate button for this.
+
+![The obvious user flow: select an element → action under selected one](/assets/2024-05-13/09-select.png)
+
+_Fig. 9. The obvious user flow: select an element → action under selected one_
+
+However, if selecting a value in the select element is accompanied by the simultaneous execution of some action, it is unexpected and not apparent to users. — This is unusual behavior for a «familiar» element. Test engineers should recognize and alarm about the appearance of such elements in the interface.
+
+## 10. Maintaining overall consistency
 
 Almost last but not least, maintain the consistency of the components and their logic. If you have native checkboxes and selects on one page, do not invent a custom one for another page. If you use buttons to perform some actions, do not use buttons as links. All interactive elements must be combined with each other and perform the same function throughout the whole app.
 
-![On the left: the «Read more» looks like a button but behaves as a link; on the right: «Read more» looks and behaves as a link](/assets/2024-05-13/09-read-more.png)
+![On the left: the «Read more» looks like a button but behaves as a link; on the right: «Read more» looks and behaves as a link](/assets/2024-05-13/10-read-more.png)
 
-_Fig. 9. On the left: the [Read more] looks like a button but behaves as a link; on the right: «Read more» looks and behaves as a link_
+_Fig. 10. On the left: the [Read more] looks like a button but behaves as a link; on the right: «Read more» looks and behaves as a link_
 
 Keep in mind that your interface should provide clear feedback when users misuse tools or features, guiding them toward correct usage and preventing frustration. A tool that users use incorrectly should tell them that they are doing it wrong.
 
-## 10. Testability of elements
+## 11. Testability of elements
 
 This is a controversial item that depends heavily on the processes within the development team: who writes autotests? which framework is used? and so on.
 
@@ -176,8 +200,21 @@ Read further:
 - [Testing Recipes](https://legacy.reactjs.org/docs/testing-recipes.html) (take a look at `data-testid` attributes at examples in code snippets);
 - [Why Your Development Team Should Use data-testid Attributes](https://medium.com/@automationTest/why-your-development-team-should-use-data-testid-attributes-a83f1ca27ebb).
 
+## 12. Prioritizing accessibility features
+
+Finally, most of the issues discussed above are related to accessibility and usability in general. The same can be said about light and dark themes, but actually, color themes are more than just design trends but essential considerations for users with diverse needs.
+
+A dark theme is crucial for users who work in low-light environments or constantly monitor something on a screen: air traffic controllers (or any vehicle controllers/operators), stock traders, and various system administrators. In contrast, a light theme is a must-have for those who use your app outdoors and/or in bright sunlight.
+
+Read further:
+
+- [A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML);
+- [Why Your App Should Have Both Dark And Light Themes](https://eevis.codes/blog/2024-03-07/why-your-app-should-have-both-dark-and-light-themes/).
+
+However, in some rare cases of commercial development, accessibility is not needed, and its implementation can slow down development. That is why prioritization is important and dependent on the context or domain.
+
 ---
 
-If none of the listed items were considered during the web application’s development, then QA engineers will report dozens of [bugs related to A11Y](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html), UI, UX, and the app’s logic. Meanwhile, most of them can be resolved in advance by adhering to the practices discussed above.
+If none of the listed items were considered during the web application’s development, then test engineers will report dozens of [bugs related to A11Y](https://adequatica.github.io/2021/08/29/accessibility-manual-testing.html), UI, UX, and the app’s logic. Meanwhile, most of the problems can be resolved in advance by adhering to the practices discussed above.
 
 Copy @ [Medium](https://adequatica.medium.com/developing-ui-with-testing-in-mind-741d9fe8e3b3)
