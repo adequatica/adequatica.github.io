@@ -61,14 +61,14 @@ In order to make an informed decision on what order is «better», I collected d
 
 #### URLs
 
-| Latitude Longitude                                                                                                                                   | Longitude latitude                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Google Maps <sup>[e.g.](https://www.google.com/maps/@44.8198261,20.436645,16z)</sup>                                                                 | 2GIS <sup>[e.g.](https://2gis.ae/dubai/geo/13933647002594323/55.27434%2C25.197091)</sup> |
-| Apple Maps <sup>[e.g.](https://beta.maps.apple.com/?ll=44.818161959837006%2C20.443788177820323&spn=0.040468247493485876%2C0.09146203301651212)</sup> | EPSG <sup>[e.g.](https://epsg.io/map#srs=4326&x=20.442413&y=44.819579&z=17)</sup>        |
-| Bing Maps <sup>[e.g.](https://www.bing.com/maps?cp=44.823653%7E20.450316&lvl=17.5)</sup>                                                             | Yandex Maps <sup>[e.g.](https://yandex.com/maps/?ll=20.453578%2C44.817094)</sup>         |
-| HERE WeGo <sup>[e.g.](https://maps.here.com/?map=44.82377,20.45185)</sup>                                                                            |                                                                                          |
-| Geojson.io <sup>[e.g.](https://geojson.io/#id=gist:anonymous/&map=15.87/44.823377/20.448848)</sup>                                                   |                                                                                          |
-| OpenStreetMap <sup>[e.g.](https://www.openstreetmap.org/#map=19/44.823027/20.447236)</sup>                                                           |                                                                                          |
+| Latitude Longitude                                                                                                                                                                      | Longitude latitude                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Google Maps <sup>[docs](https://developers.google.com/maps/documentation/urls/get-started#constructing-valid-urls), [e.g.](https://www.google.com/maps/@44.8198261,20.436645,16z)</sup> | 2GIS <sup>[e.g.](https://2gis.ae/dubai/geo/13933647002594323/55.27434%2C25.197091)</sup> |
+| Apple Maps <sup>[e.g.](https://beta.maps.apple.com/?ll=44.818161959837006%2C20.443788177820323&spn=0.040468247493485876%2C0.09146203301651212)</sup>                                    | EPSG <sup>[e.g.](https://epsg.io/map#srs=4326&x=20.442413&y=44.819579&z=17)</sup>        |
+| Bing Maps <sup>[e.g.](https://www.bing.com/maps?cp=44.823653%7E20.450316&lvl=17.5)</sup>                                                                                                | Yandex Maps <sup>[e.g.](https://yandex.com/maps/?ll=20.453578%2C44.817094)</sup>         |
+| HERE WeGo <sup>[e.g.](https://maps.here.com/?map=44.82377,20.45185)</sup>                                                                                                               |                                                                                          |
+| Geojson.io <sup>[e.g.](https://geojson.io/#id=gist:anonymous/&map=15.87/44.823377/20.448848)</sup>                                                                                      |                                                                                          |
+| OpenStreetMap <sup>[e.g.](https://www.openstreetmap.org/#map=19/44.823027/20.447236)</sup>                                                                                              |                                                                                          |
 
 #### JavaScript APIs
 
