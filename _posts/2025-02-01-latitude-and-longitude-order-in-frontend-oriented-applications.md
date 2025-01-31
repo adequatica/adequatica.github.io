@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Latitude and Longitude Order in Frontend-oriented Applications"
-date: 2025-01-31 22:00:00 +0100
+date: 2025-01-31 21:11:12 +0100
 tags: coordinates
 ---
 
@@ -135,4 +135,4 @@ Read further:
 - [Latitude and Longitude](https://www.open.edu/openlearn/history-the-arts/history/history-science-technology-and-medicine/history-science/latitude-and-longitude);
 - [Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time](https://www.amazon.com/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X) by Dava Sobel.
 
-Copy @ [Medium]()
+Copy @ [Medium](https://adequatica.medium.com/latitude-and-longitude-order-in-frontend-oriented-applications-0de61453ed4a)
