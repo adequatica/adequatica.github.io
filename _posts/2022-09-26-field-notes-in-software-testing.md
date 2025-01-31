@@ -42,14 +42,14 @@ _Fig. 2. Printing is an outdated case for most modern websites, but for document
 
 ## On coordinates
 
-- Double check [geographic coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system): the values of latitude and longitude **should NOT be mixed up in places** — surprisingly, it is quite a common bug because some APIs operate lat/long, but others long/lat (and there is a special place in hell for developers using a single `ll` parameter for positioning);
-- It is recommended that the latitude be indicated in the first place because latitude-measuring techniques [were invented earlier than longitude](https://www.open.edu/openlearn/history-the-arts/history/history-science-technology-and-medicine/history-science/latitude-and-longitude), and **latitude coordinates are listed first** [for positioning in the sea and marine charts](https://www.sailingissues.com/navcourse1.html);
-- Latitude and longitude ranges are not the same (again, surprisingly, such bugs occur):
+- Double check [geographic coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system): the values of latitude and longitude **should NOT be mixed up in places** — surprisingly, it is quite a common bug because some APIs operate lat/long, but others long/lat (and there is a special place in hell for developers using a single `ll` parameter for positioning due to non-obviousness);
+- For all human-readable places and inputs, **it is highly recommended to put latitude coordinates first and longitude second** because it is a traditional [positioning](https://sailingissues.com/navcourse1.html) order in all maps;
+- Latitude and longitude ranges are not the same (again, surprisingly, such bugs occur very often):
   - latitude range is from `-90` to `90`, and
   - longitude range is from `-180` to `180`.
 - Latitude and longitude can be `0` — it’s a perfect edge case and [Null Island](https://en.wikipedia.org/wiki/Null_Island) on Earth;
 - Watch out for coordinates in exponential format, like `4.4816236e+1, 2.0460467e+1` instead of regular numbers;
-- Carry on the [coordinates’ precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates). Unlimited precision may cause unnecessary calculations; therefore, slicing or rounding the coordinate value may have advantages. Eight decimals are already [nearly 1 mm in accuracy](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude).
+- Carry on the [coordinates precision](https://wiki.openstreetmap.org/wiki/Precision_of_coordinates). Unlimited precision may cause unnecessary calculations; therefore, slicing or rounding the coordinate value may have advantages. Eight decimals are already [nearly 1 mm in accuracy](https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude).
 
 ## On opening URLs
 
