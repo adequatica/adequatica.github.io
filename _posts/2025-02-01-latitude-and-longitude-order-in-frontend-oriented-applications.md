@@ -11,16 +11,16 @@ Long story short, geospatial software has no «correct» coordinate order.
 
 _Fig. 1. Latitude and Longitude of the Earth ([original image source](https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg))._
 
-On my current project, there was a considerable debate within the development team about the order of the [coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system): Latitude, Longitude — as several internal and external APIs do, or Longitude, Latitude — as a client-side JavaScript library Mapbox GL JS does.
+In my current project, there was considerable debate within the development team about the [coordinate](https://en.wikipedia.org/wiki/Geographic_coordinate_system) order: Latitude, Longitude — as used by several internal and external APIs, or Longitude, Latitude — as a client-side JavaScript library Mapbox GL JS does.
 
 There are cons for each variant:
 
 ## Latitude, Longitude:
 
-- Latitude, Longitude order is a standard [ISO 6709](https://en.wikipedia.org/wiki/ISO_6709);
-- Coordinates in all **real maps** are represented in Latitude, Longitude order — it is maritime, navigational, geographical, and cartographical tradition;
-- People learned to determine latitude ([through celestial observations](https://en.wikipedia.org/wiki/Celestial_navigation)) much earlier [than longitude](https://en.wikipedia.org/wiki/History_of_longitude) — thus, it may stand in the first place by the right of «discovery» and history;
-- Becaus latitude represents north-south positioning, looking at the first coordinates’ value (where the first is latitude), you can roughly estimate the distance of the object from the equator — that is relatively convenient.
+- Latitude, Longitude order follows the [ISO 6709](https://en.wikipedia.org/wiki/ISO_6709) standard;
+- **All real-world maps** represent coordinates in the Latitude, Longitude order — it is a maritime, navigational, geographical, and cartographical tradition;
+- People learned to determine latitude ([through celestial observations](https://en.wikipedia.org/wiki/Celestial_navigation)) much earlier [than longitude](https://en.wikipedia.org/wiki/History_of_longitude) so that it may take precedence due to historical and «discovery» reasons;
+- Since latitude represents north-south positioning, looking at the first coordinate value (latitude) allows for a rough estimation of an object’s distance from the equator — this is relatively convenient.
 
 Highlights from the ISO standard:
 
@@ -28,28 +28,28 @@ Highlights from the ISO standard:
 - North latitude is positive;
 - East longitude is positive;
 - Coordinate values (latitude, longitude, and altitude) should be delimited by spaces;
-- Latitude and longitude should be displayed by sexagesimal fractions (i.e., minutes and seconds).
+- Latitude and longitude should be displayed using sexagesimal fractions (i.e., minutes and seconds).
 
 For example: `44°41′45.5″N 20°30′52″E 511m`
 
 ## Longitude, Latitude:
 
-- Longitude, Latitude order is [GeoJSON](https://geojson.org) format, which is based on [RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946) standard;
-- Longitude, Latitude is a conventional order in **mathematics, where the horizontal or X coordinate (Longitude) is followed by the vertical or Y coordinate (Latitude)** (see explanation in [Cartesian](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) and [spherical](https://en.wikipedia.org/wiki/Spherical_coordinate_system) coordinate systems);
-- The ISO standard specifies the representation and input of coordinates but does not specify storage format in software applications — thus, it does not prohibit storing data in any convenient form;
+- Longitude, Latitude order is used in the [GeoJSON](https://geojson.org) format, which follows the [RFC 7946](https://datatracker.ietf.org/doc/html/rfc7946) standard;
+- Longitude, Latitude is a conventional order **in mathematics, where the horizontal (X) coordinate (Longitude) precedes the vertical (Y) coordinate (Latitude)** (see explanation in [Cartesian](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) and [spherical](https://en.wikipedia.org/wiki/Spherical_coordinate_system) coordinate systems);
+- The ISO standard specifies the representation and input of coordinates but does not dictate how software applications store them — therefore, data can be stored in any convenient format;
 - Most databases ([MySQL](https://dev.mysql.com/doc/refman/8.4/en/gis-point-property-functions.html), [PostGIS](https://postgis.net/documentation/tips/lon-lat-or-lat-lon/), [Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/19/spatl/coordinate-systems-concepts.html#GUID-5CDBB4BD-2721-43A1-99DD-C195B909F85B), [Redis](https://redis.io/docs/latest/develop/interact/search-and-query/advanced-concepts/geo/)) store points as Longitude, Latitude (X, Y).
 
 Highlights from the RFC:
 
 - A position is an array of numbers;
-- The first two elements are longitude and latitude, or easting and northing, precisely in that order and using decimal numbers. Altitude or elevation may be included as an optional third element;
-- The coordinate reference system for all GeoJSON coordinates is a geographic coordinate reference system, using the [World Geodetic System 1984 (WGS 84)](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84) datum, with longitude and latitude units of decimal degrees.
+- The first two elements are longitude and latitude (or easting and northing), precisely in that order and using decimal numbers. Altitude or elevation may be included as an optional third element;
+- The coordinate reference system for all GeoJSON coordinates is a geographic coordinate reference system using the [World Geodetic System 1984 (WGS 84)](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84) datum, with longitude and latitude units in decimal degrees.
 
 For example: `[44.695972, 20.514444]`
 
 ---
 
-In order to make an informed decision on what order is «better», I collected data on the representation of coordinate order in different geospatial software (the selected projects reflect only my domain area: frontend, JavaScript APIs, and JS libraries).
+To make an informed decision on which coordinate order is «better», I collected data on how different geospatial software represent coordinate order. The selected projects reflect only my domain area: frontend development, JavaScript APIs, and JS libraries.
 
 #### Standards and formats
 
@@ -98,32 +98,32 @@ Among other SDKs, [Apple MapKit](https://developer.apple.com/documentation/mapki
 |                                                                        | OpenLayers <sup>[docs](https://openlayers.org/en/latest/apidoc/module-ol_proj.html#.fromLonLat)</sup> |
 |                                                                        | TurfJS <sup>[docs](https://turfjs.org/docs/getting-started)</sup>                                     |
 
-Most JS libraries (except Leaflet) use the GeoJSON format, which is incredible consistency for the JavaScript ecosystem.
+Most JavaScript libraries (except Leaflet) use the GeoJSON format, which provides remarkable consistency within the JavaScript ecosystem.
 
 ---
 
-Looking at the tables above, there are some identifiable patterns in the use of coordinate order:
+Looking at the tables above, some identifiable patterns emerge in the use of coordinate order:
 
-- In the URLs, it’s better to use Latitude, Longitude — actually, **in all human-readable presentations and inputs of coordinates, it’s better to use Latitude, Longitude;**
-- If the application uses APIs and libraries based on GeoJSON format, then it would be pragmatic to use Longitude, Latitude order;
-- In other cases… it’s up to you. **There is no «correct» way** and depends on the context of the application.
+- In URLs, it’s better to use the Latitude, Longitude order. In fact, **for all _human-readable presentations_ and coordinate inputs, Latitude, Longitude is preferable;**
+- If the application relies on APIs and libraries based on the GeoJSON format, it is more pragmatic to use the Longitude, Latitude order;
+- In other cases, the choice is up to you — **there is no «correct» way.** It depends on the application’s context.
 
-Eventually, the problem is much more profound. Is it worth representing the coordinates in an [ordered pair](https://en.wikipedia.org/wiki/Ordered_pair) (like `[44.69, 20.51]`) or the object (like `{lat: 44.69, lng: 20.51}`)? In any case, due to the usage of several APIs and libraries with different coordinate notations, we would still have to convert the coordinates.
+However, the problem runs deeper. Should coordinates be represented as an [ordered pair](https://en.wikipedia.org/wiki/Ordered_pair) (like `[44.69, 20.51]`) or as an object (like `{lat: 44.69, lng: 20.51}`)? Regardless of the choice, due to the use of multiple APIs and libraries with different coordinate notations, we will still need to convert coordinates.
 
 > _«If using multiple libraries or a different combination of software in a GIS workflow, this may lead to mistakes and frustration.»_ [Lat Lon or Lon Lat](https://observablehq.com/@clhenrick/lat-lon-or-lon-lat)?
 
-In my current project, we have chosen `{lat: 0, lng, 0}` object format for a few reasons:
+In my current project, we chose the `{lat: 0, lng, 0}` object format for several reasons:
 
-- `lat` and `lng` (or `lon` or `long`) keys in JSON clearly indicate the position ⇒ no need for the developer to think about coordinates order;
-- Keys in the object have the [property of commutativity](https://en.wikipedia.org/wiki/Commutative_property) in contrast to ordered pain in the array of coordinates. — This mitigates the errors of mixing up coordinates;
-- Coordinates as keys may be used in different extended objects, not just as a pair;
-- Because we will still have to convert the coordinates from/to different third-party APIs and libraries; therefore, it is better to keep intermediate data in a convenient, explicit, and human-readable view for developers to [minimize errors](https://adequatica.github.io/2022/09/26/field-notes-in-software-testing.html#on-coordinates).
+- The `lat` and `lng` (or `lon` or `long`) keys in JSON explicitly indicate the position, eliminating the need for developers to think about coordinate order;
+- Object keys are [commutative](https://en.wikipedia.org/wiki/Commutative_property), unlike an ordered pair in an array, reducing the risk of mixing up coordinates;
+- Coordinates stored as keys can be used within extended objects, not just as a pair;
+- Since we frequently convert coordinates between different third-party APIs and libraries, it’s better to store intermediate data in a convenient, explicit, and human-readable format to [minimize errors](https://adequatica.github.io/2022/09/26/field-notes-in-software-testing.html#on-coordinates).
 
-To prevent errors when converting, receiving, or transferring coordinates, it is necessary to have tests based on this:
+To prevent errors when converting, receiving, or transferring coordinates, tests should verify the following:
 
 - Latitude ranges between -90 and 90 degrees, inclusive
 - Longitude ranges between -180 and 180 degrees, inclusive;
-- Coordinates `0, 0` is a valid point and is known as [Null Island](https://en.wikipedia.org/wiki/Null_Island).
+- Coordinates `0, 0` is a valid point, known as [Null Island](https://en.wikipedia.org/wiki/Null_Island).
 
 Read further:
 
