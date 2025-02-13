@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Latitude and Longitude Order in Frontend-oriented Applications"
+title: 'Latitude and Longitude Order in Frontend-oriented Applications'
 date: 2025-01-31 21:11:12 +0100
 tags: coordinates
 ---
@@ -121,7 +121,7 @@ In my current project, we chose the `{lat: 0, lng, 0}` object format for several
 
 To prevent errors when converting, receiving, or transferring coordinates, tests should verify the following:
 
-- Latitude ranges between -90 and 90 degrees, inclusive
+- Latitude ranges between -90 and 90 degrees, inclusive;
 - Longitude ranges between -180 and 180 degrees, inclusive;
 - Coordinates `0, 0` is a valid point, known as [Null Island](https://en.wikipedia.org/wiki/Null_Island).
 
