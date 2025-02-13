@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Latitude and Longitude Order in Frontend-oriented Applications'
+title: "Latitude and Longitude Order in Frontend-oriented Applications"
 date: 2025-01-31 21:11:12 +0100
 tags: coordinates
 ---
