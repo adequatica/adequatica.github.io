@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Mitigate JavaScript Flaky Unit Tests'
-date: 2025-03-24 20:30:12 +0100
+date: 2025-03-24 19:20:15 +0100
 tags: testing
 ---
 
@@ -34,7 +34,7 @@ Unit tests will be robust and reliable if they are self-contained and do not dep
 - Keep test data isolated;
 - Avoid order-dependent tests.
 
-> _For the code example below, I will use [Vitest](https://vitest.dev) as a testing framework — it is not the most widely used in JavaScript (it is [Jest](https://jestjs.io) now), but it is one of the fastest-growing ones [4]._
+_For the code example below, I will use [Vitest](https://vitest.dev) as a testing framework — it is not the most widely used in JavaScript (it is [Jest](https://jestjs.io) now), but it is one of the fastest-growing ones [4]._
 
 ### Avoid sharing state across tests
 
@@ -103,7 +103,7 @@ test('should not mutate the original object', () => {
 });
 ```
 
-In the example above, a copy of the data is created in the test using [`_.cloneDeep()`](https://lodash.com/docs/4.17.15#cloneDeep) method, and subsequent operations are performed under the copied data while the original data stays untouched.
+In the example above, a copy of the data is created in the test using [`_.cloneDeep()`](https://lodash.com/docs/#cloneDeep) method, and subsequent operations are performed under the copied data while the original data stays untouched.
 
 ### Avoid order-dependent tests
 
@@ -260,7 +260,7 @@ Combination of these CLI options makes a test run completely random:
 
 `npx vitest run --sequence.shuffle.files --sequence.shuffle.tests`
 
-> _You can set your tests to always run in random order in CI. But in case of a failure, you may need to reproduce the order in which they were run, and this will not be so easy. So, to simplify debugging failed tests on a production scale, it may be better to run tests in CI in a predictable order._
+_You can set your tests to always run in random order in CI. But in case of a failure, you may need to reproduce the order in which they were run, and this will not be so easy. So, to simplify debugging failed tests on a production scale, it may be better to run tests in CI in a predictable order._
 
 Fully independent tests will allow them to be safely run in parallel, which will increase the speed of testing.
 
@@ -277,4 +277,4 @@ References:
 5. Negar Hashemi, Amjed Tahir, Shawn Rasheed, August Shi, and Rachel Blagojevic, “Detecting and Evaluating Order-Dependent Flaky Tests in JavaScript,” in 18th IEEE International Conference on Software Testing, Verification and Validation (ICST), 2025. [https://doi.org/10.48550/arXiv.2501.12680](https://doi.org/10.48550/arXiv.2501.12680)
 6. [Testing Library: Using Fake Timers](https://testing-library.com/docs/using-fake-timers/)
 
-Copy @ [Medium]()
+Copy @ [Medium](https://adequatica.medium.com/mitigate-javascript-flaky-unit-tests-67e8e2790e7f)

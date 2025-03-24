@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Examples of Using Playwright Evaluate Method"
+title: 'Examples of Using Playwright Evaluate Method'
 date: 2023-09-29 07:32:44 +0100
 tags: automation playwright
 ---
@@ -51,7 +51,7 @@ Read more:
 - [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API);
 - [How do I access the browser clipboard with Playwright](https://playwrightsolutions.com/how-do-i-access-the-browser-clipboard-with-playwright/).
 
-## Run anything in the console {#run-anything-in-the-console}
+## Run anything in the console
 
 From the examples above about the clipboard, you may notice that the syntax of the evaluate method is simple: `page.evaluate('foobar');`
 

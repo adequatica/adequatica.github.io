@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hidden Gems of Playwright"
+title: 'Hidden Gems of Playwright'
 date: 2022-09-07 11:35:14 +0300
 tags: playwright
 ---
@@ -24,7 +24,7 @@ I picked up a few features that excited me when I discovered them:
 
 All of them are «illustrated» in [this GitHub repository](https://github.com/adequatica/ui-testing).
 
-## maxFailures {#maxfailures}
+## maxFailures
 
 [Docs](https://playwright.dev/docs/api/class-testconfig#test-config-max-failures)
 
@@ -175,7 +175,7 @@ Read more:
 
 ---
 
-## Explore Selectors in Playwright Inspector {#explore-selectors-in-playwright-inspector}
+## Explore Selectors in Playwright Inspector
 
 [Docs](https://playwright.dev/docs/debug-selectors)
 

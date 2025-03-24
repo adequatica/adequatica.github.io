@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Field Notes in Software Testing"
+title: 'Field Notes in Software Testing'
 date: 2022-09-26 07:55:19 +0300
 tags: testing
 ---
@@ -59,7 +59,7 @@ _Fig. 2. Printing is an outdated case for most modern websites, but for document
 - If there is pagination in the URL’s path, then open `0` or negative page (`-1`);
 - Try to request an HTTPS page by HTTP — it can depend on the server’s redirect rules.
 
-## On search inputs (applies to any input fields) {#on-search-inputs-applies-to-any-input-fields}
+## On search inputs (applies to any input fields)
 
 - Search for a [space](<https://en.wikipedia.org/wiki/Space_(punctuation)>);
 - Search with a space before and after the request;
@@ -116,7 +116,7 @@ Of course, there may be exceptions for each case. For example, in one project, w
 
 Further reading about [cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing).
 
-## On browser behavior {#on-browser-behavior}
+## On browser behavior
 
 - Back to the previous page by `[Back]` — it can affect [SPA websites](https://en.wikipedia.org/wiki/Single-page_application) and websites which use [History API](https://developer.mozilla.org/en-US/docs/Web/API/History/back);
 - Switch to another tab by `[CMD]+[NUM_KEY]` or switch to another application by `[ALT]+[TAB]`;
@@ -190,7 +190,7 @@ console.log(navigator.userAgent);
 
 _Fig. 7. [User-agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)_
 
-## How to change user-agent without addons? {#how-to-change-user-agent-without-addons}
+## How to change user-agent without addons?
 
 This trick [works only in Chrome browser](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/):
 

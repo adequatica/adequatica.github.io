@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automated Accessibility Testing of Keyboard Navigation on Tab"
+title: 'Automated Accessibility Testing of Keyboard Navigation on Tab'
 date: 2024-03-25 09:58:30 +0100
 tags: accessibility testing
 ---
@@ -99,7 +99,7 @@ Read more:
 
 Next, I will focus only on [TAB] navigation.
 
-## TAB Navigation Order Automation {#tab-navigation-order-automation}
+## TAB Navigation Order Automation
 
 _In my current project, we invested some development time in proper keyboard navigation, with a pretty successful result — it became possible for the user to access almost all functionality by tabbing. But after a few releases, we accidentally noticed that an unintended `<div>` receives focus. That was a sign that the Tab order must be automatically tested._
 
@@ -139,16 +139,16 @@ Thus, we need to refer to the Node’s or [Element](https://developer.mozilla.or
 Here is an example of a single step of the first [TAB] press:
 
 ```javascript
-await test.step("Press TAB key", async () => {
-  await page.keyboard.press("Tab");
+await test.step('Press TAB key', async () => {
+  await page.keyboard.press('Tab');
 
   const focusedOn = await page.evaluate(() => {
     const selector = document.activeElement;
     return selector ? selector.innerHTML : null;
   });
 
-  expect(focusedOn, "Should have correct active element").toBe(
-    "\n  Skip to main content\n",
+  expect(focusedOn, 'Should have correct active element').toBe(
+    '\n  Skip to main content\n'
   );
 });
 ```
