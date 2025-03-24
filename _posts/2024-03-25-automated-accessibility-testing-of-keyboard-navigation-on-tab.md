@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Automated Accessibility Testing of Keyboard Navigation on Tab'
+title: "Automated Accessibility Testing of Keyboard Navigation on Tab"
 date: 2024-03-25 09:58:30 +0100
 tags: accessibility testing
 ---
@@ -139,16 +139,16 @@ Thus, we need to refer to the Node’s or [Element](https://developer.mozilla.or
 Here is an example of a single step of the first [TAB] press:
 
 ```javascript
-await test.step('Press TAB key', async () => {
-  await page.keyboard.press('Tab');
+await test.step("Press TAB key", async () => {
+  await page.keyboard.press("Tab");
 
   const focusedOn = await page.evaluate(() => {
     const selector = document.activeElement;
     return selector ? selector.innerHTML : null;
   });
 
-  expect(focusedOn, 'Should have correct active element').toBe(
-    '\n  Skip to main content\n'
+  expect(focusedOn, "Should have correct active element").toBe(
+    "\n  Skip to main content\n",
   );
 });
 ```

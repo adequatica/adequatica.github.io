@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Hidden Gems of Playwright'
+title: "Hidden Gems of Playwright"
 date: 2022-09-07 11:35:14 +0300
 tags: playwright
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Mitigate JavaScript Flaky Unit Tests'
+title: "Mitigate JavaScript Flaky Unit Tests"
 date: 2025-03-24 19:20:15 +0100
 tags: testing
 ---
@@ -43,16 +43,16 @@ The «state» may refer to variables or in-memory objects that can be accessed s
 ❌ Bad example
 
 ```javascript
-import { test, expect } from 'vitest';
+import { test, expect } from "vitest";
 
 let counter = 0;
 
-test('should increment counter', () => {
+test("should increment counter", () => {
   counter += 1;
   expect(counter).toBe(1);
 });
 
-test('should decrement counter', () => {
+test("should decrement counter", () => {
   counter -= 1;
   expect(counter).toBe(0); // ❌ Fails if tests run in a different order due to shared variable
 });
@@ -61,15 +61,15 @@ test('should decrement counter', () => {
 ✅ Good example
 
 ```javascript
-import { test, expect } from 'vitest';
+import { test, expect } from "vitest";
 
-test('should increment counter', () => {
+test("should increment counter", () => {
   let counter = 0;
   counter += 1;
   expect(counter).toBe(1);
 });
 
-test('should decrement counter', () => {
+test("should decrement counter", () => {
   let counter = 0;
   counter -= 1;
   expect(counter).toBe(-1);
@@ -87,14 +87,14 @@ If test data is created for a test, it should be cleaned up after the test ends.
 If common variables/constants are imported as test data into the test file, it should be copied for each test. For objects, this can be done by [deep cloning](https://developer.mozilla.org/en-US/docs/Glossary/Deep_copy) to prevent modifications of an original object.
 
 ```javascript
-import { test, expect } from 'vitest';
-import _ from 'lodash';
+import { test, expect } from "vitest";
+import _ from "lodash";
 
 const original = {
-  player: { name: 'Messi', bib: 10 },
+  player: { name: "Messi", bib: 10 },
 };
 
-test('should not mutate the original object', () => {
+test("should not mutate the original object", () => {
   const originalCopy = _.cloneDeep(original);
 
   originalCopy.player.bib = 30;
@@ -160,13 +160,13 @@ If you check one value against another, be tolerant of «inaccurate» checks and
 ❌ Bad example
 
 ```javascript
-import { test, expect } from 'vitest';
-import { calculateDistanceFunction } from './calculate-distance-function';
+import { test, expect } from "vitest";
+import { calculateDistanceFunction } from "./calculate-distance-function";
 
-test('should calculate distance', () => {
+test("should calculate distance", () => {
   const result = calculateDistanceFunction(
     [20.4489, 44.7866],
-    [19.8335, 45.2671]
+    [19.8335, 45.2671],
   );
   expect(result).toBe(72.06735); // ❌ Too precise, may cause flakiness due to floating-point precision
 });
@@ -175,13 +175,13 @@ test('should calculate distance', () => {
 ✅ Good example
 
 ```javascript
-import { test, expect } from 'vitest';
-import { calculateDistanceFunction } from './calculate-distance-function';
+import { test, expect } from "vitest";
+import { calculateDistanceFunction } from "./calculate-distance-function";
 
-test('should calculate distance', () => {
+test("should calculate distance", () => {
   const result = calculateDistanceFunction(
     [20.4489, 44.7866],
-    [19.8335, 45.2671]
+    [19.8335, 45.2671],
   );
   expect(result).toBeCloseTo(72, 0);
 });
@@ -196,10 +196,10 @@ Any autotest around time is potentially flaky. The problems lie in many areas: t
 ❌ Bad example
 
 ```javascript
-import { test, expect } from 'vitest';
-import { delayedFunction } from './delayed-function';
+import { test, expect } from "vitest";
+import { delayedFunction } from "./delayed-function";
 
-test('should call callback after 100ms', async () => {
+test("should call callback after 100ms", async () => {
   const start = Date.now();
 
   await new Promise((resolve) => {
@@ -217,10 +217,10 @@ test('should call callback after 100ms', async () => {
 ✅ Good example
 
 ```javascript
-import { test, expect } from 'vitest';
-import { delayedFunction } from './delayed-function';
+import { test, expect } from "vitest";
+import { delayedFunction } from "./delayed-function";
 
-test('should call callback after approximately 100ms', async () => {
+test("should call callback after approximately 100ms", async () => {
   const start = Date.now();
 
   await new Promise((resolve) => {

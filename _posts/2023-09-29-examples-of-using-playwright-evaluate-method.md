@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Examples of Using Playwright Evaluate Method'
+title: "Examples of Using Playwright Evaluate Method"
 date: 2023-09-29 07:32:44 +0100
 tags: automation playwright
 ---

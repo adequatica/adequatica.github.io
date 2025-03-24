@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Field Notes in Software Testing'
+title: "Field Notes in Software Testing"
 date: 2022-09-26 07:55:19 +0300
 tags: testing
 ---
