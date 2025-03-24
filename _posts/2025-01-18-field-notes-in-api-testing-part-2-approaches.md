@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Field Notes in API Testing, Part 2: Practical Approaches'
+title: "Field Notes in API Testing, Part 2: Practical Approaches"
 date: 2025-01-18 17:53:06 +0100
 tags: testing
 ---
