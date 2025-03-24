@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Field Notes in API Testing, Part 2: Practical Approaches"
+title: 'Field Notes in API Testing, Part 2: Practical Approaches'
 date: 2025-01-18 17:53:06 +0100
 tags: testing
 ---
@@ -167,7 +167,7 @@ Examples of test cases:
 - Ensure that rearranging query parameters does not affect the result — this is the test for [commutativity](https://en.wikipedia.org/wiki/Commutative_property);
 - Fill query parameter values [with XSS vectors or SQL injections](https://adequatica.github.io/2019/07/28/use-postman-collection-runner-as-vulnerability-scanner.html) (e.g., `/foobar?items=1;drop table temp --`) — this is a part of security testing;
 - Request resources with partly [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) endpoints (e.g., `/users?search=D%C5%BEejms%20D%C5%BEojs%26lang%3Den` which is the same as `/users?search=Džejms Džojs&lang=en`);
-- Assemble the endpoint with the maximum possible number of parameters and its values. If the limit set on the server is exceeded, you will receive a response with `414 URI Too Long` status.
+- Assemble the endpoint with the maximum possible number of parameters and its values. If the limit on a server is exceeded ([the «safe length» of a URI is under 2083 characters](https://stackoverflow.com/questions/417142/what-is-the-maximum-length-of-a-url-in-different-browsers), which is the maximum length of the Microsoft Edge/Internet Explorer browser), you will receive a response with `414 URI Too Long` status.
 
 ### 6. Versioning (a special case of path and query parameters)
 
