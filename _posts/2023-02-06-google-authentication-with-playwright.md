@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Google Authentication with Playwright"
+title: 'Google Authentication with Playwright'
 date: 2023-02-06 07:40:05 +0100
 tags: authentication automation playwright
 ---
@@ -12,11 +12,13 @@ In my recent project, I had to test a web app under an authenticated user, but t
 - Complicated API;
 - Auth providers have anti-robot detectors.
 
-> UPDATE: In recent changes to the Playwright documentation, the [recommended authentication concept](https://playwright.dev/docs/auth#core-concepts) has been changed, but the approach described in the article still works.
+> UPDATE, February 2023: In recent changes to the Playwright documentation, the [recommended authentication concept](https://playwright.dev/docs/auth#core-concepts) has been changed, but the approach described in the article still works.
+
+> UPDATE, April 2025: This approach **may be stale** cause used packages [playwright-extra](https://www.npmjs.com/package/playwright-extra) and [puppeteer-extra-plugin-stealth](https://www.npmjs.com/package/puppeteer-extra-plugin-stealth) maintenance were stopped in March 2023. Anyway, you can give it a try for your personal needs.
 
 ### Complicated API
 
-It is always faster for autotests to authenticate through API than through UI, but it is not that simple with Google. Google requires you to have a project on [Google Cloud Console](https://console.cloud.google.com/getting-started) for getting Client ID and Client secret as credentials — [this is doable](https://developers.google.com/identity/protocols/oauth2), but if your web app works with Google Workspace (as mine does), this significantly complicates the problem.
+It is always faster for autotests to authenticate through API than through UI, but it is not that simple with Google. Google requires you to have a project on [Google Cloud Console](https://console.cloud.google.com/getting-started) to get a Client ID and Client secret as credentials — [this is doable](https://developers.google.com/identity/protocols/oauth2), but if your web app works with Google Workspace (as mine does), this significantly complicates the problem.
 
 Eventually, I decided it would be easier to authenticate by user’s login and password through Sign in form.
 
