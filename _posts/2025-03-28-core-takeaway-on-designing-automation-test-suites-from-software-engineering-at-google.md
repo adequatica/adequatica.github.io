@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Core Takeaway on Designing Automation Test Suites from «Software Engineering at Google»'
+title: "Core Takeaway on Designing Automation Test Suites from «Software Engineering at Google»"
 date: 2025-03-28 13:06:19 +0100
 tags: testing
 ---

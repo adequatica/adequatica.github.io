@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Google Authentication with Playwright'
+title: "Google Authentication with Playwright"
 date: 2023-02-06 07:40:05 +0100
 tags: authentication automation playwright
 ---
