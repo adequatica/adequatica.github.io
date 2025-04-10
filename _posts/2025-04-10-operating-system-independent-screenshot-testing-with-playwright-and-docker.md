@@ -30,7 +30,7 @@ Read more about font rendering:
 
 ## Solution
 
-**The solution to the challenges is running tests inside Docker.**
+**The solution to the challenges is running tests inside Docker.** All tests and screenshots inside Docker will always be executed on the same OS and the same browser.
 
 Additional requirements include seamless running with a single command that is unified for all developers. Reference screenshots and test reports should be available locally, and Docker should only be needed for running Playwright tests on demand.
 
@@ -44,7 +44,7 @@ Additional requirements include seamless running with a single command that is u
 
 ### 1. Dockerfile for building a Docker build
 
-[Microsoft already provide Docker image with Playwright](https://playwright.dev/docs/docker), and it remains to supplement it with necessary settings for accepting Playwright commands:
+[Microsoft already provides Docker images for Playwright](https://playwright.dev/docs/docker), and it remains to supplement it with the necessary settings for accepting Playwright commands:
 
 ```bash
 FROM mcr.microsoft.com/playwright:v1.51.1
@@ -56,6 +56,8 @@ RUN npm install @playwright/test@1.51.1
 
 CMD ["npx", "playwright"]
 ```
+
+In the presented case, `:v1.51.1` container is based on Ubuntu 24.04 LTS (Noble Numbat) and contains the Playwright v1.51.1 release with Chromium 134.0.6998.35 browser. All test runs, regardless of who and where they run it (locally by any dev team member or CI/CD), will be executed on this «stack».
 
 ### 2. Make script for running dockerfile
 
