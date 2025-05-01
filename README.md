@@ -1,6 +1,6 @@
 # About
 
-A copy of my personal blog on [Medium](https://adequatica.medium.com/) (only technical articles).
+A copy of technical articles from [my personal blog on Medium](https://adequatica.medium.com/).
 
 ## How to Set up Blog on GitHub Pages with Jekyll
 
@@ -118,7 +118,7 @@ A [similar article](https://ritviknag.com/tech-tips/ruby-versioning-hell-with-je
 
 ---
 
-Only for this repository: local Markdown files formatting:
+Only for this repository — local Markdown files formatting:
 
 - Set up `package.json` for [Prettier](https://prettier.io/): `npm install`
 - Add [Husky](https://typicode.github.io/husky/) pre-commit: `npm run prepare`
