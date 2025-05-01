@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Kludgy Way to Convert Base64 into Image in Postman on the Example of gpt-image-1 OpenAI API'
+title: "Kludgy Way to Convert Base64 into Image in Postman on the Example of gpt-image-1 OpenAI API"
 date: 2025-05-01 09:40:03 +0200
 tags: postman
 ---
@@ -11,7 +11,7 @@ The initial state of the problem:
 
 - You use Postman UI;
 - You have a [base64](https://en.wikipedia.org/wiki/Base64)-encoded image in the body response;
-- How to save this image as a file (JPG or PNG) on a local drive? [Click here to scroll down to the solution immediately]().
+- How to save this image as a file (JPG or PNG) on a local drive? [Click here to scroll down to the solution immediately](https://adequatica.github.io/2025/05/01/kludgy-way-to-convert-base64-into-image-in-postman-on-the-example-of-gpt-image-1-openai-api.html#steps-to-save-a-base64-encoded-image-created-by-gpt-image-1-api-through-postman).
 
 There are a few questions in Postman’s community forum on the topic of how to save a base64-encoded code as a file to the local drive in Postman, but none of them have answers.
 
@@ -63,7 +63,7 @@ But I discovered that the image from Postman’s Visualization screen can be dra
 
 ### Steps to save a base64-encoded image created by gpt-image-1 API through Postman:
 
-1. Create Postman’s request with post-response script:
+1. Create Postman’s request with post-response script:
 
 ![Postman Post-response Scripts tab](/assets/2025-05-01/01-post-response-script.png)
 
@@ -84,7 +84,7 @@ const visualizerTemplate = `
 pm.visualizer.set(visualizerTemplate, visualizerPayload());
 ```
 
-2. Send the request. Example of `gpt-image-1` OpenAI API request:
+2. Send the request. Example of `gpt-image-1` OpenAI API request:
 
 ```javascript
 curl --location 'https://api.openai.com/v1/images/generations' \
@@ -99,13 +99,13 @@ curl --location 'https://api.openai.com/v1/images/generations' \
 }'
 ```
 
-3. Choose [Visualisation] on the response’s Body tab:
+3. Choose [Visualisation] on the response’s Body tab:
 
 ![Postman Visualisation](/assets/2025-05-01/02-visualization.png)
 
 _Fig. 2. Postman Visualisation_
 
-4. Drag and drop the image from Postman to a local folder:
+4. Drag and drop the image from Postman to a local folder:
 
 ![Drag & drop from Postman to folder](/assets/2025-05-01/03-drag-and-drop.png)
 

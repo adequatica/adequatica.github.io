@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Operating System Independent Screenshot Testing with Playwright and Docker'
+title: "Operating System Independent Screenshot Testing with Playwright and Docker"
 date: 2025-04-10 04:58:53 +0200
 tags: testing
 ---
