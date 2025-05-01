@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Operating System Independent Screenshot Testing with Playwright and Docker"
+title: 'Operating System Independent Screenshot Testing with Playwright and Docker'
 date: 2025-04-10 04:58:53 +0200
 tags: testing
 ---
 
 Sometimes, as a test engineer, you might be dazed when all your dev team needs to perform visual regression testing.
 
-![Operating System Independent Screenshot Testing with Playwright and Docker](/assets/2025-04-10/00-cover.jpg)
+![GPT-image-1 prompt](/assets/2025-04-10/00-cover.jpg)
+
+_GPT-image-1 prompt: A digital illustration showing a side-by-side comparison of two cluttered desktop scenes, filled with detailed computer parts like circuit boards, wires, monitors, keyboards, CPUs, and code snippets. A large magnifying glass hovers over the images, revealing subtle differences between the two scenes, highlighting the Playwright test framework logo (the red/green comedy/tragedy masks icon). The background is white, the style is clean, light, and bright, semi-realistic with a techy, puzzle-like aesthetic._
 
 One of the causes of flaky tests are Operating Systems (OS) and platforms (e.g., browsers) [1]. This is especially true for visual regression testing, which is why screenshot tests may be very fragile.
 
@@ -98,7 +100,7 @@ Where:
 - `-p 9323:9323` option maps port 9323 on the local machine to port 9323 inside the container. This allows to open Docker’s resources on a local machine, for example, for examining test reports [http://0.0.0.0:9323/](http://0.0.0.0:9323/) (the same port should also be set for HTML [reporter in Playwright’s config](https://playwright.dev/docs/api/class-testconfig#test-config-reporter)).
 - `-v` options mount directories from the current working directory (`$PWD`) into `/app` directory inside the container. This allows the container to access local files.
 - `-t playwright-screenshot-tests` specifies the name of the Docker image to use (it was a given name in step №2).
-- After the container starts, the script will run `npx -y playwright "$@"` command inside the container; where `-y` flag automatically confirms any prompts that `npx` might display, and `"$@"` option allows to execute Playwright with any additional arguments passed to the script.
+- After the container starts, the script will run `npx -y playwright "$@"` command inside the container, where `-y` flag automatically confirms any prompts that `npx` might display, and `"$@"` option allows to execute Playwright with any additional arguments passed to the script.
 
 This `playwright-screenshot.sh` script should run through the npm script ⇒ `package.json` should contain this command:
 
