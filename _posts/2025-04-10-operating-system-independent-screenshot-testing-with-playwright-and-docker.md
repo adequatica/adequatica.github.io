@@ -73,7 +73,7 @@ init-playwright-screenshot-tests:
 
 ### 3. Bash script for running Docker image
 
-Another script, this time on Вash, will run Docker image to execute Playwright tests inside the container:
+Another script, this time on Bash, will run Docker image to execute Playwright tests inside the container:
 
 ```bash
 set -ex

@@ -68,4 +68,4 @@ References:
 1. [API Contract Testing on Frontend with Playwright](https://adequatica.github.io/2023/12/25/api-contract-testing-on-frontend-with-playwright.html);
 2. [Pros and Cons of the Ways of End-to-End Automated Testing in CI](https://adequatica.github.io/2023/12/04/pros-and-cons-of-the-ways-of-end-to-end-automated-testing-in-ci.html).
 
-Copy @ [Medium](https://medium.com/@adequatica/overcoming-bugs-in-testing-infrastructure-with-playwright-5fbce14e11bc)
+Copy @ [Medium](https://adequatica.medium.com/overcoming-bugs-in-testing-infrastructure-with-playwright-5fbce14e11bc)
