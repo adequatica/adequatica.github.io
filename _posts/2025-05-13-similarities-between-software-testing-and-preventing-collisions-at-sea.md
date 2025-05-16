@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Correlation Between Software Testing and Preventing Collisions at Sea"
+title: "Similarities Between Software Testing and Preventing Collisions at Sea"
 date: 2025-05-13 04:30:32 +0200
 tags: testing
 ---
@@ -21,9 +21,9 @@ As a sailing enthusiast, I have had to learn a set of special rules, which I fou
 
 In other words, if a collision does occur, neither captain can simply say, «I was right». In maritime collisions, both vessels are considered responsible. Item (b) explains why: if the only way to avoid a collision is to break the Rules, then the Rules must be broken.
 
-The same principle applies to software production incidents. Responsibility should not be pinned solely on developers, testers, ops teams, or management who approved the release. Everyone shares responsibility. Instead of finding someone to blame, we should focus on learning from the incident on how to prevent such a situation in the future. That means adding more tests, improving release processes, clarifying task requirements, and developing soft skills necessary to communicate problems early and effectively.
+The same principle applies to software production incidents. Responsibility should not be pinned solely on developers, testers, ops teams, or management who approved the release. Everyone shares responsibility. Instead of finding someone to blame, we should focus on learning from the incident on how to prevent such a situation in the future. That means adding more tests, improving release processes, clarifying task requirements, and developing the soft skills necessary to communicate problems early and effectively.
 
-And _sometimes_ we must deviate from established procedures to meet important product requirements (or goals). _Sometimes_ we have to be extremely agile, which means knowing when and how we can bend our own rules — like shipping with failing tests or releasing on weekends — if the circumstances demand it.
+However, _sometimes_ we may break established procedures to meet important product requirements (or goals). _Sometimes_ we have to be extremely agile, which means knowing when and how we can bend our own rules — like shipping with failing tests or releasing on weekends — if the circumstances demand it.
 
 ## Rule 7 Risk of collision
 
@@ -33,7 +33,7 @@ We must use every available monitoring of the system — if some parameter can b
 
 If one metric on a dashboard starts to spike while others remain flat, immediately assume that something is wrong. Please do not wait for another system component to fail before we start to act. Many signals lag behind real issues.
 
-Keep in mind, just because our dashboards are green does not mean everything is fine.
+Keep in mind that just because our dashboards are green does not mean everything is fine.
 
 ## Rule 8 Action to avoid collision
 
@@ -75,7 +75,7 @@ This is a great example of thoughtful mentorship. If you see a junior engineer a
 >
 > (ii) A vessel constrained by her draught shall navigate with particular caution having full regard to her special condition.
 
-«Exhibiting the signals» is a reminder that during releases, the current status of release or the main task should be explicit. Proactively informing the team and stakeholders about an upcoming or ongoing release — one of the riskiest moments in the lifecycle of any system — is simply good practice. Visibility helps everyone navigate more safely.
+«Exhibiting the signals» is a reminder that during releases, the current status of the elease or the main task should be explicit. Proactively informing the team and stakeholders about an upcoming or ongoing release — one of the riskiest moments in the lifecycle of any system — is simply good practice. Visibility helps everyone navigate more safely.
 
 «With particular caution having full regard to her special condition» translates as not all releases are the same. Some may depend on the timing of other deployments, align with specific business events, or intentionally break from standard procedures. If a release has special constraints, it must be handled with special care.
 
@@ -89,6 +89,6 @@ In uncertain or high-risk conditions, we should operate at a safe pace and be re
 
 ---
 
-The final word always belongs to the captain — in our world, that is the senior software engineer, team lead, or some C-level manager. No matter how democratic the team may be, and regardless of how decisions are usually made, when it comes to crucial choices and decisions, someone with experience, knowledge, and skills (and willing to take the responsibility) should be placed in charge.
+The final word always belongs to the captain — in our world, that is the senior software engineer, team lead, or some C-level manager. No matter how democratic the team may be, and regardless of how decisions are usually made when it comes to crucial choices and decisions, someone with experience, knowledge, and skills (and willingness to take responsibility) should be placed in charge.
 
 Copy @ [Medium](https://adequatica.medium.com/correlation-between-software-testing-and-preventing-collisions-at-sea-3902a934d327)
