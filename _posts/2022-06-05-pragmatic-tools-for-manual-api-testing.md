@@ -64,7 +64,7 @@ Even if browsers give enough room for API testing, the use of specialized tools 
 
 ### Postman
 
-Today [Postman](https://www.postman.com/) is the most popular tool for API testing. Starting from a browser extension, it has become an extremely powerful desktop application for all platforms: Windows, Mac OS, and Linux. There is no reason to talk about its features here because all of them are repeatedly covered in many articles, [videos](https://www.youtube.com/postman), talks, and even [courses](https://medium.com/javarevisited/7-best-courses-to-learn-postman-tool-for-web-service-and-api-testing-f225c138fa5a).
+Today [Postman](https://www.postman.com/) is the most popular tool for API testing. Starting from a browser extension, it has become an extremely powerful desktop application for all platforms: Windows, Mac OS, and Linux. There is no reason to talk about its features here because all of them have been repeatedly covered in numerous articles, videos, and even [courses](https://medium.com/javarevisited/7-best-courses-to-learn-postman-tool-for-web-service-and-api-testing-f225c138fa5a).
 
 Despite the ongoing promotion of its cloud platform, the app continues to provide for free its main and perfectly working function — issue HTTP requests to an HTTP API.
 
@@ -76,7 +76,7 @@ _Fig. 6. Postman_
 
 [Insomnia](https://insomnia.rest/) is a worthy alternative to Postman. It is [open source](https://github.com/Kong/insomnia), free, has almost the same set of features, more interface themes, and supports [plugins](https://insomnia.rest/plugins) that extend the standard functionality.
 
-If you are an inexperienced user in API testing or you are [overwhelmed with Postman](https://www.aviskase.com/articles/2019/11/25/why-i-dont-use-postman/)’s features that you do not need — Insomnia is your choice. Advanced Postman’s users may face the absence of some of their usual things, but comparison is not a topic of this article.
+If you are an inexperienced user in API testing or you are [overwhelmed with Postman](https://www.aviskase.com/articles/2019/11/25/why-i-dont-use-postman/)’s features that you do not need — Insomnia is your choice. Advanced Postman users may face the absence of some of their usual things, but comparison is not the topic of this article.
 
 ![Insomnia](/assets/2022-06-05/07-insomnia.png)
 
