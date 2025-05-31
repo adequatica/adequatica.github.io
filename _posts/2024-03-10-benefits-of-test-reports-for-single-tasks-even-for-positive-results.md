@@ -47,7 +47,7 @@ At least, the test report will be seen from a new angle (from the point of the t
 
 _I have had cases when developers came after reading the test report and explained that everything was implemented differently than what was tested. Or managers would explain that they assumed something completely different from the final implementation. Both cases can be attributed to miscommunication problems or insufficient task descriptions. Still, such issues cannot be avoided even with strict development regulations._
 
-## 3. Test reports may come in handy in the future
+## 3. Test reports may come in handy in the future
 
 In 9 out of 10 tickets, no one will look at test reports, the attached screenshots, or examples of HTTP handler calls and responses, but in the remaining last one, these screenshots and examples may become crucial. The test report shows how the feature/system worked at the time of testing (see point №1), and this «time stamp from the past» may be wanted in the future.
 
@@ -64,7 +64,7 @@ Both cases above may represent poorly documented projects, but this does not dim
 
 Both cases above may represent poorly documented projects, but this does not diminish the value of test reports.
 
-### One more thing
+### One more thing
 
 Test report should not be just a single «OK» (it is no better than an immediately closed ticket; see point №1).
 

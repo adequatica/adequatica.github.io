@@ -21,7 +21,7 @@ I decided to give it a try with several intentions:
 
 ### What is MCP?
 
-[MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction) is a universal interpreter between LLMs and real-world applications (in this case, it is a Playwright). If you need to solve a clear problem (in this case, testing a web application with Playwright), MCP allows you to give the LLM tasks focused on your goals, without including excessive explanations about your tooling in the prompt, then LLM may contol the application as an AI agent.
+[MCP (Model Context Protocol)](https://modelcontextprotocol.io/introduction) is a universal interpreter between LLMs and real-world applications (in this case, it is a Playwright). If you need to solve a clear problem (in this case, testing a web application with Playwright), MCP allows you to give the LLM tasks focused on your goals, without including excessive explanations about your tooling in the prompt, then the LLM may control the application as an AI agent.
 
 So, the Playwright MCP server handles browser integrations, chooses locators, and writes tests, as it gains access to the page’s code and already knows how Playwright works, among other things.
 

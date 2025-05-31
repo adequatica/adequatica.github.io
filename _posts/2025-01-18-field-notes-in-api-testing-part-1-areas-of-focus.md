@@ -38,7 +38,7 @@ _Fig. 1. An example of HTTP request from client to server (may contain a body fo
 
 _Fig. 2. An example of HTTP response from server to client (body in optional)_
 
-Secondly, you need to figure out confusing terminology. The terms _resource, endpoint,_ and _URI_ mean about the same thing. A _resource_ is an entity on the server whose _endpoint_ specifies the path to it by _URI_ ([Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)). While the term _handler_ implies a way to call a specific resource, so it is a _method + endpoint_ (e.g., `GET http://example.com/api/v1/foobar`).
+Secondly, you need to figure out confusing terminology. The terms _resource, endpoint,_ and _URI_ mean about the same thing. A _resource_ is an entity on the server whose _endpoint_ specifies the path to it by _URI_ ([Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier), [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)). While the term _handler_ implies a way to call a specific resource, so it is a _method + endpoint_ (e.g., `GET http://example.com/api/v1/foobar`).
 
 A URL ([Uniform Resource Locator](https://en.wikipedia.org/wiki/URL), [RFC 1738](https://datatracker.ietf.org/doc/html/rfc1738)) is a subset of URI, but it differs from it in that it provides an access mechanism (scheme). For example, `example.com/api/v1/foobar` is a URI; however, `https://example.com/api/v1/foobar` is already a URL (and still a URI, [RFC 6570](https://www.rfc-editor.org/rfc/rfc6570)).
 

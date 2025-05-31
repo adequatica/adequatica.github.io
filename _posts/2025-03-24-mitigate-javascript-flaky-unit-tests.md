@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Mitigate JavaScript Flaky Unit Tests"
+title: "Mitigate JavaScript Flaky Unit Tests"
 date: 2025-03-24 19:20:15 +0100
 tags: testing
 ---
 
-Flaky tests are the constant accompanying problem of autotests. However, unlike UI end-to-end browser tests, unit tests are less exposed to flakiness, but the issue still exists.
+Flaky tests are the constant accompanying problem of autotests. However, unlike UI end-to-end browser tests, unit tests are less exposed to flakiness, but the issue still exists.
 
-![Mitigate JavaScript Flaky Unit Tests](/assets/2025-03-24/00-cover.jpg)
+![Mitigate JavaScript Flaky Unit Tests](/assets/2025-03-24/00-cover.jpg)
 
 The approaches to mitigating flaky tests for E2E and unit tests are quite different.
 

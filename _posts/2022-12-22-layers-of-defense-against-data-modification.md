@@ -5,7 +5,7 @@ date: 2022-12-22 17:45:12 +0100
 tags: testing
 ---
 
-Sometimes, as a test engineer, you have to perform testing under a knotty environment and not affect production with your activity. Autotests can help, but they require thorough preparations.
+Sometimes, as a test engineer, you have to perform testing under a knotty environment and not affect production with your activity. Autotests can help, but they require thorough preparations.
 
 Before diving into the topic of autotests, I need to explain the architecture of my project and its testing environments. Without this context, it will be unclear what problem is solved here:
 

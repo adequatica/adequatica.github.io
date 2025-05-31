@@ -284,7 +284,7 @@ _Fig. 12. No redirection through GET parameter in URL_
 
 ---
 
-As I pointed out at the beginning, I have listed only brief checks for manual execution. Of course, there are a bunch of tools for deep security testing, like [Burp Suite](https://portswigger.net/burp).
+As I pointed out at the beginning, I have listed only brief checks for manual execution. Of course, there are a bunch of tools for deep security testing, like [Burp Suite](https://portswigger.net/burp).
 
 Further reading:
 
