@@ -59,6 +59,8 @@ To make an informed decision on which coordinate order is «better», I collecte
 | GeoRSS <sup>[docs](https://www.ogc.org/publications/standard/georss/)</sup> | KML <sup>[docs](https://developers.google.com/kml/documentation/kmlreference#elements-specific-to-point)</sup> |
 | OSM JSON <sup>[docs](https://wiki.openstreetmap.org/wiki/OSM_JSON)</sup>    |                                                                                                                |
 
+_In spite of the «default» coordinate order, OSM JSON’s parameters can be swapped (have a commutative property)._
+
 #### URLs
 
 | Latitude Longitude                                                                                                                                                                      | Longitude latitude                                                                       |
@@ -68,7 +70,10 @@ To make an informed decision on which coordinate order is «better», I collecte
 | Bing Maps <sup>[e.g.](https://www.bing.com/maps?cp=44.823653%7E20.450316&lvl=17.5)</sup>                                                                                                | Yandex Maps <sup>[e.g.](https://yandex.com/maps/?ll=20.453578%2C44.817094)</sup>         |
 | HERE WeGo <sup>[e.g.](https://maps.here.com/?map=44.82377,20.45185)</sup>                                                                                                               |                                                                                          |
 | Geojson.io <sup>[e.g.](https://geojson.io/#id=gist:anonymous/&map=15.87/44.823377/20.448848)</sup>                                                                                      |                                                                                          |
+| Mapillary <sup>[e.g.](https://www.mapillary.com/app/?lat=44.827453778554&lng=20.452865989495308&z=14)</sup>                                                                             |                                                                                          |
 | OpenStreetMap <sup>[e.g.](https://www.openstreetmap.org/#map=19/44.823027/20.447236)</sup>                                                                                              |                                                                                          |
+
+_In spite of the «default» coordinate order, EPSG and Mapillary URLs’ parameters can be swapped (have a commutative property)._
 
 #### JavaScript APIs
 
@@ -77,11 +82,11 @@ To make an informed decision on which coordinate order is «better», I collecte
 | Google Maps JavaScript API <sup>[docs](https://developers.google.com/maps/documentation/javascript/reference/coordinates)</sup>                 | 2GIS MapGL JS API <sup>[docs](https://docs.2gis.com/en/mapgl/reference/Map)</sup>                                                             |
 | HERE Maps API for JavaScript <sup>[docs](https://www.here.com/docs/bundle/maps-api-for-javascript-api-reference/page/H.Map.html#.Options)</sup> | ArcGIS Maps SDK for JavaScript <sup>[docs](https://developers.arcgis.com/javascript/latest/maps-2d/#set-the-visible-portion-of-the-map)</sup> |
 | Kokao Maps Web API <sup>[docs](https://apis.map.kakao.com/web/documentation/#LatLng)</sup>                                                      | Azure Maps Web SDK <sup>[docs](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)</sup>                               |
-| MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup>                                                   | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup>                                                    |
-| Yandex Maps JavaScript API\* <sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>               | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
-|                                                                                                                                                 | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup>                             |
+| MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                              | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup>                                                    |
+| MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup>                                                   | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
+| Yandex Maps JavaScript API<sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                  | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup>                             |
 
-✻ In Yandex JavaScript API, developers can set a preferred order setting: [latitude, longitude] or [longitude, latitude], but the first one is the default.
+_In spite of the «default» coordinate order, HERE and MapillaryJS APIs’ parameters can be swapped (have a commutative property); in Yandex JavaScript API, developers can set a preferred order setting: [latitude, longitude] or [longitude, latitude], but the first one is the default._
 
 Among other SDKs, [Apple MapKit](https://developer.apple.com/documentation/mapkitjs/mapkit.coordinate/mapkit.coordinate) (for iOS) and [Google Maps SDK](https://developers.google.com/maps/documentation/android-sdk/coordinates) (for Android) both use Latitude, Longitude order.
 
