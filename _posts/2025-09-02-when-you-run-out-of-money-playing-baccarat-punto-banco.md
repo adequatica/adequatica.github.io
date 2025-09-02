@@ -15,25 +15,27 @@ Baccarat is a highly popular card game found in casinos worldwide, from Macau to
 
 Baccarat (punto banco) is fundamentally a game of chance where each hand is statistically independent of the previous outcomes, and there is no strategy to beat the house in the long run. If that’s really the case (that you cannot beat the house), I want to find out how many rounds you can play before you run out of money (bankroll).
 
+To solve this question, I need the game itself (the rules are given below), a simulator (the source code is available in the [GitHub repository](https://github.com/adequatica/punto-banco-golango)), and a list of different baccarat strategies for the simulations.
+
 Table of contents:
 
-- Game Rules
-- Simulator Features
-- Baccarat (Punto Banco) Strategies Simulations
+- [Game Rules](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#game-rules)
+- [Simulator Features](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#simulator-features)
+- [Baccarat (Punto Banco) Strategies Simulations](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#baccarat-punto-banco-strategies-simulations)
   - Flat Betting Strategies
-    - Always Bet on Punto (Player) or Always Bet Banco (Banker)
-    - Always Bet on Égalité (Tie)
-    - Bet on Last Hand
-    - Bet on Random
+    - [Always Bet on Punto (Player) or Always Bet Banco (Banker)](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#always-bet-on-punto-player-or-always-bet-banco-banker)
+    - [Always Bet on Égalité (Tie)](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#always-bet-on-égalité-tie)
+    - [Bet on Last Hand](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#bet-on-last-hand)
+    - [Bet on Random](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#bet-on-random)
   - Progression Strategies
-    - Martingale System
-    - Paroli
-    - Fibonacci
-    - D’Alembert
-    - 1-3-2-6
-- Summary
-  - Threats to Validity
-  - References
+    - [Martingale System](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#martingale-system)
+    - [Paroli](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#paroli)
+    - [Fibonacci](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#fibonacci)
+    - [D’Alembert](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#dalembert)
+    - [1-3-2-6](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#1-3-2-6)
+- [Summary](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#summary)
+  - [Threats to Validity](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#threats-to-validity)
+  - [References](https://adequatica.github.io/2025/09/02/when-you-run-out-of-money-playing-baccarat-punto-banco.html#references)
 
 ## Game Rules
 
@@ -81,7 +83,7 @@ After all cards are drawn according to the «tableau», the **hand with the tota
 
 ## Simulator Features
 
-> _The simulator for this article is written on Go and presented in the [GitHub repository](https://github.com/adequatica/punto-banco-golango) along with the punto blanco terminal game._
+> _The simulator for this article is written on Go and presented in the [GitHub repository](https://github.com/adequatica/punto-banco-golango) along with the punto blanco game._
 
 This simulator runs the punto banco game, and during each round, it bets on Punto (player), Banco (banker), or Égalité (tie) depending on the chosen strategy.
 
@@ -217,7 +219,7 @@ This is an attempt to improve the «always bet on one side» strategy. The mecha
 
 For «Bet on Last Hand PB», a gambler switches to Banco in case Égalité won the previous hand, and this strategy performs somewhere in between «Always bet on Punto» and «Always bet on Banco», but in the end, a gambler will run out of bankroll in about 935 rounds.
 
-### Bet on Rando
+### Bet on Random
 
 Because baccarat is a game of chance, and no strategy can guarantee consistent wins, maybe a random strategy can deal with it? Unfortunately, not.
 
@@ -247,7 +249,7 @@ Because Égalité is the worst choice for betting, I excluded it from random bet
 
 Thus, among all flat betting strategies, «Bet Always on Banco» is the best way to stretch the game before running out of bankroll.
 
-## Progression Strategies
+### Progression Strategies
 
 In progression betting strategies, a gambler adjusts the bet size based on previous outcomes.
 
@@ -480,6 +482,6 @@ The behavior of a bankroll over time during a game session requires further stud
 3. [Baccarat Strategies and Systems for Advanced Players](https://www.baccarat.net/baccarat-specials/advanced-guide-of-how-to-play-baccarat-and-strategies/) by Caroline Richardson
 4. [The Best Baccarat Strategy Guide — Learn How to Win at Baccarat](https://readwrite.com/gambling/guides/baccarat-strategy/) by Djordje Bogdanovic
 5. [How To Beat Baccarat: The Best Baccarat Strategies Revealed](https://www.casino.org/blog/baccarat-strategy/) by Stephen Tabone
-6. S. N. Ethier and Jiyeon Lee, “The evolution of the game of baccarat,” 2015. [https://doi.org/10.48550/arXiv.1308.1481](https://doi.org/10.48550/arXiv.1308.1481)
+6. S.N. Ethier and Jiyeon Lee, “The evolution of the game of baccarat,” 2015. [https://doi.org/10.48550/arXiv.1308.1481](https://doi.org/10.48550/arXiv.1308.1481)
 
 Copy @ [Medium](https://adequatica.medium.com/when-you-run-out-of-money-playing-baccarat-punto-banco-deaa5ca23fb7)
