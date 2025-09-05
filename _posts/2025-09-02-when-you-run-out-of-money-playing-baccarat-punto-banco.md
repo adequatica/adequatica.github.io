@@ -7,9 +7,9 @@ tags: gambling
 
 If someone tells you about «a secret baccarat strategy» with a win rate of around 50%, it is a lie!
 
-![Baccarat table in casino](/assets/2025-09-02/00-baccarat-table.jpg)
+![Baccarat table in casino (GPT-4o Image Generation)](/assets/2025-09-02/00-baccarat-table.jpg)
 
-_Baccarat table in casino_
+_Baccarat table in casino (GPT-4o Image Generation)_
 
 Baccarat is a highly popular card game found in casinos worldwide, from Macau to Las Vegas. Punto banco is a simplified version of baccarat. During the game of punto banco, the player’s moves are restricted by drawn cards. He simply chooses a hand: Punto (player), Banco (banker), or Égalité (tie), and then the entire process unfolds automatically with no skill required, unlike the _chemin de fer_ version of baccarat, where the player can make a decision to receive the third card. It was this version that [James Bond played](https://jamesbond.fandom.com/wiki/Baccarat).
 

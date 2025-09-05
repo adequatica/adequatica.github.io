@@ -20,7 +20,7 @@
 
 title: Sometimes, as a Quality Assurance Engineer
 description: >- # this means to ignore newlines until "baseurl:"
-  A copy of my personal blog on Medium https://adequatica.medium.com
+  A copy of my personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adequatica.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: adequatica
