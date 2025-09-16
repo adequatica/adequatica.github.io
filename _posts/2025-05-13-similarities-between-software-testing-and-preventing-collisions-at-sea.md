@@ -7,9 +7,9 @@ tags: testing
 
 Sometimes, as a test engineer, you may notice a close connection between software testing practices and something completely different.
 
-![GPT-image-1 prompt](/assets/2025-05-13/00-colregs.jpg)
+![GPT-image-1 prompt](/assets/2025-05-13/00-colregs-art.jpg)
 
-_GPT-image-1 prompt: A modern blue and white sailing yacht with three tall white sails, sailing in the open sea at sunrise or sunset. In the background, a massive container ship is loaded with cargo containers. The lighting is soft, casting reflections on the water._
+_GPT-image-1 prompt: A modern sailing yacht with three tall white sails, sailing in the open sea at sunrise or sunset. In the background, a massive container ship is loaded with cargo containers. The lighting is soft, casting reflections on the water. Make it is a marine art painting. Show the beauty of the sea waves._
 
 As a sailing enthusiast, I have had to learn a set of special rules for marine navigation, which I found closely related to my day-to-day work as a QA engineer. [The International Regulations for Preventing Collisions at Sea](https://en.wikipedia.org/wiki/International_Regulations_for_Preventing_Collisions_at_Sea) (COLREGs) turn out to be surprisingly related to software engineering. These rules, designed to keep vessels safe in unpredictable conditions, map neatly onto the realities of testing, release processing, updating systems, and incident management. In this post, I cherry-picked some of the most relevant COLREGs and reinterpreted them through the lens of software testing.
 
