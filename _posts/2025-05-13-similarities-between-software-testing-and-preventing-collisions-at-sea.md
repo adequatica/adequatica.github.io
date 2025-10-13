@@ -11,7 +11,7 @@ Sometimes, as a test engineer, you may notice a close connection between softwar
 
 _GPT-image-1 prompt: A modern sailing yacht with three tall white sails, sailing in the open sea at sunrise or sunset. In the background, a massive container ship is loaded with cargo containers. The lighting is soft, casting reflections on the water. Make it is a marine art painting. Show the beauty of the sea waves._
 
-As a sailing enthusiast, I have had to learn a set of special rules for marine navigation, which I found closely related to my day-to-day work as a QA engineer. [The International Regulations for Preventing Collisions at Sea](https://en.wikipedia.org/wiki/International_Regulations_for_Preventing_Collisions_at_Sea) (COLREGs) turn out to be surprisingly related to software engineering. These rules, designed to keep vessels safe in unpredictable conditions, map neatly onto the realities of testing, release processing, updating systems, and incident management. In this post, I cherry-picked some of the most relevant COLREGs and reinterpreted them through the lens of software testing.
+If you are a sailing enthusiast, you must learn a set of special rules for marine navigation. These rules turn out to be closely related to the day-to-day work of a QA engineer. [The International Regulations for Preventing Collisions at Sea](https://en.wikipedia.org/wiki/International_Regulations_for_Preventing_Collisions_at_Sea) (COLREGs) are surprisingly similar to software engineering. Designed to keep vessels safe in unpredictable conditions, these rules neatly map onto the realities of testing, release processing, updating and upgrading systems, and incident management. This post cherry-picks and reinterprets some of the most relevant COLREGs rules through the lens of software testing.
 
 ## Rule 2 Responsibility
 
@@ -21,7 +21,7 @@ As a sailing enthusiast, I have had to learn a set of special rules for marine n
 
 Interpretation of these articles of the Rules to «normal» language means that if a collision does occur, neither captain can say, «I was right». In maritime collisions, both vessels are considered responsible. Item (b) explains why: if the only way to avoid a collision is to break the Rules, then the Rules must be broken.
 
-The same principle should apply to review of incidents in production. Responsibility should not be pinned solely on developers, testers, ops teams, or management who approved the release. Everyone shares responsibility. Instead of finding someone to blame, you should focus on learning from the incident on how to prevent such a situation in the future. That means adding more tests, improving release processes, clarifying task requirements, and developing the soft skills necessary to communicate problems early and effectively.
+The same principle should apply to review of incidents in production. Responsibility should not be pinned solely on developers, testers, ops teams, or management who approved the release. Everyone shares responsibility. Instead of finding someone to blame, you should focus on learning from the incident on how to prevent such a situation in the future. This may mean adding more tests, improving release processes, clarifying task requirements, and developing the soft skills necessary to communicate problems early and effectively.
 
 However, _sometimes_ you may break established procedures to meet important product requirements (or goals). _Sometimes_ you have to be extremely agile, which means knowing when and how you can bend your own rules — like shipping with failing tests or releasing on weekends — if the circumstances demand it.
 
@@ -86,6 +86,6 @@ In uncertain or high-risk conditions, you should operate at a safe pace and be r
 
 ---
 
-The final word always belongs to the captain — a senior software engineer, team lead, or some C-level manager. No matter how democratic the team may be, and regardless of how decisions are usually made when it comes to crucial choices, someone with experience, knowledge, and skills (and willingness to take responsibility) should be placed in charge.
+The final decision always belongs to the captain, who is usually a senior software engineer, team lead, or C-level manager. No matter how democratic the team is, someone with experience, knowledge, skills, and the willingness to take responsibility should be placed in charge when it comes to crucial choices, like rolling out a long-awaited but problematic release, prioritizing of equally important tasks, or changing the technology stack.
 
 Copy @ [Medium](https://adequatica.medium.com/correlation-between-software-testing-and-preventing-collisions-at-sea-3902a934d327)
