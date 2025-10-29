@@ -140,7 +140,7 @@ Read further on handling errors in Go:
 
 - [Error handling and Go](https://go.dev/blog/error-handling-and-go)
 - [Errors are values](https://go.dev/blog/errors-are-values)
-- [[ On | No ] syntactic support for error handling](https://go.dev/blog/error-syntax)
+- [\[ On \| No \] syntactic support for error handling](https://go.dev/blog/error-syntax)
 - [Comprehensive Guide to Testing in Go](https://blog.jetbrains.com/go/2022/11/22/comprehensive-guide-to-testing-in-go/)
 - [Go’s Error Handling Is a Form of Storytelling](https://preslav.me/2023/04/14/golang-error-handling-is-a-form-of-storytelling/)
 
