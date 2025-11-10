@@ -89,7 +89,7 @@ This simulator runs the punto banco game, and during each round, it bets on Punt
 
 «The game» is a game session, in which the **simulation starts with the bankroll of $1000** and ends when it cannot afford to bet the next bet.
 
-**The default bet in the simulator is $10**, because it is the [minimum bet for baccarat in Las Vegas](https://vegasadvantage.com/las-vegas-table-game-survey/baccarat/). Therefore, for flat betting strategies, the simulator bets 1% of its initial bankroll in each round.
+**The default bet in the simulator is $10**, because it is the [minimum bet for baccarat in Las Vegas](https://vegasadvantage.com/las-vegas-table-game-survey/baccarat/). Therefore, for flat betting strategies, the simulator bets 1% of its starting bankroll in each round.
 
 The simulator features a logic-based betting approach: the game ends if the current simulator’s bankroll falls below the amount required for the next round.
 
@@ -189,7 +189,7 @@ This is the only strategy a gambler must avoid due to its poor win rate.
 | Profitable games               | 81.94%         |
 | Profitably ended games         | 0%             |
 
-Don’t be fooled by 81,94% of profitable games and a maximum recorded bankroll (but it was one time in a million simulations). Due to a high payout (8:1), a bankroll may exceed the initial bankroll during the game, but in the long run, a gambler will run out of bankroll in 692 rounds. It’s 1,35 times faster than betting always on Punto or Banco.
+Don’t be fooled by 81,94% of profitable games and a maximum recorded bankroll (but it was one time in a million simulations). Due to a high payout (8:1), a bankroll may exceed the starting bankroll during the game, but in the long run, a gambler will run out of bankroll in 692 rounds. It’s 1,35 times faster than betting always on Punto or Banco.
 
 ### Bet on Last Hand
 
@@ -440,11 +440,11 @@ So, progression strategies are much riskier than flat betting ones. Following ne
 
 ## Summary
 
-So, when you run out of money playing punto banco? Betting always on Banco, you will run out of money in 942 rounds (with an initial bankroll of $1000 and a fixed bet of $10). Betting on Punto with the martingale system, you will run out of money in 112 rounds.
+So, when you run out of money playing punto banco? Betting always on Banco, you will run out of money in 942 rounds (with a starting bankroll of $1000 and a fixed bet of $10). Betting on Punto with the martingale system, you will run out of money in 112 rounds.
 
 ![Mean rounds per game session for different baccarat strategies](/assets/2025-09-02/01-mean-rounds-per-game.png)
 
-_Mean rounds per game session for different baccarat strategies_
+_Mean rounds per game session (i.e., number of hands until you run out of money) for different baccarat strategies_
 
 And a few other ideas after the performed simulations:
 
