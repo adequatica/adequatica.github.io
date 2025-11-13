@@ -80,6 +80,8 @@ The four components of the confusion matrix are defined in the context of classi
 
 _Fig. 1. Confusion matrix for flaky tests._
 
+Practitioners may call FN and FP tests as «suspicious» because debugging the cause of failures takes a significant amount of time [36].
+
 ## Deterministic outcome/result
 
 This is an outcome that can be predicted exactly with 100% certainty from a given set of inputs and starting conditions. This implies that no randomness or uncertainty is involved.
@@ -306,7 +308,7 @@ According to some researchers [35], most flaky tests are causally related to tes
 ## References
 
 1. Owain Parry, Gregory M. Kapfhammer, Michael Hilton, and Phil McMinn. 2021. a Survey of Flaky Tests. ACM Transactions on Software Engineering and Methodology (TOSEM), Volume 31, Issue 1, Article No.: 17, Pages 1–74. [https://doi.org/10.1145/3476105](https://doi.org/10.1145/3476105)
-2. Qingzhou Luo, Farah Hariri, Lamyaa Eloussi, and Darko Marinov. 2014. An Empirical Analysis of Flaky Tests. Proceedings of the Symposium on the Foundations of Software Engineering (FSE). 643–653. [https://dl.acm.org/doi/10.1145/2635868.2635920](https://dl.acm.org/doi/10.1145/2635868.2635920)
+2. Qingzhou Luo, Farah Hariri, Lamyaa Eloussi, and Darko Marinov. 2014. An Empirical Analysis of Flaky Tests. Proceedings of the Symposium on the Foundations of Software Engineering (FSE). 643–653. [https://dl.acm.org/doi/10.1145/2635868.2635920](https://dl.acm.org/doi/10.1145/2635868.2635920) (_Actually, this is the first empirical study centered on flakiness._)
 3. Moritz Eck, Fabio Palomba, Marco Castelluccio, and Alberto Bacchelli. 2019. Understanding Flaky Tests: The Developer’s Perspective. Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE ’19), August 26–30, 2019, Tallinn, Estonia. ACM, New York, NY, USA, 11 pages. [https://doi.org/10.1145/3338906.3338945](https://doi.org/10.1145/3338906.3338945)
 4. Azeem Ahmad, Ola Leifler, Kristian Sandahl. 2021. Empirical analysis of practitioners’ perceptions of test flakiness factors. Software Testing, Verification and Reliability, Volume 31, Issue 8. [https://doi.org/10.1002/stvr.1791](https://doi.org/10.1002/stvr.1791)
 5. Mark Harman and Peter O’Hearn. 2018. From start-ups to scale-ups: Opportunities and open problems for static and dynamic program analysis. 2018 IEEE 18th International Working Conference on Source Code Analysis and Manipulation (SCAM). Madrid, Spain, 1–23. [https://doi.org/10.1109/SCAM.2018.00009](https://doi.org/10.1109/SCAM.2018.00009)
@@ -340,6 +342,7 @@ According to some researchers [35], most flaky tests are causally related to tes
 33. Phil McMinn, Muhammad Firhard Roslan, and Gregory M. Kapfhammer. 2025. Beyond Test Flakiness: A Manifesto for a Holistic Approach to Test Suite Health. 2025 IEEE/ACM International Flaky Tests Workshop (FTW). [https://doi.org/10.1109/FTW66604.2025.00007](https://doi.org/10.1109/FTW66604.2025.00007)
 34. Bruno Camara, Marco Silva, Andre Endo, and Silvia Vergilio. 2025. On the use of test smells for prediction of flaky tests. SAST ’21: Proceedings of the 6th Brazilian Symposium on Systematic and Automated Software Testing, Pages 46–54. [https://doi.org/10.1145/3482909.348291](https://doi.org/10.1145/3482909.348291)
 35. Fabio Palomba, and Andy Zaidman. 2017. Notice of Retraction: Does Refactoring of Test Smells Induce Fixing Flaky Tests?. 2017 IEEE International Conference on Software Maintenance and Evolution (ICSME). [https://doi.org/10.1109/ICSME.2017.12](https://doi.org/10.1109/ICSME.2017.12)
+36. Wing Lam, Patrice Godefroid, Suman Nath, Anirudh Santhiar, and Suresh Thummalapenta. 2019. Root Causing Flaky Tests in a Large-Scale Industrial Setting. Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’19), July 15–19, 2019, Beijing, China. ACM, New York, NY, USA, 11 pages. [https://doi.org/10.1145/3293882.3330570](https://doi.org/10.1145/3293882.3330570)
 
 Articles from the Google Testing Blog are often referenced, too:
 
