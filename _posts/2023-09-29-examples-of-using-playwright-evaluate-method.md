@@ -92,7 +92,7 @@ The most desired way of using `evaluate()` is for modifying web page elements. I
 
 ```JavaScript
 await page.evaluate(() => {
-  // Get element inside evaluate() mathod
+  // Get element inside evaluate() method
   const selector = document.querySelector('input');
 
   // This IF is only aimed to overcome «is possibly 'null'» TypeScript error
