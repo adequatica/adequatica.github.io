@@ -473,7 +473,11 @@ All simulations were made for a 6-deck shoe. However, an 8-deck shoe is also com
 
 1М game session simulation (as it was made here) may not be enough for precise results.
 
-The behavior of a bankroll over time during a game session requires further study.
+The behavior of a bankroll over time during a game session requires further study. For example, here are the trends of a bankroll during [random simulations](https://github.com/adequatica/punto-banco-golango/tree/main/datasets):
+
+![Sample bankroll trends during random sessions of baccarat (punto banco)](/assets/2025-09-02/02-bankroll-trends.png)
+
+_Sample bankroll trends during random sessions of baccarat (punto banco)_
 
 ### References
 
