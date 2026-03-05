@@ -51,7 +51,7 @@ For example: `[44.695972, 20.514444]`
 
 To make an informed decision on which coordinate order is «better», I collected data on how different geospatial software represent coordinate order. The selected projects reflect only my domain area: frontend development, JavaScript APIs, and JS libraries.
 
-#### Standards and formats
+### Standards and formats
 
 | Latitude Longitude                                                          | Longitude latitude                                                                                             |
 | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +61,7 @@ To make an informed decision on which coordinate order is «better», I collecte
 
 _In spite of the «default» coordinate order, OSM JSON’s parameters can be swapped (have a commutative property)._
 
-#### URLs
+### URLs
 
 | Latitude Longitude                                                                                                                                                                      | Longitude latitude                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ _In spite of the «default» coordinate order, OSM JSON’s parameters can be sw
 
 _In spite of the «default» coordinate order, EPSG and Mapillary URLs’ parameters can be swapped (have a commutative property)._
 
-#### JavaScript APIs
+### JavaScript APIs
 
 | Latitude Longitude                                                                                                                              | Longitude latitude                                                                                                                            |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -83,15 +83,23 @@ _In spite of the «default» coordinate order, EPSG and Mapillary URLs’ parame
 | HERE Maps API for JavaScript <sup>[docs](https://www.here.com/docs/bundle/maps-api-for-javascript-api-reference/page/H.Map.html#.Options)</sup> | ArcGIS Maps SDK for JavaScript <sup>[docs](https://developers.arcgis.com/javascript/latest/maps-2d/#set-the-visible-portion-of-the-map)</sup> |
 | Kokao Maps Web API <sup>[docs](https://apis.map.kakao.com/web/documentation/#LatLng)</sup>                                                      | Azure Maps Web SDK <sup>[docs](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)</sup>                               |
 | MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup>                                                   | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup>                                                    |
-| Yandex Maps JavaScript API<sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                  | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                            |
-|                                                                                                                                                 | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
+| NAVER Maps API<sup>[docs](https://navermaps.github.io/maps.js.en/docs/tutorial-Projection.html)</sup>                                           | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                            |
+| Yandex Maps JavaScript API<sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                  | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
 |                                                                                                                                                 | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup>                             |
 
 _In spite of the «default» coordinate order, HERE and MapillaryJS APIs’ parameters can be swapped (have a commutative property); in Yandex JavaScript API, developers can set a preferred order setting: [latitude, longitude] or [longitude, latitude], but the first one is the default._
 
+Despite the Latitude, Longitude coordinates’ order in its [JavaScript API](https://navermaps.github.io/maps.js.en/docs/naver.maps.LatLng.html), NAVER uses Longitude, Latitude on its backend API.
+
+![NAVER API](/assets/2025-01-31/03-naver-api.png)
+
+_NAVER API `https://map.naver.com/p/api/location/geocode?coords=longitude,latitude`_
+
+---
+
 Among other SDKs, [Apple MapKit](https://developer.apple.com/documentation/mapkitjs/mapkit.coordinate/mapkit.coordinate) (for iOS) and [Google Maps SDK](https://developers.google.com/maps/documentation/android-sdk/coordinates) (for Android) both use Latitude, Longitude order.
 
-#### Libraries
+### Libraries
 
 | Latitude Longitude                                                     | Longitude Latitude                                                                                    |
 | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
