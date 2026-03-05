@@ -83,13 +83,13 @@ _In spite of the «default» coordinate order, EPSG and Mapillary URLs’ parame
 | HERE Maps API for JavaScript <sup>[docs](https://www.here.com/docs/bundle/maps-api-for-javascript-api-reference/page/H.Map.html#.Options)</sup> | ArcGIS Maps SDK for JavaScript <sup>[docs](https://developers.arcgis.com/javascript/latest/maps-2d/#set-the-visible-portion-of-the-map)</sup> |
 | Kokao Maps Web API <sup>[docs](https://apis.map.kakao.com/web/documentation/#LatLng)</sup>                                                      | Azure Maps Web SDK <sup>[docs](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)</sup>                               |
 | MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup>                                                   | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup>                                                    |
-| NAVER Maps API<sup>[docs](https://navermaps.github.io/maps.js.en/docs/tutorial-Projection.html)</sup>                                           | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                            |
-| Yandex Maps JavaScript API<sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                  | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
+| NAVER Maps API <sup>[docs](https://navermaps.github.io/maps.js.en/docs/tutorial-Projection.html)</sup>                                          | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                            |
+| Yandex Maps JavaScript API <sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                 | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
 |                                                                                                                                                 | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup>                             |
 
 _In spite of the «default» coordinate order, HERE and MapillaryJS APIs’ parameters can be swapped (have a commutative property); in Yandex JavaScript API, developers can set a preferred order setting: [latitude, longitude] or [longitude, latitude], but the first one is the default._
 
-Despite the Latitude, Longitude coordinates’ order in its [JavaScript API](https://navermaps.github.io/maps.js.en/docs/naver.maps.LatLng.html), NAVER uses Longitude, Latitude on its backend API.
+Despite the Latitude, Longitude coordinates’ order in its [JavaScript API](https://navermaps.github.io/maps.js.en/docs/naver.maps.LatLng.html) on frontend, NAVER uses Longitude, Latitude on its backend API.
 
 ![NAVER API](/assets/2025-01-31/03-naver-api.png)
 
