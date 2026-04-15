@@ -1,4 +1,5 @@
 {
   "singleQuote": false,
-  "useTabs": false
+  "useTabs": false,
+  "proseWrap": "never"
 }

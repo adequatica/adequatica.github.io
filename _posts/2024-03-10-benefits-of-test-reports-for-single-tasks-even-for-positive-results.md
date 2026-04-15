@@ -59,8 +59,7 @@ This is not as rare as it seems. This is not as rare as it seems. You never know
 
 _2. A few months after the project change, a manager from a previous project came to me and asked me to explain how one particular functionality works. Of course, I had already forgotten the technical details. But thanks to the test report, we restored the feature’s functionality using screenshots and QA comments._
 
-_3. A week ago, the entire team of one of our customers changed. The old team did not keep any documentation of their processes, and new people were trying to figure out the functionality of their legacy. The only documentation of the features they needed turned out to be test reports in tickets (and test cases in TMS) written more than a year ago.
-Both cases above may represent poorly documented projects, but this does not diminish the value of test reports._
+_3. A week ago, the entire team of one of our customers changed. The old team did not keep any documentation of their processes, and new people were trying to figure out the functionality of their legacy. The only documentation of the features they needed turned out to be test reports in tickets (and test cases in TMS) written more than a year ago. Both cases above may represent poorly documented projects, but this does not diminish the value of test reports._
 
 Both cases above may represent poorly documented projects, but this does not diminish the value of test reports.
 

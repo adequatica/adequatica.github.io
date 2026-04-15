@@ -195,27 +195,27 @@ Don’t be fooled by 81,94% of profitable games and a maximum recorded bankroll 
 
 This is an attempt to improve the «always bet on one side» strategy. The mechanics are that if Banco won the previous hand, a gambler bets on Banco for the current hand. If Punto won the previous hand, a gambler bets on Punto for the current hand, etc.
 
-| Strategy                       | Bet on Last Hand | Bet on Last Hand PB | Average |
-| ------------------------------ | ---------------- | ------------------- | ------- |
-| Mean rounds per game           | 903.6            | 934.5               | 919.05  |
-| Minimum played rounds per game | 178              | 240                 | 209     |
-| Maximum played rounds per game | 4422             | 3571                | 3996.5  |
-|                                |                  |                     |         |
-| Mean wins per game             | 378.2            | 423.4               | 400.8   |
-| Minimum wins per game          | 40               | 71                  | 55.5    |
-| Maximum wins per game          | 1953             | 1761                | 1857    |
-| Win rate                       | 41.34%           | 44.82%              | 43.08%  |
-| Rate of zero-wins games        | 0%               | 0%                  | 0%      |
-|                                |                  |                     |         |
-| Mean winning streak            | 7.8              | 8                   | 7.9     |
-| Maximum winning streak         | 24               | 25                  | 24.5    |
-| Mean losing streak             | 11.9             | 10.5                | 11.2    |
-| Maximum losing streak          | 36               | 32                  | 34      |
-|                                |                  |                     |         |
-| Mean peak bankroll per game    | 1065.57          | 1041.04             | 1053.31 |
-| Maximum recorded bankroll      | 2057.5           | 1636                | 1846.75 |
-| Profitable games               | 71.06%           | 66.95%              | 69.01%  |
-| Profitably ended games         | 0%               | 0%                  | 0%      |
+| Strategy | Bet on Last Hand | Bet on Last Hand PB | Average |
+| --- | --- | --- | --- |
+| Mean rounds per game | 903.6 | 934.5 | 919.05 |
+| Minimum played rounds per game | 178 | 240 | 209 |
+| Maximum played rounds per game | 4422 | 3571 | 3996.5 |
+|  |  |  |  |
+| Mean wins per game | 378.2 | 423.4 | 400.8 |
+| Minimum wins per game | 40 | 71 | 55.5 |
+| Maximum wins per game | 1953 | 1761 | 1857 |
+| Win rate | 41.34% | 44.82% | 43.08% |
+| Rate of zero-wins games | 0% | 0% | 0% |
+|  |  |  |  |
+| Mean winning streak | 7.8 | 8 | 7.9 |
+| Maximum winning streak | 24 | 25 | 24.5 |
+| Mean losing streak | 11.9 | 10.5 | 11.2 |
+| Maximum losing streak | 36 | 32 | 34 |
+|  |  |  |  |
+| Mean peak bankroll per game | 1065.57 | 1041.04 | 1053.31 |
+| Maximum recorded bankroll | 2057.5 | 1636 | 1846.75 |
+| Profitable games | 71.06% | 66.95% | 69.01% |
+| Profitably ended games | 0% | 0% | 0% |
 
 For «Bet on Last Hand PB», a gambler switches to Banco in case Égalité won the previous hand, and this strategy performs somewhere in between «Always bet on Punto» and «Always bet on Banco», but in the end, a gambler will run out of bankroll in about 935 rounds.
 
@@ -267,27 +267,27 @@ Explanation of the martingale system algorithm:
 4. Continue doubling your bet after each subsequent loss.
 5. Once you win a hand, you return to your original base bet amount and start the process over again. The theory is that this single win will recover all previous losses and provide a profit equal to your initial betting unit.
 
-| Strategy                       | Martingale on Punto | Martingale on Banco | Average  |
-| ------------------------------ | ------------------- | ------------------- | -------- |
-| Mean rounds per game           | 112.1               | 123.5               | 117.8    |
-| Minimum played rounds per game | 6                   | 6                   | 6        |
-| Maximum played rounds per game | 11800               | 9744                | 10772    |
-|                                |                     |                     |          |
-| Mean wins per game             | 49.9                | 56.7                | 53.3     |
-| Minimum wins per game          | 0                   | 0                   | 0        |
-| Maximum wins per game          | 5364                | 4501                | 4932.5   |
-| Win rate                       | 39.27%              | 40.69%              | 39.98%   |
-| Rate of zero-wins games        | 2.88%               | 2.52%               | 2.7%     |
-|                                |                     |                     |          |
-| Mean winning streak            | 4.4                 | 4.7                 | 4.55     |
-| Maximum winning streak         | 23                  | 24                  | 23.5     |
-| Mean losing streak             | 6.5                 | 6.5                 | 6.5      |
-| Maximum losing streak          | 12                  | 11                  | 11.5     |
-|                                |                     |                     |          |
-| Mean peak bankroll per game    | 1498.69             | 1453.32             | 1476.01  |
-| Maximum recorded bankroll      | 35290               | 31306.5             | 33298.25 |
-| Profitable games               | 94.35%              | 94.85%              | 94.6%    |
-| Profitably ended games         | 5.26%               | 4.49%               | 4.88%    |
+| Strategy | Martingale on Punto | Martingale on Banco | Average |
+| --- | --- | --- | --- |
+| Mean rounds per game | 112.1 | 123.5 | 117.8 |
+| Minimum played rounds per game | 6 | 6 | 6 |
+| Maximum played rounds per game | 11800 | 9744 | 10772 |
+|  |  |  |  |
+| Mean wins per game | 49.9 | 56.7 | 53.3 |
+| Minimum wins per game | 0 | 0 | 0 |
+| Maximum wins per game | 5364 | 4501 | 4932.5 |
+| Win rate | 39.27% | 40.69% | 39.98% |
+| Rate of zero-wins games | 2.88% | 2.52% | 2.7% |
+|  |  |  |  |
+| Mean winning streak | 4.4 | 4.7 | 4.55 |
+| Maximum winning streak | 23 | 24 | 23.5 |
+| Mean losing streak | 6.5 | 6.5 | 6.5 |
+| Maximum losing streak | 12 | 11 | 11.5 |
+|  |  |  |  |
+| Mean peak bankroll per game | 1498.69 | 1453.32 | 1476.01 |
+| Maximum recorded bankroll | 35290 | 31306.5 | 33298.25 |
+| Profitable games | 94.35% | 94.85% | 94.6% |
+| Profitably ended games | 5.26% | 4.49% | 4.88% |
 
 Due to a negative progression, this strategy has a poor win rate of approximately 40% and significantly devastates the bankroll. A gambler may run out of bankroll only in 118 rounds. It’s 7,9 times faster than betting always on Punto or Banco. In 2,7% of game sessions, a game may end (bankroll will be emptied) without a single win, just six rounds, and you are done.
 
@@ -339,27 +339,27 @@ Explanation of the Fibonacci algorithm:
 3. If your bet wins, you move back two steps in the Fibonacci sequence to determine your next bet amount. For example, if you won a $30 bet (representing «3» in the sequence 1, 1, 2, 3), you would move back two steps to the «1» in the sequence, making your next bet $10.
 4. Continue this pattern of increasing bets after a loss and decreasing them after a win.
 
-| Strategy                       | Fibonacci on Punto | Fibonacci on Banco | Average |
-| ------------------------------ | ------------------ | ------------------ | ------- |
-| Mean rounds per game           | 205.1              | 238.4              | 221.75  |
-| Minimum played rounds per game | 9                  | 9                  | 9       |
-| Maximum played rounds per game | 7354               | 7553               | 7453.5  |
-|                                |                    |                    |         |
-| Mean wins per game             | 91.5               | 109.4              | 100.45  |
-| Minimum wins per game          | 0                  | 0                  | 0       |
-| Maximum wins per game          | 3361               | 3534               | 3447.5  |
-| Win rate                       | 41.01%             | 42.52%             | 41.76%  |
-| Rate of zero-wins games        | 0.49%              | 0.41%              | 0.45%   |
-|                                |                    |                    |         |
-| Mean winning streak            | 5.3                | 5.7                | 5.5     |
-| Maximum winning streak         | 26                 | 21                 | 23.5    |
-| Mean losing streak             | 7.7                | 7.7                | 7.7     |
-| Maximum losing streak          | 14                 | 12                 | 13      |
-|                                |                    |                    |         |
-| Mean peak bankroll per game    | 1290.54            | 1229.03            | 1259.79 |
-| Maximum recorded bankroll      | 11150              | 5919.5             | 8534.75 |
-| Profitable games               | 92.82%             | 92.8%              | 92.81%  |
-| Profitably ended games         | 0.19%              | 0.02%              | 0.11%   |
+| Strategy | Fibonacci on Punto | Fibonacci on Banco | Average |
+| --- | --- | --- | --- |
+| Mean rounds per game | 205.1 | 238.4 | 221.75 |
+| Minimum played rounds per game | 9 | 9 | 9 |
+| Maximum played rounds per game | 7354 | 7553 | 7453.5 |
+|  |  |  |  |
+| Mean wins per game | 91.5 | 109.4 | 100.45 |
+| Minimum wins per game | 0 | 0 | 0 |
+| Maximum wins per game | 3361 | 3534 | 3447.5 |
+| Win rate | 41.01% | 42.52% | 41.76% |
+| Rate of zero-wins games | 0.49% | 0.41% | 0.45% |
+|  |  |  |  |
+| Mean winning streak | 5.3 | 5.7 | 5.5 |
+| Maximum winning streak | 26 | 21 | 23.5 |
+| Mean losing streak | 7.7 | 7.7 | 7.7 |
+| Maximum losing streak | 14 | 12 | 13 |
+|  |  |  |  |
+| Mean peak bankroll per game | 1290.54 | 1229.03 | 1259.79 |
+| Maximum recorded bankroll | 11150 | 5919.5 | 8534.75 |
+| Profitable games | 92.82% | 92.8% | 92.81% |
+| Profitably ended games | 0.19% | 0.02% | 0.11% |
 
 The Fibonacci strategy is less aggressive and carries a lower risk than the Martingale system. But anyway, a gambler will run out of bankroll in 222 rounds, or four times faster than betting always on Punto or Banco
 
@@ -374,27 +374,27 @@ Explanation of D’Alembert algorithm:
 3. If your bet loses, you increase your stake by one unit for the next bet. For example, if you bet $10 and lose, your next bet would be $20.
 4. If your bet wins, you decrease your stake by one unit for the next bet. For example, if you win the $20 bet, your next bet would return to $10. This gradual method aims to slowly recoup losses through a series of smaller wins, rather than risking a large amount to recover everything at once.
 
-| Strategy                       | D’Alembert on Punto | D’Alembert on Banco | Average |
-| ------------------------------ | ------------------- | ------------------- | ------- |
-| Mean rounds per game           | 113.4               | 125.6               | 119.5   |
-| Minimum played rounds per game | 13                  | 13                  | 13      |
-| Maximum played rounds per game | 2098                | 2282                | 2190    |
-|                                |                     |                     |         |
-| Mean wins per game             | 50.6                | 57.6                | 54.1    |
-| Minimum wins per game          | 0                   | 0                   | 0       |
-| Maximum wins per game          | 1038                | 1136                | 1087    |
-| Win rate                       | 41.13%              | 42.39%              | 41.76%  |
-| Rate of zero-wins games        | 0.05%               | 0.03%               | 0.04%   |
-|                                |                     |                     |         |
-| Mean winning streak            | 4.8                 | 5.1                 | 4.95    |
-| Maximum winning streak         | 21                  | 26                  | 23.5    |
-| Mean losing streak             | 6.9                 | 6.9                 | 6.9     |
-| Maximum losing streak          | 20                  | 19                  | 19.5    |
-|                                |                     |                     |         |
-| Mean peak bankroll per game    | 1315.55             | 1276.88             | 1296.22 |
-| Maximum recorded bankroll      | 8320                | 6581                | 7450.5  |
-| Profitable games               | 91.31%              | 91.9%               | 91.61%  |
-| Profitably ended games         | 0%                  | 0%                  | 0%      |
+| Strategy | D’Alembert on Punto | D’Alembert on Banco | Average |
+| --- | --- | --- | --- |
+| Mean rounds per game | 113.4 | 125.6 | 119.5 |
+| Minimum played rounds per game | 13 | 13 | 13 |
+| Maximum played rounds per game | 2098 | 2282 | 2190 |
+|  |  |  |  |
+| Mean wins per game | 50.6 | 57.6 | 54.1 |
+| Minimum wins per game | 0 | 0 | 0 |
+| Maximum wins per game | 1038 | 1136 | 1087 |
+| Win rate | 41.13% | 42.39% | 41.76% |
+| Rate of zero-wins games | 0.05% | 0.03% | 0.04% |
+|  |  |  |  |
+| Mean winning streak | 4.8 | 5.1 | 4.95 |
+| Maximum winning streak | 21 | 26 | 23.5 |
+| Mean losing streak | 6.9 | 6.9 | 6.9 |
+| Maximum losing streak | 20 | 19 | 19.5 |
+|  |  |  |  |
+| Mean peak bankroll per game | 1315.55 | 1276.88 | 1296.22 |
+| Maximum recorded bankroll | 8320 | 6581 | 7450.5 |
+| Profitable games | 91.31% | 91.9% | 91.61% |
+| Profitably ended games | 0% | 0% | 0% |
 
 Due to its negative progression nature, a gambler quickly runs out of their bankroll. It takes only 120 rounds to lose, and it’s 7,8 times faster than betting always on Punto or Banco. These numbers are very close to the martingale system.
 
@@ -412,27 +412,27 @@ Explanation of 1-3-2-6 algorithm:
 6. After a Win (Stage 4), cycle completion: If your fourth bet wins, you have completed one full cycle of the strategy. You should then return to the original 1-unit bet ($10) to restart the sequence.
 7. After any Loss: If you lose a hand at any point during the sequence (Stage 1, 2, 3, or 4), you must return to your original 1-unit base bet ($10) for the next hand and restart the progression from Stage 1.
 
-| Strategy                       | 1-3-2-6 on Punto | 1-3-2-6 on Banco | Average |
-| ------------------------------ | ---------------- | ---------------- | ------- |
-| Mean rounds per game           | 490.8            | 489.5            | 490.15  |
-| Minimum played rounds per game | 104              | 107              | 105.5   |
-| Maximum played rounds per game | 4070             | 3224             | 3647    |
-|                                |                  |                  |         |
-| Mean wins per game             | 219.1            | 224.5            | 221.8   |
-| Minimum wins per game          | 28               | 29               | 28.5    |
-| Maximum wins per game          | 1952             | 1562             | 1757    |
-| Win rate                       | 43.8%            | 45.03%           | 44.42%  |
-| Rate of zero-wins games        | 0%               | 0%               | 0%      |
-|                                |                  |                  |         |
-| Mean winning streak            | 6.9              | 7.1              | 7       |
-| Maximum winning streak         | 26               | 25               | 25.5    |
-| Mean losing streak             | 9.5              | 9.2              | 9.35    |
-| Maximum losing streak          | 30               | 28               | 29      |
-|                                |                  |                  |         |
-| Mean peak bankroll per game    | 1119.65          | 1117.53          | 1118.59 |
-| Maximum recorded bankroll      | 3070             | 2922.5           | 2996.25 |
-| Profitable games               | 77.1%            | 78.69%           | 77.9%   |
-| Profitably ended games         | 0%               | 0%               | 0%      |
+| Strategy | 1-3-2-6 on Punto | 1-3-2-6 on Banco | Average |
+| --- | --- | --- | --- |
+| Mean rounds per game | 490.8 | 489.5 | 490.15 |
+| Minimum played rounds per game | 104 | 107 | 105.5 |
+| Maximum played rounds per game | 4070 | 3224 | 3647 |
+|  |  |  |  |
+| Mean wins per game | 219.1 | 224.5 | 221.8 |
+| Minimum wins per game | 28 | 29 | 28.5 |
+| Maximum wins per game | 1952 | 1562 | 1757 |
+| Win rate | 43.8% | 45.03% | 44.42% |
+| Rate of zero-wins games | 0% | 0% | 0% |
+|  |  |  |  |
+| Mean winning streak | 6.9 | 7.1 | 7 |
+| Maximum winning streak | 26 | 25 | 25.5 |
+| Mean losing streak | 9.5 | 9.2 | 9.35 |
+| Maximum losing streak | 30 | 28 | 29 |
+|  |  |  |  |
+| Mean peak bankroll per game | 1119.65 | 1117.53 | 1118.59 |
+| Maximum recorded bankroll | 3070 | 2922.5 | 2996.25 |
+| Profitable games | 77.1% | 78.69% | 77.9% |
+| Profitably ended games | 0% | 0% | 0% |
 
 There is also a variation called the 1-3-2-4 system, which reduces the risk on the final bet by wagering 4 units instead of 6, helping to preserve some profits even if the last bet loses. Unfortunately, none of these strategies saves a gambler’s bankroll from being out-run. A gambler will run out of it in 490 rounds. It’s even faster than betting only on Égalité.
 

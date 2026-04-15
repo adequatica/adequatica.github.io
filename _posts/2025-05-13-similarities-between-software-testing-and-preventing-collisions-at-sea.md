@@ -70,6 +70,7 @@ This is a great example of thoughtful mentorship. If you see a junior engineer a
 ## Rule 18 Responsibilities between vessels
 
 > (d) (i) Any vessel other than a vessel not under command or a vessel restricted in her ability to manoeuvre shall, if the circumstances of the case admit, avoid impeding the safe passage of a vessel constrained by her draught.
+>
 > (ii) A vessel constrained by her draught shall navigate with particular caution having full regard to her special condition.
 
 In terms of testing, «exhibiting the signals» means that during release, the current status of the release (or its main task) should be explicit. Proactively informing the team and stakeholders about an upcoming or ongoing release — one of the riskiest moments in the lifecycle of any system — is simply a good practice. Visibility helps everyone navigate more safely.

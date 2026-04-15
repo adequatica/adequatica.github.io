@@ -53,39 +53,39 @@ To make an informed decision on which coordinate order is «better», I collecte
 
 ### Standards and formats
 
-| Latitude Longitude                                                          | Longitude latitude                                                                                             |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| ISO 6709 <sup>[docs](https://en.wikipedia.org/wiki/ISO_6709)</sup>          | GeoJSON (RFC 7946) <sup>[docs](https://datatracker.ietf.org/doc/html/rfc7946#section-4)</sup>                  |
+| Latitude Longitude | Longitude latitude |
+| --- | --- |
+| ISO 6709 <sup>[docs](https://en.wikipedia.org/wiki/ISO_6709)</sup> | GeoJSON (RFC 7946) <sup>[docs](https://datatracker.ietf.org/doc/html/rfc7946#section-4)</sup> |
 | GeoRSS <sup>[docs](https://www.ogc.org/publications/standard/georss/)</sup> | KML <sup>[docs](https://developers.google.com/kml/documentation/kmlreference#elements-specific-to-point)</sup> |
-| OSM JSON <sup>[docs](https://wiki.openstreetmap.org/wiki/OSM_JSON)</sup>    |                                                                                                                |
+| OSM JSON <sup>[docs](https://wiki.openstreetmap.org/wiki/OSM_JSON)</sup> |  |
 
 _In spite of the «default» coordinate order, OSM JSON’s parameters can be swapped (have a commutative property)._
 
 ### URLs
 
-| Latitude Longitude                                                                                                                                                                      | Longitude latitude                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Latitude Longitude | Longitude latitude |
+| --- | --- |
 | Google Maps <sup>[docs](https://developers.google.com/maps/documentation/urls/get-started#constructing-valid-urls), [e.g.](https://www.google.com/maps/@44.8198261,20.436645,16z)</sup> | 2GIS <sup>[e.g.](https://2gis.ae/dubai/geo/13933647002594323/55.27434%2C25.197091)</sup> |
-| Apple Maps <sup>[e.g.](https://beta.maps.apple.com/?ll=44.818161959837006%2C20.443788177820323&spn=0.040468247493485876%2C0.09146203301651212)</sup>                                    | EPSG <sup>[e.g.](https://epsg.io/map#srs=4326&x=20.442413&y=44.819579&z=17)</sup>        |
-| Bing Maps <sup>[e.g.](https://www.bing.com/maps?cp=44.823653%7E20.450316&lvl=17.5)</sup>                                                                                                | Yandex Maps <sup>[e.g.](https://yandex.com/maps/?ll=20.453578%2C44.817094)</sup>         |
-| HERE WeGo <sup>[e.g.](https://maps.here.com/?map=44.82377,20.45185)</sup>                                                                                                               |                                                                                          |
-| Geojson.io <sup>[e.g.](https://geojson.io/#id=gist:anonymous/&map=15.87/44.823377/20.448848)</sup>                                                                                      |                                                                                          |
-| Mapillary <sup>[e.g.](https://www.mapillary.com/app/?lat=44.827453778554&lng=20.452865989495308&z=14)</sup>                                                                             |                                                                                          |
-| OpenStreetMap <sup>[e.g.](https://www.openstreetmap.org/#map=19/44.823027/20.447236)</sup>                                                                                              |                                                                                          |
+| Apple Maps <sup>[e.g.](https://beta.maps.apple.com/?ll=44.818161959837006%2C20.443788177820323&spn=0.040468247493485876%2C0.09146203301651212)</sup> | EPSG <sup>[e.g.](https://epsg.io/map#srs=4326&x=20.442413&y=44.819579&z=17)</sup> |
+| Bing Maps <sup>[e.g.](https://www.bing.com/maps?cp=44.823653%7E20.450316&lvl=17.5)</sup> | Yandex Maps <sup>[e.g.](https://yandex.com/maps/?ll=20.453578%2C44.817094)</sup> |
+| HERE WeGo <sup>[e.g.](https://maps.here.com/?map=44.82377,20.45185)</sup> |  |
+| Geojson.io <sup>[e.g.](https://geojson.io/#id=gist:anonymous/&map=15.87/44.823377/20.448848)</sup> |  |
+| Mapillary <sup>[e.g.](https://www.mapillary.com/app/?lat=44.827453778554&lng=20.452865989495308&z=14)</sup> |  |
+| OpenStreetMap <sup>[e.g.](https://www.openstreetmap.org/#map=19/44.823027/20.447236)</sup> |  |
 
 _In spite of the «default» coordinate order, EPSG and Mapillary URLs’ parameters can be swapped (have a commutative property)._
 
 ### JavaScript APIs
 
-| Latitude Longitude                                                                                                                              | Longitude latitude                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Google Maps JavaScript API <sup>[docs](https://developers.google.com/maps/documentation/javascript/reference/coordinates)</sup>                 | 2GIS MapGL JS API <sup>[docs](https://docs.2gis.com/en/mapgl/reference/Map)</sup>                                                             |
+| Latitude Longitude | Longitude latitude |
+| --- | --- |
+| Google Maps JavaScript API <sup>[docs](https://developers.google.com/maps/documentation/javascript/reference/coordinates)</sup> | 2GIS MapGL JS API <sup>[docs](https://docs.2gis.com/en/mapgl/reference/Map)</sup> |
 | HERE Maps API for JavaScript <sup>[docs](https://www.here.com/docs/bundle/maps-api-for-javascript-api-reference/page/H.Map.html#.Options)</sup> | ArcGIS Maps SDK for JavaScript <sup>[docs](https://developers.arcgis.com/javascript/latest/maps-2d/#set-the-visible-portion-of-the-map)</sup> |
-| Kokao Maps Web API <sup>[docs](https://apis.map.kakao.com/web/documentation/#LatLng)</sup>                                                      | Azure Maps Web SDK <sup>[docs](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)</sup>                               |
-| MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup>                                                   | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup>                                                    |
-| NAVER Maps API <sup>[docs](https://navermaps.github.io/maps.js.en/docs/tutorial-Projection.html)</sup>                                          | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup>                                            |
-| Yandex Maps JavaScript API <sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup>                 | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup>                                                        |
-|                                                                                                                                                 | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup>                             |
+| Kokao Maps Web API <sup>[docs](https://apis.map.kakao.com/web/documentation/#LatLng)</sup> | Azure Maps Web SDK <sup>[docs](https://learn.microsoft.com/en-us/azure/azure-maps/how-to-use-map-control)</sup> |
+| MapQuest.js <sup>[docs](https://developer.mapquest.com/documentation/sdks/mapquest-js/)</sup> | Mapbox GL JS <sup>[docs](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglat)</sup> |
+| NAVER Maps API <sup>[docs](https://navermaps.github.io/maps.js.en/docs/tutorial-Projection.html)</sup> | MapillaryJS <sup>[docs](https://mapillary.github.io/mapillary-js/api/interfaces/api.LngLat/)</sup> |
+| Yandex Maps JavaScript API <sup>[docs](https://yandex.com/dev/jsapi-v2-1/doc/en/v2-1/ref/reference/meta#coordinatesOrder)</sup> | MapTiler Client JS <sup>[docs](https://docs.maptiler.com/client-js/coordinates/)</sup> |
+|  | Tomtom Maps SDK for Web <sup>[docs](https://developer.tomtom.com/maps-sdk-web-js/documentation#Maps.LngLat)</sup> |
 
 _In spite of the «default» coordinate order, HERE and MapillaryJS APIs’ parameters can be swapped (have a commutative property); in Yandex JavaScript API, developers can set a preferred order setting: [latitude, longitude] or [longitude, latitude], but the first one is the default._
 
@@ -101,16 +101,16 @@ Among other SDKs, [Apple MapKit](https://developer.apple.com/documentation/mapki
 
 ### Libraries
 
-| Latitude Longitude                                                     | Longitude Latitude                                                                                    |
-| ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Leaflet <sup>[docs](https://leafletjs.com/reference.html#latlng)</sup> | CesiumJS <sup>[docs](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)</sup>              |
-|                                                                        | D3 <sup>[docs](https://github.com/d3/d3-geo)</sup>                                                    |
-|                                                                        | DataMaps <sup>[docs](https://github.com/markmarkoh/datamaps/blob/master/README.md)</sup>              |
-|                                                                        | Deck.gl <sup>[docs](https://deck.gl/docs/developer-guide/coordinate-systems)</sup>                    |
-|                                                                        | GeoExt <sup>[docs](https://geoext.github.io/geoext/)</sup>                                            |
-|                                                                        | MapLibre GL JS <sup>[docs](https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLat/)</sup>        |
-|                                                                        | OpenLayers <sup>[docs](https://openlayers.org/en/latest/apidoc/module-ol_proj.html#.fromLonLat)</sup> |
-|                                                                        | TurfJS <sup>[docs](https://turfjs.org/docs/getting-started)</sup>                                     |
+| Latitude Longitude | Longitude Latitude |
+| --- | --- |
+| Leaflet <sup>[docs](https://leafletjs.com/reference.html#latlng)</sup> | CesiumJS <sup>[docs](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)</sup> |
+|  | D3 <sup>[docs](https://github.com/d3/d3-geo)</sup> |
+|  | DataMaps <sup>[docs](https://github.com/markmarkoh/datamaps/blob/master/README.md)</sup> |
+|  | Deck.gl <sup>[docs](https://deck.gl/docs/developer-guide/coordinate-systems)</sup> |
+|  | GeoExt <sup>[docs](https://geoext.github.io/geoext/)</sup> |
+|  | MapLibre GL JS <sup>[docs](https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLat/)</sup> |
+|  | OpenLayers <sup>[docs](https://openlayers.org/en/latest/apidoc/module-ol_proj.html#.fromLonLat)</sup> |
+|  | TurfJS <sup>[docs](https://turfjs.org/docs/getting-started)</sup> |
 
 Most JavaScript libraries (except Leaflet) use the GeoJSON format, which provides remarkable consistency within the JavaScript ecosystem.
 

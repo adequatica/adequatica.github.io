@@ -37,14 +37,18 @@ A copy of technical articles from [my personal blog on Medium](https://adequatic
 
    - Use sudo to install Bundle:
 
-     ```bash
-     sudo bundle install
-     ```
+   ```bash
+   sudo bundle install
+   ```
 
    - **Reboot the terminal!**
 
 4. Test a site locally by [instruction](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll#building-your-site-locally):
-   - Run: `sudo bundle exec jekyll serve`
+   - Run:
+
+   ```bash
+   sudo bundle exec jekyll serve
+   ```
 
 5. Add, commit, and push into «main»:
    - For the «gh-pages» branch, the deployment should be set up by [instruction](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch);
@@ -64,11 +68,25 @@ If `sudo bundle exec jekyll serve` does not work and you get an error:
 	from /usr/local/opt/ruby/bin/bundle:25:in `<main>'
 ```
 
-Check the bundle version: `bundle -v`
+Check the bundle version:
 
-If it is not 2.4.22, then you need to install it: `sudo gem install bundler -v 2.4.22`.
+```bash
+bundle -v
+```
 
-Reinstall gems: `sudo bundle install` and try to exec jekyll server again.
+If it is not 2.4.22, then you need to install it:
+
+```bash
+sudo gem install bundler -v 2.4.22
+```
+
+Reinstall gems and try to exec jekyll server again:
+
+```bash
+sudo bundle install
+
+sudo bundle exec jekyll serve
+```
 
 If you still get an error like this:
 
@@ -123,7 +141,7 @@ A [similar article](https://ritviknag.com/tech-tips/ruby-versioning-hell-with-je
 
 ---
 
-Only for this repository — local Markdown files formatting:
+Only for this repository — local Markdown files formatting before commit:
 
 - Set up `package.json` for [Prettier](https://prettier.io/): `npm install`
 - Add [Husky](https://typicode.github.io/husky/) pre-commit: `npm run prepare`
