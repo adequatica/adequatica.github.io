@@ -69,6 +69,8 @@ But I discovered that the image from Postman’s Visualization screen can be dra
 
 _Fig. 1. Postman Post-response Scripts tab_
 
+{% raw %}
+
 ```javascript
 function visualizerPayload() {
   const jsonData = pm.response.json();
@@ -83,6 +85,8 @@ const visualizerTemplate = `
 
 pm.visualizer.set(visualizerTemplate, visualizerPayload());
 ```
+
+{% endraw %}
 
 2. Send the request. Example of `gpt-image-1` OpenAI API request:
 
