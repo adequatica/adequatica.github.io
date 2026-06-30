@@ -101,7 +101,7 @@ The second set of tests is aimed at how the site is ready to work with [assistiv
 
 ### 5. Language Declaration
 
-Yandex Music has [localisation](https://en.wikipedia.org/wiki/Language_localisation) — the page language could be changed into Russian, Armenian, Uzbek, Kazakh, Ukrainian, or Azerbaijani. Therefore, you need to check [the declaration of the page language](https://www.w3.org/International/questions/qa-html-language-declarations).
+Yandex Music has [localisation](https://en.wikipedia.org/wiki/Language_localisation) — the page language could be changed into Russian, English, Uzbek, or Kazakh. Therefore, you need to check [the declaration of the page language](https://www.w3.org/International/questions/qa-html-language-declarations).
 
 Actual result: `<html>` tag does not have any attributes.
 
@@ -109,7 +109,7 @@ Expected: `<html lang="en">`.
 
 Wherefore? To help a speech synthesizer accurately determine the language of the page.
 
-Each language locale must correspond to the value from the [IANA registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry): ru, hy, uz, kk, uk, or azb.
+Each language locale must correspond to the value from the [IANA registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry): ru, en, uz or kk.
 
 ## 6. Document Structure
 
